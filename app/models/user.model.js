@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-const UserSchema = mongoose.Schema({
+const userSchema = mongoose.Schema({
     firstName: {
         type : String,
         required : true
@@ -22,9 +22,14 @@ const UserSchema = mongoose.Schema({
 });
 
 //Save the database in a constant so that we can access it
-const userRegister = mongoose.model('userRegister',UserSchema);
+const userRegister = mongoose.model('userRegister',userSchema);
 
 class Registration{
+    /**
+     * @description: Adds data to the database
+     * @param {*} newUser 
+     * @param {*} callback 
+     */
     newUserRegistration = (newUser,callback) =>{
         
         const user = new userRegister({
@@ -35,7 +40,7 @@ class Registration{
             });
         user.save((err,data) => {
             if(err){
-                console.log("There was an error while saving user data");
+                console.log("Error detected in model");
                 return callback(err, null);
             }
             else{
@@ -44,9 +49,30 @@ class Registration{
             }   
         });
         
-    }
-
-    
+    };
+    /**
+     * @description: Authenticates user information from the database
+     * @param {*} credentials 
+     * @param {*} callback 
+     */
+    login = (credentials,callback)=>{
+        userRegister.findOne({'emailId':credentials.emailId},(err,data)=>{
+            if(err){
+                return callback(err,null);
+            }
+            else{
+                if(!data){
+                    return callback("Invalid email id",null);
+                }
+                else if(data.password == credentials.password){
+                    return callback(null,data);
+                }
+                else{   
+                    return callback("Invalid Password",null);
+                }
+            }
+        });
+    };
 }
 module.exports = new Registration();
 
