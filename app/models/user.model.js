@@ -22,49 +22,32 @@ const UserSchema = mongoose.Schema({
 });
 
 //Save the database in a constant so that we can access it
-const userRegister = mongoose.model('UserRegister',UserSchema);
-//export userschema so that controller and service can access the schema
-module.exports = mongoose.model('UserSchema',UserSchema);
+const userRegister = mongoose.model('userRegister',UserSchema);
 
 class Registration{
     newUserRegistration = (newUser,callback) =>{
-        try{
-            const user = new userRegister({
-                firstName: newUser.firstName,
-                lastName: newUser.lastName,
-                emailId: newUser.emailId,
-                password: newUser.password
+        
+        const user = new userRegister({
+            firstName: newUser.firstName,
+            lastName: newUser.lastName,
+             emailId: newUser.emailId,
+            password: newUser.password
             });
-            user.save({},(err,data) => {
-                if(err){
-                    console.log("There was an error while saving user data");
-                    return callback(err, null);
-                }
-                else{
-                    console.log("New user registered successfully!!!");
-                    return callback(null,err);
-                }   
-            });
-        }catch (err){
-            console.log("Error while registering new user");
-        }
-    }
-
-    loginUser(clientCredentials,callback){
-        userRegister.findOne({email : clientCredentials.emailId},(err,data) => {
-            if (err){
-                console.log("Error while login");
-            }
-            else if(!data){
-                console.log("Email id not found  in the database");
+        user.save((err,data) => {
+            if(err){
+                console.log("There was an error while saving user data");
+                return callback(err, null);
             }
             else{
-                console.log("Email Id found in the database");
-                return callback(null, data);
-            }
+                console.log("New user registered successfully!!!");
+                return callback(null,data);
+            }   
         });
+        
     }
+
+    
 }
-module.exports = {Registration};
+module.exports = new Registration();
 
 

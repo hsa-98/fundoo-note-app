@@ -19,7 +19,7 @@ mongoose.connect(dbConfig.url,{
     process.exit;
 });
 
-require('./app/routes/note.routes')(app);
+ require('./app/routes/note.routes')(app);
 
 app.get('/',(req,res) => {
     res.json({"message":"Welcome to fundoo notes app"});
