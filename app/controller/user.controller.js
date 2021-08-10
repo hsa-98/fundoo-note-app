@@ -13,7 +13,7 @@ class User{
                 password : req.body.password
             };
             
-            service.Service.registerUser(register,(err,data)=>{
+            service.registerUser(register,(err,data)=>{
                 if(err){
                     console.log("Error occured while registering new user");
                     res.status(500).send({
