@@ -1,4 +1,5 @@
 const service = require('../service/user.service');
+const authenticate = require('../middleware/validation');
 
 class User{
 
@@ -9,16 +10,23 @@ class User{
      * @returns 
      */
     registerUser = (req,res)=>{
-    
-        if(!req.body.firstName){
-             return res.staus(400).send({message:"firstname content cannot be empty"});
-        }   
+        
         const register = {
             firstName : req.body.firstName,
             lastName : req.body.lastName,
             emailId : req.body.emailId,
             password : req.body.password
         };
+
+        authenticate.validate(register,(err,data)=>{
+            if(err){
+                res.status(400).send({
+                    success:false,
+                    message:err
+                })
+                return;
+            }
+        })
             
         service.registerUser(register,(err,data)=>{
             if(err){
