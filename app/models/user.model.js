@@ -72,7 +72,7 @@ class Registration{
      * @param {*} credentials 
      * @param {*} callback 
      */
-    login = (credentials,callback)=>{
+    login =  async (credentials,callback)=>{
         userRegister.findOne({'emailId':credentials.emailId},(err,data)=>{
             if(err){
                 return callback(err,null);
@@ -81,13 +81,20 @@ class Registration{
                 if(!data){
                     return callback("Invalid email id",null);
                 }
-                else if(data.password == credentials.password){
-                    return callback(null,data);
-                }
-                else{   
-                    return callback("Invalid Password",null);
+                else{
+                    let bool = bcrypt.compareSync(credentials.password,data.password);
+                    console.log(data.password);
+                    console.log(credentials.password);
+                    console.log(bool);
+                    if(bool){
+                        return callback(null,data);
+                    } 
+                    else{
+                        return callback("Invalid Password",null);
+                    } 
                 }
             }
+           
         });
     };
 }
