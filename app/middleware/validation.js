@@ -16,5 +16,12 @@ class authenticate{
             return res("Password is weak",null);
         }
      }
+
+     loginValidate=(data,res)=>{
+        if(!validator.isEmail(data.emailId)){
+            return res("Enter valid email",null);
+        }
+        
+     }
 }
 module.exports = new authenticate();

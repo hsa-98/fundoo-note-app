@@ -51,17 +51,22 @@ class User{
      */
     loginUser = (req,res)=>{
         //check if email id is empty
-        if(!req.body.emailId){
-            return res.status(401).send({message:"Enter email id"});
-        }
-        //check if password is empty
-        else if(!req.body.password){
-            return res.status(401).send({message:"Enter Password"});
-        }
+        
         const credentials = {
             emailId : req.body.emailId,
             password : req.body.password
         };
+
+        authenticate.loginValidate(credentials,(err,data)=>{
+            if(err){
+                res.status(400).send({
+                    success:false,
+                    message:err
+                })
+                return;
+            }
+        })
+            
         //call service layer
         service.loginUser(credentials,(err,data)=>{
             if(err){
