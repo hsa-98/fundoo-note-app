@@ -1,5 +1,5 @@
-const service = require('../service/user.service');
-const authenticate = require('../middleware/validation');
+const service = require('../service/user.service')
+const {authenticate,authenticateLogin} = require('../middleware/joiValidation')
 
 class User{
 
@@ -9,8 +9,7 @@ class User{
      * @param {*} res 
      * @returns 
      */
-    registerUser = (req,res)=>{
-        
+    registerUser = (req,res)=>{        
         const register = {
             firstName : req.body.firstName,
             lastName : req.body.lastName,
@@ -18,15 +17,16 @@ class User{
             password : req.body.password
         };
 
-        authenticate.validate(register,(err,data)=>{
-            if(err){
+        const registerValid = authenticate.validate(register);
+
+            if(registerValid.error){
                 res.status(400).send({
                     success:false,
-                    message:err
+                    message:console.error()
                 })
                 return;
             }
-        })
+        
             
         service.registerUser(register,(err,data)=>{
             if(err){
@@ -42,6 +42,7 @@ class User{
                 });
             }
         });
+    
     }
 
     /**
@@ -57,15 +58,15 @@ class User{
             password : req.body.password
         };
 
-        authenticate.loginValidate(credentials,(err,data)=>{
-            if(err){
+        const loginValid = authenticateLogin.validate(credentials);
+    
+            if(loginValid.err){
                 res.status(400).send({
                     success:false,
                     message:err
                 })
                 return;
             }
-        })
             
         //call service layer
         service.loginUser(credentials,(err,data)=>{

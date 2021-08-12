@@ -79,7 +79,7 @@ class Registration{
             }
             else{
                 if(!data){
-                    return callback("Invalid email id",null);
+                    return callback("Email id doesnt exist",null);
                 }
                 else{
                     let bool = bcrypt.compareSync(credentials.password,data.password);
