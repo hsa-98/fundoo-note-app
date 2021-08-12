@@ -1,4 +1,5 @@
 const mongoose = require('mongoose');
+const bcrypt = require('bcrypt');
 const userSchema = mongoose.Schema({
     firstName: {
         type : String,
@@ -24,6 +25,18 @@ const userSchema = mongoose.Schema({
 }, {
     timestamps : true
 });
+
+userSchema.pre('save',async function (next){
+    try{
+        const salt = await bcrypt.genSalt(10);
+        const hashedPassword = await bcrypt.hash(this.password,salt);
+        this.password = hashedPassword;
+        next();
+    }catch(err){
+        next(err);
+    }
+
+})
 
 //Save the database in a constant so that we can access it
 const userRegister = mongoose.model('userRegister',userSchema);
