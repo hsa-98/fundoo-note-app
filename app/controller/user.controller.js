@@ -2,7 +2,6 @@ const service = require('../service/user.service')
 const {authenticate,authenticateLogin} = require('../middleware/joiValidation')
 
 class User{
-
     /**
      * @description : Function created to add user into database
      * @param {*} req 
@@ -16,7 +15,6 @@ class User{
             emailId : req.body.emailId,
             password : req.body.password
         };
-
         const registerValid = authenticate.validate(register);
 
             if(registerValid.error){
@@ -26,8 +24,7 @@ class User{
                 })
                 return;
             }
-        
-            
+                 
         service.registerUser(register,(err,data)=>{
             if(err){
                 console.log("Error occured while registering new user");

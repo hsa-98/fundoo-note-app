@@ -11,7 +11,7 @@ const authenticate = Joi.object({
                 .email()
                 .required(),
     password : Joi.string().min(8)
-                .pattern(new RegExp('^(?=.*[@#$%^&+=])(?=.*\\d)(?=.*[a-z])(?=.*[A-Z]).{8,}$'))
+                .pattern(new RegExp('^(?=.*[!@#$%^&+=])(?=.*\\d)(?=.*[a-z])(?=.*[A-Z]).{8,}$'))
      
 });
 
