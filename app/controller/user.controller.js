@@ -36,6 +36,7 @@ class User{
                 else{
                     return res.status(201).json({
                         message: "User Registered",
+                        success:true,
                         data: data,
                     });
                 }
@@ -78,7 +79,8 @@ class User{
                     return res.status(200).json({
                         success:true,
                         message:"Logged in succesfully",
-                        token:data    
+                        data:data.data,
+                        token:data.token  
                     })
                 }
             });

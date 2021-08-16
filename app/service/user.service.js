@@ -42,7 +42,7 @@ class Service{
                     let bool = bcrypt.compareSync(credentials.password,data.password);
                     if(bool){
                         const token = auth.generateToken(data);
-                        return callback(null,token);
+                        return callback(null,{data,token});
                     }
                     else{
                         return callback("Invalid Password",null);
