@@ -30,5 +30,23 @@
             "emailId":"chinmay@gmail",
             "password":"Kamerkar"
         }
+    },
+    "login":{
+        "validDetails":{
+            "emailId":"sarthgupta123@gmail.com",
+            "password":"ParthGupta!123"
+        },
+        "invalidEmail":{
+            "emailId":"sarthgupta123@",
+            "password":"ParthGupta!123"
+        },
+        "validEmailButNonExistent":{
+            "emailId":"sarthgupta123@",
+            "password":"ParthGupta!123"
+        },
+        "wrongPassword":{
+            "emailId":"sarthgupta123@gmail.com",
+            "password":"ParthGupta!1"
+        }
     }
 }

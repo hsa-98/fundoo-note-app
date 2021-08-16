@@ -80,6 +80,66 @@ describe('register',()=>{
 });
 
 describe('login',()=>{
+    it('givenValidLoginInfo_shouldReturnStatus200_WithTokenAndData',(done)=>{
+        const loginDetails = user.login.validDetails;
+        chai.request(server)
+        .post('/login')
+        .send(loginDetails)
+        .end((err,res)=>{
+            if(err){
+                return done(err);
+            }
+            res.should.have.status(200);
+            res.body.should.be.a('object')
+            res.body.should.have.property('success').eql(true);
+            res.body.should.have.property('data');
+            res.body.should.have.property('token');
+            done();
+        });
+    });
     
+    it('givenInvalidEmail_ShouldReturnStatus401',(done)=>{
+        const loginDetails = user.login.invalidEmail;
+        chai.request(server)
+        .post('/login')
+        .send(loginDetails)
+        .end((err,res)=>{
+            if(err){
+                return done(err);
+            }
+            res.should.have.status(401);
+            done();
+        });
+    });
 
-})
+    it('givenValidButNonExistentEmail_ShouldReturnStatus401AndError',(done)=>{
+        const loginDetails = user.login.validEmailButNonExistent;
+        chai.request(server)
+        .post('/login')
+        .send(loginDetails)
+        .end((err,res)=>{
+            if(err){
+                return done(err);
+            }
+            res.should.have.status(401);
+            res.body.should.have.property('message').eql('Email id doesnt exist');
+            done();
+        });
+    });
+
+    it('givenWrongPassword_ShouldReturnStatus401AndError',(done)=>{
+        const loginDetails = user.login.wrongPassword;
+        chai.request(server)
+        .post('/login')
+        .send(loginDetails)
+        .end((err,res)=>{
+            if(err){
+                return done(err);
+            }
+            res.should.have.status(401);
+            res.body.should.have.property('message').eql('Invalid Password');
+            done();
+        });
+
+    })
+});
