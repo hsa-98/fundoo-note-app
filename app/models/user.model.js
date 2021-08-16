@@ -48,44 +48,50 @@ class Registration{
      * @param {*} callback 
      */
     newUserRegistration = (newUser,callback) =>{
-        
-        const user = new userRegister({
-            firstName: newUser.firstName,
-            lastName: newUser.lastName,
-             emailId: newUser.emailId,
-            password: newUser.password
+       try{ 
+            const user = new userRegister({
+                firstName: newUser.firstName,
+                lastName: newUser.lastName,
+                emailId: newUser.emailId,
+                password: newUser.password
+                });
+            user.save((err,data) => {
+                if(err){
+                    console.log("Error detected in model");
+                    return callback(err, null);
+                }
+                else{
+                    console.log("New user registered successfully!!!");
+                    return callback(null,data);
+                }   
             });
-        user.save((err,data) => {
-            if(err){
-                console.log("Error detected in model");
-                return callback(err, null);
-            }
-            else{
-                console.log("New user registered successfully!!!");
-                return callback(null,data);
-            }   
-        });
-        
+        }catch(err){
+            console.log("Error occured while registering user");
+        }
     };
     /**
      * @description: Authenticates user information from the database
      * @param {*} credentials 
      * @param {*} callback 
      */
-    login =  async (credentials,callback)=>{
-        userRegister.findOne({'emailId':credentials.emailId},(err,data)=>{
-            if(err){
-                return callback(err,null);
-            }
-            else{
-                if(!data){
-                    return callback("Email id doesnt exist",null);
+    login = (credentials,callback)=>{
+        try{
+            userRegister.findOne({'emailId':credentials.emailId},(err,data)=>{
+                if(err){
+                    return callback(err,null);
                 }
                 else{
-                        return callback(null,data) 
-                }
-            }     
-        });
+                    if(!data){
+                        return callback("Email id doesnt exist",null);
+                    }
+                    else{
+                            return callback(null,data) 
+                    }
+                }     
+            });
+        }catch(err){
+            console.log("Error occured while logging in");
+        }
     };
 }
 module.exports = new Registration();

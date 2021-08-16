@@ -1,7 +1,9 @@
 const{required} = require('joi')
 const Joi = require('joi')
 
-
+/**
+ * Validates info entered by user and returns error if input is not valid
+ */
 const authenticate = Joi.object({
     firstName : Joi.string().min(3).required()
                 .pattern(new RegExp('^[A-Z]{1}[a-z]{2,}')),
