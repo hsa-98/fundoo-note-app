@@ -82,19 +82,9 @@ class Registration{
                     return callback("Email id doesnt exist",null);
                 }
                 else{
-                    let bool = bcrypt.compareSync(credentials.password,data.password);
-                    console.log(data.password);
-                    console.log(credentials.password);
-                    console.log(bool);
-                    if(bool){
-                        return callback(null,data);
-                    } 
-                    else{
-                        return callback("Invalid Password",null);
-                    } 
+                        return callback(null,data) 
                 }
-            }
-           
+            }     
         });
     };
 }

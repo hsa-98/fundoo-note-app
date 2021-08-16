@@ -1,4 +1,5 @@
 const UserSchema = require('../models/user.model');
+const bcrypt = require('bcrypt');
 
 class Service{
     /**
@@ -37,12 +38,18 @@ class Service{
                     return callback(err,null);
                 }
                 else{
-                    return callback(null,data);
+                    let bool = bcrypt.compareSync(credentials.password,data.password);
+                    if(bool){
+                        return callback(null,data);
+                    }
+                    else{
+                        return callback("Invalid Password",null);
+                    }
+                    
                 }
             });
-
         }catch(err){
-
+            console.log("Error occured");
         }
     }
 }
