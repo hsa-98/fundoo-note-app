@@ -1,5 +1,6 @@
 const UserSchema = require('../models/user.model');
 const bcrypt = require('bcrypt');
+const auth = require('../middleware/authenticate')
 
 class Service{
     /**
@@ -40,12 +41,12 @@ class Service{
                 else{
                     let bool = bcrypt.compareSync(credentials.password,data.password);
                     if(bool){
-                        return callback(null,data);
+                        const token = auth.generateToken(data);
+                        return callback(null,token);
                     }
                     else{
                         return callback("Invalid Password",null);
                     }
-                    
                 }
             });
         }catch(err){

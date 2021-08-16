@@ -72,8 +72,9 @@ class User{
             }
             else{
                 return res.status(200).json({
+                    success:true,
                     message:"Logged in succesfully",
-                    data:data
+                    token:data    
                 })
             }
         });
