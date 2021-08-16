@@ -2,7 +2,8 @@
     "env": {
         "browser": true,
         "commonjs": true,
-        "es2021": true
+        "es2021": true,
+        "node":true
     },
     "extends": [
         "airbnb-base"
@@ -11,5 +12,15 @@
         "ecmaVersion": 12
     },
     "rules": {
+        "semi": [
+            "error",
+            "always"
+        ],
+        "no-console": "off",
+        "quotes": 
+        [
+            "error",
+            "single"
+        ]
     }
 }

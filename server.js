@@ -8,7 +8,7 @@ app.use(express.urlencoded({extended:true}));
 app.use(express.json());
 
 dbConfig.dbConnection();
- require('./app/routes/note.routes')(app);
+require('./app/routes/note.routes')(app);
 
 app.get('/',(req,res) => {
     res.json({"message":"Welcome to fundoo notes app"});
@@ -17,3 +17,4 @@ app.get('/',(req,res) => {
 app.listen(process.env.PORT,() =>{
     console.log("App is listening on port number ${process.env.PORT}");
 })
+module.exports = app;

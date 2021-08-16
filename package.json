@@ -4,7 +4,8 @@
   "description": "\"Fundoo note app. With User login and registration\"",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha",
+    "lint": "eslint"
   },
   "keywords": [
     "Express",
@@ -17,11 +18,14 @@
   "license": "ISC",
   "dependencies": {
     "bcrypt": "^5.0.1",
+    "chai": "^4.3.4",
+    "chai-http": "^4.3.0",
     "dotenv": "^10.0.0",
     "eslint-config-airbnb-base": "^14.2.1",
     "express": "^4.17.1",
     "joi": "^17.4.2",
     "jsonwebtoken": "^8.5.1",
+    "mocha": "^9.0.3",
     "mongoose": "^5.13.5",
     "nodemon": "^2.0.12",
     "validator": "^13.6.0"

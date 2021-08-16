@@ -1,0 +1,34 @@
+{
+    "user":{
+        "validDetails":{
+            "firstName":"Sarth",
+            "lastName":"Gupta",
+            "emailId":"sarthgupta123@gmail.com",
+            "password":"ParthGupta!123"
+        },
+        "detailsWithInvalidFirstName":{
+            "firstName":"",
+            "lastName":"Kamerkar",
+            "emailId":"chinmay@gmail.com",
+            "password":"Kamerkar!123"
+        },
+        "detailsWithInvalidLastName":{
+            "firstName":"Chinmay",
+            "lastName":"",
+            "emailId":"chinmay@gmail.com",
+            "password":"Kamerkar!123"
+        },
+        "detailsWithInvalidEmailId":{
+            "firstName":"Chinmay",
+            "lastName":"kamerkar",
+            "emailId":"chinmay@gmail",
+            "password":"Kamerkar!123"
+        },
+        "detailsWithWeakPassword":{
+            "firstName":"Chinmay",
+            "lastName":"kamerkar",
+            "emailId":"chinmay@gmail",
+            "password":"Kamerkar"
+        }
+    }
+}
