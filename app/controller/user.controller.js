@@ -85,7 +85,7 @@ class User{
                 }
             });
         }catch(err){
-            console.log("Error occured");
+            console.log(err);
         }
     }
 }
