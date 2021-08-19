@@ -21,7 +21,7 @@ class User{
                 if(registerValid.error){
                     res.status(400).send({
                         success:false,
-                        message:console.error()
+                        message:"Invalid details"
                     })
                     return;
                 }
@@ -30,7 +30,7 @@ class User{
                 if(err){
                     console.log("Error occured while registering new user");
                     res.status(500).send({
-                        message:err||"Some error occured while adding user"
+                        message:"Some error occured while adding user"
                     });
                 }
                 else{

@@ -11,7 +11,7 @@ class Service{
     registerUser = (newUser,callback)=>{
         try{
         //call model layer
-        UserSchema.newUserRegistration(newUser,(err,data)=>{
+        UserSchema.registerUser(newUser,(err,data)=>{
             if(err){
                 console.log("Error occured while registering new user");
                 return callback(err,null);
@@ -34,7 +34,7 @@ class Service{
     loginUser = (credentials,callback)=>{
         try{
             //call model layer
-            UserSchema.login(credentials,(err,data)=>{
+            UserSchema.loginUser(credentials,(err,data)=>{
                 if(err){
                     return callback(err,null);
                 }

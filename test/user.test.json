@@ -1,9 +1,9 @@
 {
     "user":{
         "validDetails":{
-            "firstName":"Sarth",
+            "firstName":"Manoj",
             "lastName":"Gupta",
-            "emailId":"sarthgupta123@gmail.com",
+            "emailId":"manojkushwaha@gmail.com",
             "password":"ParthGupta!123"
         },
         "detailsWithInvalidFirstName":{

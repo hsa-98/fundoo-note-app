@@ -47,7 +47,7 @@ class Registration{
      * @param {*} newUser 
      * @param {*} callback 
      */
-    newUserRegistration = (newUser,callback) =>{
+    registerUser = (newUser,callback) =>{
        try{ 
             const user = new userRegister({
                 firstName: newUser.firstName,
@@ -74,7 +74,7 @@ class Registration{
      * @param {*} credentials 
      * @param {*} callback 
      */
-    login = (credentials,callback)=>{
+    loginUser = (credentials,callback)=>{
         try{
             userRegister.findOne({'emailId':credentials.emailId},(err,data)=>{
                 if(err){

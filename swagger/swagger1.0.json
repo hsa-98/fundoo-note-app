@@ -1,0 +1,99 @@
+{
+    "openapi": "3.0.0", 
+    "info":{
+        "version": "1.0.0",
+        "title":"fundoo-note-app",
+        "description":"Fundoo note app. With user login and registration"
+    },
+        "host":"localhost:4000",
+        "basePath":"/",
+        "schemes":["http"],
+        "consumes":["application/json"],
+        "produces":["application/json"],
+            "paths":{
+                "/register":{
+                    "post":{
+                        "tags":["Register"],
+                        "summary":"Register new user",
+                        "description":"Details of user we want to register",
+                
+                        "parameters":[
+                                {
+                                    "name":"register",
+                                    "in":"body",
+                                    "schema":{
+                                        "$ref":"#/definition/registerUser"
+                                    }                                
+                                }
+                            ],
+                        "produces":["application/json"],
+                        "responses":{
+                            "201":{
+                                "description":"User Registered"
+                            },
+                            "400":{
+                                "description":"Invalid details"
+                            },
+                            "500":{
+                                "description":"Some error occured while adding user"
+                            }
+                        }
+                    }
+                },
+                "/login":{
+                    "post":{
+                        "tags":["Login"],
+                        "description":"Login registered user",
+                            "parameters":[
+                                {
+                                    "name":"Login",
+                                    "in":"body",
+                                    "description":"Login registered user",
+                                    "schema":{
+                                        "$ref":"#/definition/loginUser"
+                                    }
+                                }
+                            ],
+                            "produces":["application/json"],
+                            "responses":{
+                                "401":{
+                                    "description":"Email id doesnt exist"
+                                },
+                                "200":{
+                                    "description":"Logged in succesfully"
+                                }
+                            }
+                        }
+                    }
+                
+            },
+          "definition":{
+            "registerUser":{
+                "type":"object",
+                "properties":{
+                    "firstName":{
+                        "type":"string"
+                    },
+                    "lastName":{
+                        "type":"string"
+                    },
+                    "emailId":{
+                        "type":"string"
+                    },
+                "password":{
+                            "type":"string"}
+                    }
+                },
+            "loginUser":{
+               "type":"object",
+                "properties":{
+                    "emailId":{
+                      "type":"string"
+                      },
+                    "password":{
+                        "type":"string"
+                        } 
+                 }
+            }
+        }       
+}
