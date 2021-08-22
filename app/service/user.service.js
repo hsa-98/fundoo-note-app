@@ -1,6 +1,7 @@
 const UserSchema = require('../models/user.model');
 const bcrypt = require('bcrypt');
-const auth = require('../middleware/authenticate')
+const auth = require('../middleware/authenticate');
+const logger = require('../../logger/logger');
 
 class Service{
     /**
@@ -36,15 +37,18 @@ class Service{
             //call model layer
             UserSchema.loginUser(credentials,(err,data)=>{
                 if(err){
+                    logger.error("Error in service",err);
                     return callback(err,null);
                 }
                 else{
                     let bool = bcrypt.compareSync(credentials.password,data.password);
                     if(bool){
                         const token = auth.generateToken(data);
+                        logger.info("Password is valid");
                         return callback(null,{data,token});
                     }
                     else{
+                        logger.error("Invalid password");
                         return callback("Invalid Password",null);
                     }
                 }

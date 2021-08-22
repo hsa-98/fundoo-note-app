@@ -1,5 +1,6 @@
 const mongoose = require('mongoose');
 const bcrypt = require('bcrypt');
+const logger = require('../../logger/logger');
 const userSchema = mongoose.Schema({
     firstName: {
         type : String,
@@ -55,17 +56,19 @@ class Registration{
                 emailId: newUser.emailId,
                 password: newUser.password
                 });
-            user.save((err,data) => {
-                if(err){
+            user.save((error,data) => {
+                if(error){
+                    logger.error("Error detected in model")
                     console.log("Error detected in model");
                     return callback(err, null);
                 }
                 else{
+                    logger.info("User registered suucesfully")
                     console.log("New user registered successfully!!!");
                     return callback(null,data);
                 }   
             });
-        }catch(err){
+        }catch(error){
             console.log("Error occured while registering user");
         }
     };
@@ -78,18 +81,22 @@ class Registration{
         try{
             userRegister.findOne({'emailId':credentials.emailId},(err,data)=>{
                 if(err){
+                    logger.error("Error occured while logging user",err);
                     return callback(err,null);
                 }
                 else{
                     if(!data){
+                        logger.error("Email id doesnt exists");
                         return callback("Email id doesnt exist",null);
                     }
                     else{
+                            logger.info("Email id found")
                             return callback(null,data) 
                     }
                 }     
             });
-        }catch(err){
+        }catch(error){
+            logger.error("Error occured while logging user",error);
             console.log("Error occured while logging in");
         }
     };
