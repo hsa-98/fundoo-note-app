@@ -7,4 +7,6 @@ app.post('/register',user.registerUser);
 app.post('/login',user.loginUser);
 //api for forgot password
 app.put('/forgotpassword',user.forgotPassword);
+//api for reset password
+//app.put('/resetpassword',user.resetPassword);
 }

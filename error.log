@@ -16,3 +16,6 @@
 {"code":"EENVELOPE","command":"API","level":"error","timestamp":"2021-08-23T01:55:46.752Z"}
 {"message":"250 2.0.0 OK  1629684157 64sm13889013pfy.114 - gsmtp","level":"error","timestamp":"2021-08-23T02:03:17.717Z"}
 {"message":"250 2.0.0 OK  1629684207 w82sm13940935pff.112 - gsmtp","level":"error","timestamp":"2021-08-23T02:04:08.156Z"}
+{"message":"Invalid password","level":"error","timestamp":"2021-08-23T03:03:08.277Z"}
+{"level":"error","timestamp":"2021-08-23T03:54:32.988Z"}
+{"level":"error","timestamp":"2021-08-23T03:57:26.117Z"}

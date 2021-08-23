@@ -66,7 +66,28 @@ class Service{
                 return callback(err,null);
             }
             else{
-                return callback(null,mailUser.sendEmail(data));
+                  mailUser.sendEmail(data,(err,resetLink)=>{
+                      if(err){
+                          logger.error("Error occured while sending reset link",err);
+                          return callback("Error occured while sending reset link",null);
+                      }
+                      else{
+                          console.log("Link sent");
+                          logger.info("Reset link sent succesfully");
+                          const link = {
+                              "id" :data._id,
+                              "link":resetLink
+                          };
+                          UserSchema.addReset(link,(err,confirmaton)=>{
+                              if (err){
+                                  return callback(err,null);
+                              }
+                              else{
+                                  return callback(null,confirmaton);
+                              }
+                          });
+                      }
+                  });
                 }
             })
     }    

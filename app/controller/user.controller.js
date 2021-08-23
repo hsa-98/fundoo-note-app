@@ -111,11 +111,17 @@ class User {
             else{
                 return res.status(200).json({
                     success:true,
-                    message:"Email reset link sent succesfully"
+                    message:"Email reset link sent succesfully",
+                    data:data
                 })
             }
         })
     }
+
+   /* resetPassword = (req,res)=>{
+        
+
+    }*/
 }
 
 module.exports = new User();

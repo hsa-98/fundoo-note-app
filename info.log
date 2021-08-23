@@ -43,3 +43,21 @@
 {"message":"250 2.0.0 OK  1629684157 64sm13889013pfy.114 - gsmtp","level":"error","timestamp":"2021-08-23T02:03:17.716Z"}
 {"message":"Succesfully connected to db","level":"info","timestamp":"2021-08-23T02:03:57.617Z"}
 {"message":"250 2.0.0 OK  1629684207 w82sm13940935pff.112 - gsmtp","level":"error","timestamp":"2021-08-23T02:04:08.156Z"}
+{"message":"Succesfully connected to db","level":"info","timestamp":"2021-08-23T03:03:03.123Z"}
+{"message":"Email id found","level":"info","timestamp":"2021-08-23T03:03:08.206Z"}
+{"message":"Invalid password","level":"error","timestamp":"2021-08-23T03:03:08.276Z"}
+{"message":"Email id found","level":"info","timestamp":"2021-08-23T03:03:15.342Z"}
+{"message":"Password is valid","level":"info","timestamp":"2021-08-23T03:03:15.414Z"}
+{"message":"Succesfully connected to db","level":"info","timestamp":"2021-08-23T03:54:20.864Z"}
+{"level":"error","timestamp":"2021-08-23T03:54:32.987Z"}
+{"message":"Succesfully connected to db","level":"info","timestamp":"2021-08-23T03:57:18.115Z"}
+{"level":"error","timestamp":"2021-08-23T03:57:26.116Z"}
+{"message":"Succesfully connected to db","level":"info","timestamp":"2021-08-23T04:01:12.479Z"}
+{"message":"Succesfully connected to db","level":"info","timestamp":"2021-08-23T04:08:00.647Z"}
+{"message":"Succesfully connected to db","level":"info","timestamp":"2021-08-23T04:08:52.858Z"}
+{"message":"Succesfully connected to db","level":"info","timestamp":"2021-08-23T04:11:22.438Z"}
+{"message":"250 2.0.0 OK  1629691856 q26sm14353745pff.174 - gsmtp","level":"info","timestamp":"2021-08-23T04:11:37.539Z"}
+{"message":"Email id found","level":"info","timestamp":"2021-08-23T04:13:20.629Z"}
+{"message":"Password is valid","level":"info","timestamp":"2021-08-23T04:13:20.698Z"}
+{"message":"Succesfully connected to db","level":"info","timestamp":"2021-08-23T04:16:01.681Z"}
+{"message":"Succesfully connected to db","level":"info","timestamp":"2021-08-23T04:17:32.277Z"}

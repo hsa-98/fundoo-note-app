@@ -2,6 +2,8 @@ const nodemailer = require('nodemailer');
 require('dotenv').config
 const auth = require('../middleware/authenticate');
 const logger = require('../../logger/logger');
+const { callbackPromise } = require('nodemailer/lib/shared');
+const { error } = require('../../logger/logger');
 
 
 exports.sendEmail = (data) => {
@@ -23,14 +25,19 @@ exports.sendEmail = (data) => {
                 <h2>please click on the link to change password</h2>
                 <p>${process.env.CLIENT_URL}/resetpassword/${token}</p>    `
     }
-    transporter.sendMail(mailOptions,(error,info)=>{
-        if(error){
-            logger.error(error);
+    transporter.sendMail(mailOptions,function(err,info){
+        if(err){
+            logger.error(err);
+             return (err,null);
         }
         else{
-            logger.error(info.response)
+            logger.info(info.response)
             console.log(info.response);
-            return info.response;
+            const data = {
+                "link":"${process.env.CLIENT_URL}+'/resetpassword/'+${token}",
+                "response":info.response
+            }
+            return (null,data);
         }
     })
 }

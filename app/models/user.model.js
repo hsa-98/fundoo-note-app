@@ -116,6 +116,17 @@ class Registration{
             }
         })
     };
+    addReset = (link,callback)=>{
+        userRegister.findByIdAndUpdate(link.id,{resetLink:link.link},(err,message)=>{
+            if(err){
+                logger.error(err);
+                return callback(err,null);
+            }
+            else{
+                return callback(null,"Reset link added successfully")
+            }
+        })
+    }
 }
 module.exports = new Registration();
 
