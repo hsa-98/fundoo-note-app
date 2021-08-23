@@ -25,7 +25,7 @@ exports.sendEmail = (data) => {
                 <h2>please click on the link to change password</h2>
                 <p>${process.env.CLIENT_URL}/resetpassword/${token}</p>    `
     }
-    transporter.sendMail(mailOptions,function(err,info){
+    transporter.sendMail(mailOptions,(info)=>{
         if(err){
             logger.error(err);
              return (err,null);
