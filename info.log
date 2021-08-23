@@ -14,3 +14,32 @@
 {"message":"Password is valid","level":"info","timestamp":"2021-08-22T08:39:16.395Z"}
 {"message":"Email id found","level":"info","timestamp":"2021-08-22T08:39:42.191Z"}
 {"message":"Invalid password","level":"error","timestamp":"2021-08-22T08:39:42.261Z"}
+{"message":"Succesfully connected to db","level":"info","timestamp":"2021-08-23T01:07:08.036Z"}
+{"message":"User registered suucesfully","level":"info","timestamp":"2021-08-23T01:08:02.881Z"}
+{"message":"User registered","level":"info","timestamp":"2021-08-23T01:08:02.884Z"}
+{"message":"Succesfully connected to db","level":"info","timestamp":"2021-08-23T01:14:31.320Z"}
+{"message":"User with email id doesnt exists","level":"error","timestamp":"2021-08-23T01:14:36.539Z"}
+{"message":"User with email id doesnt exists","level":"error","timestamp":"2021-08-23T01:14:36.540Z"}
+{"message":"Succesfully connected to db","level":"info","timestamp":"2021-08-23T01:17:45.128Z"}
+{"message":"User with email id doesnt exists","level":"error","timestamp":"2021-08-23T01:17:53.615Z"}
+{"message":"User with email id doesnt exists","level":"error","timestamp":"2021-08-23T01:17:53.616Z"}
+{"message":"Succesfully connected to db","level":"info","timestamp":"2021-08-23T01:18:43.642Z"}
+{"message":"User with email id doesnt exists","level":"error","timestamp":"2021-08-23T01:18:47.858Z"}
+{"message":"User with email id doesnt exists","level":"error","timestamp":"2021-08-23T01:18:47.859Z"}
+{"message":"User with email id doesnt exists","level":"error","timestamp":"2021-08-23T01:19:38.974Z"}
+{"message":"User with email id doesnt exists","level":"error","timestamp":"2021-08-23T01:19:38.975Z"}
+{"message":"Succesfully connected to db","level":"info","timestamp":"2021-08-23T01:23:24.905Z"}
+{"message":"Succesfully connected to db","level":"info","timestamp":"2021-08-23T01:24:57.203Z"}
+{"code":"EAUTH","response":"535-5.7.8 Username and Password not accepted. Learn more at\n535 5.7.8  https://support.google.com/mail/?p=BadCredentials c64sm12014246pfc.8 - gsmtp","responseCode":535,"command":"AUTH PLAIN","level":"error","timestamp":"2021-08-23T01:25:03.387Z"}
+{"message":"Succesfully connected to db","level":"info","timestamp":"2021-08-23T01:38:01.816Z"}
+{"code":"EENVELOPE","command":"API","level":"error","timestamp":"2021-08-23T01:38:17.090Z"}
+{"message":"Succesfully connected to db","level":"info","timestamp":"2021-08-23T01:48:35.270Z"}
+{"errno":-3008,"code":"EDNS","syscall":"getaddrinfo","hostname":"http://localhost:4000/forgotpassword","command":"CONN","level":"error","timestamp":"2021-08-23T01:48:41.423Z"}
+{"message":"Succesfully connected to db","level":"info","timestamp":"2021-08-23T01:51:37.905Z"}
+{"code":"EENVELOPE","command":"API","level":"error","timestamp":"2021-08-23T01:51:43.774Z"}
+{"message":"Succesfully connected to db","level":"info","timestamp":"2021-08-23T01:55:40.180Z"}
+{"code":"EENVELOPE","command":"API","level":"error","timestamp":"2021-08-23T01:55:46.751Z"}
+{"message":"Succesfully connected to db","level":"info","timestamp":"2021-08-23T02:03:07.849Z"}
+{"message":"250 2.0.0 OK  1629684157 64sm13889013pfy.114 - gsmtp","level":"error","timestamp":"2021-08-23T02:03:17.716Z"}
+{"message":"Succesfully connected to db","level":"info","timestamp":"2021-08-23T02:03:57.617Z"}
+{"message":"250 2.0.0 OK  1629684207 w82sm13940935pff.112 - gsmtp","level":"error","timestamp":"2021-08-23T02:04:08.156Z"}

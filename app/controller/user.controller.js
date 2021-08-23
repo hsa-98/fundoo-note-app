@@ -70,7 +70,7 @@ class User {
             if (loginValid.err) {
                 res.status(400).send({
                     success: false,
-                    message: err
+                    message: err 
                 })
                 return;
             }
@@ -92,6 +92,29 @@ class User {
         } catch (error) {
             console.log(error);
         }
+    }
+    forgotPassword=(req,res)=>{
+        const email = req.body;
+        const loginValid = authenticateLogin.validate(email);
+        if(loginValid.err){
+            logger.error("Invalid email id")
+            res.status(400).send({
+                success:false,
+                message:err
+            })
+            return;
+        }
+        service.forgotPassword(email,(error,data)=>{
+            if(error){
+                return res.status(400).send({error});
+            }
+            else{
+                return res.status(200).json({
+                    success:true,
+                    message:"Email reset link sent succesfully"
+                })
+            }
+        })
     }
 }
 

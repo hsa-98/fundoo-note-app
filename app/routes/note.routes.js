@@ -5,4 +5,6 @@ module.exports=(app)=>{
 app.post('/register',user.registerUser);
 //api for user login
 app.post('/login',user.loginUser);
+//api for forgot password
+app.put('/forgotpassword',user.forgotPassword);
 }

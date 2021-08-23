@@ -22,6 +22,10 @@ const userSchema = mongoose.Schema({
     password:{
         type: String,
         required: true
+    },
+    resetLink:{
+        data:String,
+        default:''
     }
 }, {
     timestamps : true
@@ -99,6 +103,18 @@ class Registration{
             logger.error("Error occured while logging user",error);
             console.log("Error occured while logging in");
         }
+    };
+
+    forgotPassword = (email,callback)=>{
+        userRegister.findOne({'emailId':email.emailId},(err,data)=>{
+            if(err||!data){
+                logger.error("User with email id doesnt exists")
+                return callback("User with email id doesnt exists",null);
+            }
+            else{
+                return callback(null,data);
+            }
+        })
     };
 }
 module.exports = new Registration();

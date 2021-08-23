@@ -1,6 +1,7 @@
 const UserSchema = require('../models/user.model');
 const bcrypt = require('bcrypt');
 const auth = require('../middleware/authenticate');
+const mailUser = require('../middleware/nodemailer');
 const logger = require('../../logger/logger');
 
 class Service{
@@ -57,5 +58,17 @@ class Service{
             console.log("Error occured");
         }
     }
+
+    forgotPassword = (email,callback)=>{
+        UserSchema.forgotPassword(email,(err,data)=>{
+            if(err||!data){
+                logger.error(err);
+                return callback(err,null);
+            }
+            else{
+                return callback(null,mailUser.sendEmail(data));
+                }
+            })
+    }    
 }
 module.exports = new Service();
