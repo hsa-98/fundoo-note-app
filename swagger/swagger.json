@@ -69,7 +69,54 @@
                       }
                     }
                 }    
+            },
+            "/forgotpassword":{
+              "post":{
+                "tags":["ForgotPassword"],
+                "description":"Forgot Password",
+                "parameters":[
+                  {
+                    "name":"ForgotPassword",
+                    "in":"body",
+                    "description":"User forgets password and needs reset link",
+                    "schema":{"$ref":"#/definitions/forgotPassword"}
+                  }
+                ],
+                "produces":["application/json"],
+                "responses":{
+                  "200":{
+                    "description":"Reset link sent succesfully"
+                  },
+                  "400":{
+                    "description":"Error occured while sending the link"
+                  }
+                }
+              }
+            },
+          "/resetpassword":{
+            "put":{
+              "tags":["ResetPassword"],
+              "description":"Saves new password in db",
+              "parameters":[{
+                "name":"ResetPassword",
+                "in":"body",
+                "description":"User sends new password",
+                "schema":{"$ref":"#/definitions/resetPassword"}
+              }
+              ],
+              "produces":["application/json"],
+              "responses":{
+                "200":{
+                  "description":"Password reset succesfully"
+                },
+                "400":{
+                  "description":"Invalid password"
+                },
+                "500":{"description":"Internal server error"}
+
+              }
             }
+          }
         },
         "definitions": {
             "registerUser": {
@@ -99,6 +146,25 @@
                         "type": "string"
                         }
                     }
+                },
+              "forgotPassword":{
+                "type":"object",
+                "properties":{
+                  "emailId":{
+                    "type":"string"
+                  }
                 }
+              },
+              "resetPassword":{
+                "type":"object",
+                "properties":{
+                  "token":{
+                    "type":"string"
+                  },
+                  "password":{
+                    "type":"string"
+                  }
+                }
+              }
             }
         }
