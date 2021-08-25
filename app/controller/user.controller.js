@@ -93,8 +93,15 @@ class User {
             console.log(error);
         }
     }
+    /**
+     * @description:Calls service layer to send reset password link
+     * @param {*} req 
+     * @param {*} res 
+     * @returns 
+     */
     forgotPassword=(req,res)=>{
         const email = req.body;
+        //validates the email id
         const loginValid = authenticateLogin.validate(email);
         if(loginValid.err){
             logger.error("Invalid email id")
@@ -109,7 +116,8 @@ class User {
                 return res.status(400).send({error});
             }
             else{
-                return res.status(100).json({
+                console.log("link sent");
+                return res.status(200).json({
                     success:true,
                     message:"Email reset link sent succesfully",
                     data:data
@@ -117,8 +125,14 @@ class User {
             }
         })
     }
-
+    /**
+     * @description:calls service layer to reset password
+     * @param {*} req 
+     * @param {*} res 
+     * @returns 
+     */
     resetPassword = (req,res)=>{
+        //checks if the new password is valid
         const resetValid = validateReset.validate(req.body.password)
         if(resetValid.err){
             res.status(400).send({
@@ -127,10 +141,12 @@ class User {
             })
             return;
         }
+        //object containing required data to reset password
         const data ={
             token:req.body.token,
             password:req.body.password
         }
+        
         service.resetPassword(data,(err,data)=>{
             if(err){
                 res.status(500).send({

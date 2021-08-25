@@ -5,11 +5,16 @@ const logger = require('../../logger/logger');
 const { callbackPromise } = require('nodemailer/lib/shared');
 const { error } = require('../../logger/logger');
 
-
+/**
+ * @description:Sends reset password link to the email id
+ * @param {*} data 
+ * @param {*} callback 
+ */
 exports.sendEmail = (data,callback) => {
 
     const transporter = nodemailer.createTransport({
         service: 'gmail',
+        //auth:contains email id &password to authenticate the sender
         auth: {
             user: process.env.email,
             pass: process.env.pass
@@ -17,6 +22,7 @@ exports.sendEmail = (data,callback) => {
     })
     
     const token = auth.generateToken(data);
+    //email body
     const mailOptions = {
         from: process.env.email,
         to: data.emailId,
@@ -26,6 +32,7 @@ exports.sendEmail = (data,callback) => {
                 <p>${process.env.CLIENT_URL}/resetpassword/${token}</p> 
                 <p>${token}</p>   `
     }
+    //email is sent to the user using this function
     transporter.sendMail(mailOptions,(err,info)=>{
         if(err){
             logger.error(err);
@@ -33,12 +40,10 @@ exports.sendEmail = (data,callback) => {
         }
         else{
             logger.info(info.response)
-            console.log(info.response);
             const data = {
                 "link":process.env.CLIENT_URL+'/resetpassword/'+token,
                 "response":info.response
             }
-            console.log(info.response);
             return callback(null,data) ;
         }
     })

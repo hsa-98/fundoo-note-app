@@ -101,7 +101,11 @@ class Registration{
             console.log("Error occured while logging in");
         }
     };
-
+    /**
+     * @description:checks if emailId is present inside database 
+     * @param {*} email 
+     * @param {*} callback 
+     */
     forgotPassword = (email,callback)=>{
         userRegister.findOne({'emailId':email.emailId},(err,data)=>{
             if(err||!data){
@@ -114,9 +118,15 @@ class Registration{
         })
     };
     
-    
+    /**
+     * @description:looks for data by id and updates password
+     * @param {*} credentials 
+     * @param {*} callback 
+     */
     resetPassword = (credentials,callback)=>{
+        //encrypts password
         const hashedPassword = bcrypt.hashSync(credentials.password,10);
+        //finds data by id
         userRegister.findByIdAndUpdate(credentials.id,{$set:{password:hashedPassword}},{new: true} ,(err,message)=>{
             if(err){
                 logger.error(err);

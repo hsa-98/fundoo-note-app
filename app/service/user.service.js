@@ -59,21 +59,25 @@ class Service{
             console.log("Error occured");
         }
     }
-
+    /**
+     * @description:calls nodemailer if emailid exists in database
+     * @param {*} email 
+     * @param {*} callback 
+     */
     forgotPassword = (email,callback)=>{
+        //calls model layer
         UserSchema.forgotPassword(email,(err,data)=>{
             if(err||!data){
                 logger.error(err);
                 return callback(err,null);
             }
-            else{
+            else{//calls nodemailer to send email
                   mailUser.sendEmail(data,(err,res)=>{
                       if(err){
                           logger.error("Error occured while sending reset link",err);
                           return callback("Error occured while sending reset link",null);
                       }
                       else{
-                          console.log("Link sent");
                           logger.info("Reset link sent succesfully");
                           const link = {
                               "id" :data._id,
@@ -85,20 +89,26 @@ class Service{
                 }
         })
     }    
-
+    /**
+     * @description:verifies token, if valid sends new password to model layer
+     * @param {*} req 
+     * @param {*} callback 
+     */
     resetPassword = (req,callback)=>{
         const token = req.token
+        //verifies token
          auth.verifyToken(token,(err,data)=>{
             if(err){
                 logger.error(err); 
                 console.log("Error occured while verifying",err);
                 return callback(err,null);
             }
-            else{
+            else{//object containing necessary data
                 const credentials = {
                     id:data.dataForToken.id,
                     password : req.password
                 }
+                //object is passed to model layer
                 UserSchema.resetPassword(credentials,(err,data)=>{
                     if(err){
                         return callback(err,null);
