@@ -1,5 +1,5 @@
 const service = require('../service/user.service')
-const { authenticate, authenticateLogin } = require('../middleware/joiValidation');
+const { authenticate, authenticateLogin,validateReset } = require('../middleware/joiValidation');
 const logger = require('../../logger/logger');
 
 class User {
@@ -109,7 +109,7 @@ class User {
                 return res.status(400).send({error});
             }
             else{
-                return res.status(200).json({
+                return res.status(100).json({
                     success:true,
                     message:"Email reset link sent succesfully",
                     data:data
@@ -118,10 +118,35 @@ class User {
         })
     }
 
-   /* resetPassword = (req,res)=>{
-        
+    resetPassword = (req,res)=>{
+        const resetValid = validateReset.validate(req.body.password)
+        if(resetValid.err){
+            res.status(400).send({
+                success: false,
+                message: err 
+            })
+            return;
+        }
+        const data ={
+            token:req.body.token,
+            password:req.body.password
+        }
+        service.resetPassword(data,(err,data)=>{
+            if(err){
+                res.status(500).send({
+                    success:false,
+                    message:err
+                })
+            }
+            else{
+                res.status(200).send({
+                    success:true,
+                    message:data
+                });
+            }
+        })
 
-    }*/
+    }
 }
 
 module.exports = new User();

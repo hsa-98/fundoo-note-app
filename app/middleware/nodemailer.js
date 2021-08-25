@@ -6,7 +6,7 @@ const { callbackPromise } = require('nodemailer/lib/shared');
 const { error } = require('../../logger/logger');
 
 
-exports.sendEmail = (data) => {
+exports.sendEmail = (data,callback) => {
 
     const transporter = nodemailer.createTransport({
         service: 'gmail',
@@ -23,21 +23,23 @@ exports.sendEmail = (data) => {
         subject: 'Password change link',
         html: `
                 <h2>please click on the link to change password</h2>
-                <p>${process.env.CLIENT_URL}/resetpassword/${token}</p>    `
+                <p>${process.env.CLIENT_URL}/resetpassword/${token}</p> 
+                <p>${token}</p>   `
     }
-    transporter.sendMail(mailOptions,(info)=>{
+    transporter.sendMail(mailOptions,(err,info)=>{
         if(err){
             logger.error(err);
-             return (err,null);
+             return callback(error,null);
         }
         else{
             logger.info(info.response)
             console.log(info.response);
             const data = {
-                "link":"${process.env.CLIENT_URL}+'/resetpassword/'+${token}",
+                "link":process.env.CLIENT_URL+'/resetpassword/'+token,
                 "response":info.response
             }
-            return (null,data);
+            console.log(info.response);
+            return callback(null,data) ;
         }
     })
 }

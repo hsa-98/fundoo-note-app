@@ -61,3 +61,235 @@
 {"message":"Password is valid","level":"info","timestamp":"2021-08-23T04:13:20.698Z"}
 {"message":"Succesfully connected to db","level":"info","timestamp":"2021-08-23T04:16:01.681Z"}
 {"message":"Succesfully connected to db","level":"info","timestamp":"2021-08-23T04:17:32.277Z"}
+{"message":"Succesfully connected to db","level":"info","timestamp":"2021-08-23T18:42:28.910Z"}
+{"message":"User registered suucesfully","level":"info","timestamp":"2021-08-23T18:43:58.622Z"}
+{"message":"User registered","level":"info","timestamp":"2021-08-23T18:43:58.623Z"}
+{"message":"Succesfully connected to db","level":"info","timestamp":"2021-08-23T19:01:14.328Z"}
+{"message":"Succesfully connected to db","level":"info","timestamp":"2021-08-23T19:13:23.091Z"}
+{"message":"Succesfully connected to db","level":"info","timestamp":"2021-08-23T19:17:43.746Z"}
+{"message":"Succesfully connected to db","level":"info","timestamp":"2021-08-23T19:19:41.074Z"}
+{"message":"Succesfully connected to db","level":"info","timestamp":"2021-08-23T19:27:32.515Z"}
+{"level":"error","timestamp":"2021-08-23T19:27:38.837Z"}
+{"level":"error","message":"Error occured while sending reset link","timestamp":"2021-08-23T19:27:38.838Z"}
+{"message":"Succesfully connected to db","level":"info","timestamp":"2021-08-23T19:28:47.731Z"}
+{"level":"error","timestamp":"2021-08-23T19:28:54.364Z"}
+{"level":"error","message":"Error occured while sending reset link","timestamp":"2021-08-23T19:28:54.365Z"}
+{"message":"Succesfully connected to db","level":"info","timestamp":"2021-08-24T01:23:16.395Z"}
+{"message":"250 2.0.0 OK  1629768203 o75sm17502861pfd.211 - gsmtp","level":"info","timestamp":"2021-08-24T01:23:23.743Z"}
+{"message":"Reset link sent succesfully","level":"info","timestamp":"2021-08-24T01:23:23.744Z"}
+{"message":"250 2.0.0 OK  1629768410 fh2sm432517pjb.12 - gsmtp","level":"info","timestamp":"2021-08-24T01:26:51.053Z"}
+{"message":"Reset link sent succesfully","level":"info","timestamp":"2021-08-24T01:26:51.054Z"}
+{"message":"Succesfully connected to db","level":"info","timestamp":"2021-08-24T01:26:59.955Z"}
+{"message":"250 2.0.0 OK  1629768425 188sm17806484pfy.144 - gsmtp","level":"info","timestamp":"2021-08-24T01:27:05.542Z"}
+{"message":"Reset link sent succesfully","level":"info","timestamp":"2021-08-24T01:27:05.544Z"}
+{"message":"Succesfully connected to db","level":"info","timestamp":"2021-08-24T01:51:48.254Z"}
+{"message":"Email id found","level":"info","timestamp":"2021-08-24T01:52:56.091Z"}
+{"message":"Invalid password","level":"error","timestamp":"2021-08-24T01:52:56.206Z"}
+{"message":"Email id found","level":"info","timestamp":"2021-08-24T01:53:02.917Z"}
+{"message":"Password is valid","level":"info","timestamp":"2021-08-24T01:53:03.014Z"}
+{"message":"Succesfully connected to db","level":"info","timestamp":"2021-08-24T01:56:21.699Z"}
+{"message":"250 2.0.0 OK  1629770209 w11sm5310193pgf.5 - gsmtp","level":"info","timestamp":"2021-08-24T01:56:49.722Z"}
+{"message":"Reset link sent succesfully","level":"info","timestamp":"2021-08-24T01:56:49.723Z"}
+{"message":"Email id found","level":"info","timestamp":"2021-08-24T01:57:01.719Z"}
+{"message":"Password is valid","level":"info","timestamp":"2021-08-24T01:57:01.811Z"}
+{"message":"Succesfully connected to db","level":"info","timestamp":"2021-08-24T01:58:34.798Z"}
+{"message":"250 2.0.0 OK  1629770319 m28sm20858960pgl.9 - gsmtp","level":"info","timestamp":"2021-08-24T01:58:40.023Z"}
+{"message":"250 2.0.0 OK  1629770376 t12sm21129186pgo.56 - gsmtp","level":"info","timestamp":"2021-08-24T01:59:36.871Z"}
+{"message":"Succesfully connected to db","level":"info","timestamp":"2021-08-24T02:03:05.994Z"}
+{"message":"250 2.0.0 OK  1629770594 d18sm20434941pgk.24 - gsmtp","level":"info","timestamp":"2021-08-24T02:03:14.990Z"}
+{"message":"Succesfully connected to db","level":"info","timestamp":"2021-08-24T02:06:16.438Z"}
+{"message":"250 2.0.0 OK  1629770786 nv11sm463539pjb.48 - gsmtp","level":"info","timestamp":"2021-08-24T02:06:26.492Z"}
+{"message":"Reset link sent succesfully","level":"info","timestamp":"2021-08-24T02:06:26.494Z"}
+{"message":"Email id found","level":"info","timestamp":"2021-08-24T02:07:20.219Z"}
+{"message":"Password is valid","level":"info","timestamp":"2021-08-24T02:07:20.316Z"}
+{"message":"Succesfully connected to db","level":"info","timestamp":"2021-08-24T02:09:39.897Z"}
+{"message":"250 2.0.0 OK  1629771008 y67sm17555554pfg.218 - gsmtp","level":"info","timestamp":"2021-08-24T02:10:08.778Z"}
+{"message":"Reset link sent succesfully","level":"info","timestamp":"2021-08-24T02:10:08.779Z"}
+{"message":"Email id found","level":"info","timestamp":"2021-08-24T02:10:21.271Z"}
+{"message":"Password is valid","level":"info","timestamp":"2021-08-24T02:10:21.368Z"}
+{"message":"Succesfully connected to db","level":"info","timestamp":"2021-08-24T02:36:29.403Z"}
+{"message":"250 2.0.0 OK  1629772607 u25sm16841218pfn.209 - gsmtp","level":"info","timestamp":"2021-08-24T02:36:47.581Z"}
+{"message":"Reset link sent succesfully","level":"info","timestamp":"2021-08-24T02:36:47.583Z"}
+{"message":"250 2.0.0 OK  1629772667 x27sm2146563pfu.204 - gsmtp","level":"info","timestamp":"2021-08-24T02:37:47.614Z"}
+{"message":"Reset link sent succesfully","level":"info","timestamp":"2021-08-24T02:37:47.615Z"}
+{"message":"Email id found","level":"info","timestamp":"2021-08-24T02:38:11.751Z"}
+{"message":"Password is valid","level":"info","timestamp":"2021-08-24T02:38:11.860Z"}
+{"message":"Succesfully connected to db","level":"info","timestamp":"2021-08-24T18:50:34.867Z"}
+{"message":"250 2.0.0 OK  1629831059 u24sm21181359pfm.81 - gsmtp","level":"info","timestamp":"2021-08-24T18:50:58.331Z"}
+{"message":"Reset link sent succesfully","level":"info","timestamp":"2021-08-24T18:50:58.334Z"}
+{"message":"Succesfully connected to db","level":"info","timestamp":"2021-08-24T19:17:10.102Z"}
+{"message":"250 2.0.0 OK  1629832637 m11sm3183192pjn.2 - gsmtp","level":"info","timestamp":"2021-08-24T19:17:16.886Z"}
+{"message":"Reset link sent succesfully","level":"info","timestamp":"2021-08-24T19:17:16.891Z"}
+{"message":"Succesfully connected to db","level":"info","timestamp":"2021-08-24T19:53:08.159Z"}
+{"message":"Succesfully connected to db","level":"info","timestamp":"2021-08-24T19:53:23.804Z"}
+{"message":"250 2.0.0 OK  1629834814 n11sm3167672pjf.17 - gsmtp","level":"info","timestamp":"2021-08-24T19:53:33.936Z"}
+{"message":"Reset link sent succesfully","level":"info","timestamp":"2021-08-24T19:53:33.937Z"}
+{"message":"Succesfully connected to db","level":"info","timestamp":"2021-08-24T19:58:58.870Z"}
+{"message":"Succesfully connected to db","level":"info","timestamp":"2021-08-24T20:01:10.036Z"}
+{"message":"Succesfully connected to db","level":"info","timestamp":"2021-08-24T20:12:29.556Z"}
+{"message":"Succesfully connected to db","level":"info","timestamp":"2021-08-24T20:13:08.150Z"}
+{"message":"Succesfully connected to db","level":"info","timestamp":"2021-08-24T20:14:07.835Z"}
+{"message":"Password reset succesfully","level":"info","timestamp":"2021-08-24T20:14:11.477Z"}
+{"message":"Email id found","level":"info","timestamp":"2021-08-24T20:15:11.087Z"}
+{"message":"Invalid password","level":"error","timestamp":"2021-08-24T20:15:11.210Z"}
+{"message":"Email id found","level":"info","timestamp":"2021-08-24T20:15:36.149Z"}
+{"message":"Invalid password","level":"error","timestamp":"2021-08-24T20:15:36.270Z"}
+{"message":"Succesfully connected to db","level":"info","timestamp":"2021-08-24T20:21:37.073Z"}
+{"message":"Email id doesnt exists","level":"error","timestamp":"2021-08-24T20:22:05.382Z"}
+{"level":"error","message":"Error in service","timestamp":"2021-08-24T20:22:05.383Z"}
+{"message":"Succesfully connected to db","level":"info","timestamp":"2021-08-24T20:22:59.882Z"}
+{"message":"Succesfully connected to db","level":"info","timestamp":"2021-08-24T20:23:32.469Z"}
+{"message":"Succesfully connected to db","level":"info","timestamp":"2021-08-24T20:23:46.407Z"}
+{"message":"Password reset succesfully","level":"info","timestamp":"2021-08-24T20:23:51.029Z"}
+{"message":"Succesfully connected to db","level":"info","timestamp":"2021-08-25T01:11:11.756Z"}
+{"message":"250 2.0.0 OK  1629853935 o10sm3420047pjg.34 - gsmtp","level":"info","timestamp":"2021-08-25T01:12:15.070Z"}
+{"message":"Reset link sent succesfully","level":"info","timestamp":"2021-08-25T01:12:15.076Z"}
+{"message":"Succesfully connected to db","level":"info","timestamp":"2021-08-25T01:17:32.998Z"}
+{"message":"250 2.0.0 OK  1629854262 h13sm23115265pgh.93 - gsmtp","level":"info","timestamp":"2021-08-25T01:17:41.606Z"}
+{"message":"Reset link sent succesfully","level":"info","timestamp":"2021-08-25T01:17:41.612Z"}
+{"stringValue":"\"Promise {\n  <rejected> Error: data must be a string or Buffer and salt must either be a salt string or a number of rounds\n      at Object.hash (C:\\Users\\visha\\Desktop\\nodeprojects\\fundoo-note-app\\node_modules\\bcrypt\\bcrypt.js:144:17)\n      at C:\\Users\\visha\\Desktop\\nodeprojects\\fundoo-note-app\\node_modules\\bcrypt\\promises.js:29:12\n      at new Promise (<anonymous>)\n      at Object.module.exports.promise (C:\\Users\\visha\\Desktop\\nodeprojects\\fundoo-note-app\\node_modules\\bcrypt\\promises.js:20:12)\n      at Object.hash (C:\\Users\\visha\\Desktop\\nodeprojects\\fundoo-note-app\\node_modules\\bcrypt\\bcrypt.js:133:25)\n      at Registration.resetPassword (C:\\Users\\visha\\Desktop\\nodeprojects\\fundoo-note-app\\app\\models\\user.model.js:120:40)\n      at C:\\Users\\visha\\Desktop\\nodeprojects\\fundoo-note-app\\app\\service\\user.service.js:102:28\n      at Object.exports.verifyToken (C:\\Users\\visha\\Desktop\\nodeprojects\\fundoo-note-app\\app\\middleware\\authenticate.js:20:17)\n      at Service.resetPassword (C:\\Users\\visha\\Desktop\\nodeprojects\\fundoo-note-app\\app\\service\\user.service.js:91:15)\n      at resetPassword (C:\\Users\\visha\\Desktop\\nodeprojects\\fundoo-note-app\\app\\controller\\user.controller.js:134:17)\n      at Layer.handle [as handle_request] (C:\\Users\\visha\\Desktop\\nodeprojects\\fundoo-note-app\\node_modules\\express\\lib\\router\\layer.js:95:5)\n      at next (C:\\Users\\visha\\Desktop\\nodeprojects\\fundoo-note-app\\node_modules\\express\\lib\\router\\route.js:137:13)\n      at Route.dispatch (C:\\Users\\visha\\Desktop\\nodeprojects\\fundoo-note-app\\node_modules\\express\\lib\\router\\route.js:112:3)\n      at Layer.handle [as handle_request] (C:\\Users\\visha\\Desktop\\nodeprojects\\fundoo-note-app\\node_modules\\express\\lib\\router\\layer.js:95:5)\n      at C:\\Users\\visha\\Desktop\\nodeprojects\\fundoo-note-app\\node_modules\\express\\lib\\router\\index.js:281:22\n      at Function.process_params (C:\\Users\\visha\\Desktop\\nodeprojects\\fundoo-note-app\\node_modules\\express\\lib\\router\\index.js:335:12)\n}\"","kind":"string","value":{},"path":"password","reason":null,"valueType":"Promise","level":"error","timestamp":"2021-08-25T01:18:49.789Z"}
+{"message":"Succesfully connected to db","level":"info","timestamp":"2021-08-25T01:24:56.280Z"}
+{"message":"Password reset succesfully","level":"info","timestamp":"2021-08-25T01:24:59.944Z"}
+{"message":"Email id found","level":"info","timestamp":"2021-08-25T01:25:41.006Z"}
+{"message":"Invalid password","level":"error","timestamp":"2021-08-25T01:25:41.203Z"}
+{"message":"Succesfully connected to db","level":"info","timestamp":"2021-08-25T01:28:55.520Z"}
+{"message":"Password reset succesfully","level":"info","timestamp":"2021-08-25T01:28:59.094Z"}
+{"message":"Succesfully connected to db","level":"info","timestamp":"2021-08-25T01:30:27.731Z"}
+{"message":"Succesfully connected to db","level":"info","timestamp":"2021-08-25T01:30:53.981Z"}
+{"message":"Email id found","level":"info","timestamp":"2021-08-25T01:31:28.993Z"}
+{"message":"Invalid password","level":"error","timestamp":"2021-08-25T01:31:29.230Z"}
+{"message":"Succesfully connected to db","level":"info","timestamp":"2021-08-25T01:33:22.019Z"}
+{"message":"Password reset succesfully","level":"info","timestamp":"2021-08-25T01:33:44.221Z"}
+{"message":"Email id found","level":"info","timestamp":"2021-08-25T01:38:46.436Z"}
+{"message":"Invalid password","level":"error","timestamp":"2021-08-25T01:38:46.658Z"}
+{"message":"Succesfully connected to db","level":"info","timestamp":"2021-08-25T01:41:54.092Z"}
+{"message":"Email id found","level":"info","timestamp":"2021-08-25T01:42:00.786Z"}
+{"message":"Invalid password","level":"error","timestamp":"2021-08-25T01:42:00.975Z"}
+{"message":"Succesfully connected to db","level":"info","timestamp":"2021-08-25T02:06:18.811Z"}
+{"message":"250 2.0.0 OK  1629857200 f21sm9003200pfc.55 - gsmtp","level":"info","timestamp":"2021-08-25T02:06:39.713Z"}
+{"message":"Reset link sent succesfully","level":"info","timestamp":"2021-08-25T02:06:39.715Z"}
+{"message":"Succesfully connected to db","level":"info","timestamp":"2021-08-25T02:08:07.856Z"}
+{"message":"Succesfully connected to db","level":"info","timestamp":"2021-08-25T02:14:34.972Z"}
+{"message":"Succesfully connected to db","level":"info","timestamp":"2021-08-25T02:15:20.916Z"}
+{"message":"Password reset succesfully","level":"info","timestamp":"2021-08-25T02:15:27.806Z"}
+{"message":"Email id found","level":"info","timestamp":"2021-08-25T02:16:11.698Z"}
+{"message":"Invalid password","level":"error","timestamp":"2021-08-25T02:16:11.848Z"}
+{"message":"Succesfully connected to db","level":"info","timestamp":"2021-08-25T10:08:22.802Z"}
+{"message":"250 2.0.0 OK  1629886133 y12sm23848464pgl.65 - gsmtp","level":"info","timestamp":"2021-08-25T10:08:52.694Z"}
+{"message":"Reset link sent succesfully","level":"info","timestamp":"2021-08-25T10:08:52.698Z"}
+{"message":"Password reset succesfully","level":"info","timestamp":"2021-08-25T10:10:14.978Z"}
+{"message":"Email id found","level":"info","timestamp":"2021-08-25T10:10:54.727Z"}
+{"message":"Invalid password","level":"error","timestamp":"2021-08-25T10:10:54.937Z"}
+{"message":"Email id found","level":"info","timestamp":"2021-08-25T10:13:51.027Z"}
+{"message":"Invalid password","level":"error","timestamp":"2021-08-25T10:13:51.198Z"}
+{"message":"Email id found","level":"info","timestamp":"2021-08-25T10:13:58.311Z"}
+{"message":"Password is valid","level":"info","timestamp":"2021-08-25T10:13:58.516Z"}
+{"message":"Succesfully connected to db","level":"info","timestamp":"2021-08-25T10:26:20.053Z"}
+{"message":"Password reset succesfully","level":"info","timestamp":"2021-08-25T10:26:42.085Z"}
+{"message":"Email id found","level":"info","timestamp":"2021-08-25T10:27:23.186Z"}
+{"message":"Invalid password","level":"error","timestamp":"2021-08-25T10:27:23.385Z"}
+{"message":"Succesfully connected to db","level":"info","timestamp":"2021-08-25T10:28:48.547Z"}
+{"message":"Password reset succesfully","level":"info","timestamp":"2021-08-25T10:29:27.382Z"}
+{"message":"Email id found","level":"info","timestamp":"2021-08-25T10:29:48.320Z"}
+{"message":"Invalid password","level":"error","timestamp":"2021-08-25T10:29:48.539Z"}
+{"message":"Succesfully connected to db","level":"info","timestamp":"2021-08-25T10:31:14.479Z"}
+{"message":"Password reset succesfully","level":"info","timestamp":"2021-08-25T10:33:37.918Z"}
+{"message":"Email id found","level":"info","timestamp":"2021-08-25T10:33:56.323Z"}
+{"message":"Invalid password","level":"error","timestamp":"2021-08-25T10:33:56.589Z"}
+{"message":"Succesfully connected to db","level":"info","timestamp":"2021-08-25T11:15:34.813Z"}
+{"errno":-4062,"code":"ESOCKET","syscall":"connect","address":"2404:6800:4003:c04::6d","port":465,"command":"CONN","level":"error","timestamp":"2021-08-25T11:16:28.696Z"}
+{"level":"error","message":"Error occured while sending reset link","timestamp":"2021-08-25T11:16:28.697Z"}
+{"errno":-4062,"code":"ESOCKET","syscall":"connect","address":"2404:6800:4003:c04::6d","port":465,"command":"CONN","level":"error","timestamp":"2021-08-25T11:16:33.162Z"}
+{"level":"error","message":"Error occured while sending reset link","timestamp":"2021-08-25T11:16:33.163Z"}
+{"errno":-4062,"code":"ESOCKET","syscall":"connect","address":"2404:6800:4003:c04::6d","port":465,"command":"CONN","level":"error","timestamp":"2021-08-25T11:19:09.225Z"}
+{"level":"error","message":"Error occured while sending reset link","timestamp":"2021-08-25T11:19:09.225Z"}
+{"message":"Succesfully connected to db","level":"info","timestamp":"2021-08-25T11:19:18.525Z"}
+{"message":"250 2.0.0 OK  1629890364 6sm5689347pjz.8 - gsmtp","level":"info","timestamp":"2021-08-25T11:19:24.335Z"}
+{"message":"Reset link sent succesfully","level":"info","timestamp":"2021-08-25T11:19:24.337Z"}
+{"message":"Password reset succesfully","level":"info","timestamp":"2021-08-25T11:21:00.076Z"}
+{"message":"Email id found","level":"info","timestamp":"2021-08-25T11:21:43.681Z"}
+{"message":"Invalid password","level":"error","timestamp":"2021-08-25T11:21:43.811Z"}
+{"message":"Succesfully connected to db","level":"info","timestamp":"2021-08-25T11:49:56.859Z"}
+{"message":"Password reset succesfully","level":"info","timestamp":"2021-08-25T11:51:49.197Z"}
+{"message":"Email id found","level":"info","timestamp":"2021-08-25T11:52:29.090Z"}
+{"message":"Invalid password","level":"error","timestamp":"2021-08-25T11:52:29.204Z"}
+{"message":"Succesfully connected to db","level":"info","timestamp":"2021-08-25T11:53:27.951Z"}
+{"message":"Email id doesnt exists","level":"error","timestamp":"2021-08-25T11:53:41.198Z"}
+{"level":"error","message":"Error in service","timestamp":"2021-08-25T11:53:41.199Z"}
+{"message":"Password reset succesfully","level":"info","timestamp":"2021-08-25T11:53:58.317Z"}
+{"message":"Succesfully connected to db","level":"info","timestamp":"2021-08-25T11:56:12.218Z"}
+{"message":"Password reset succesfully","level":"info","timestamp":"2021-08-25T11:56:14.987Z"}
+{"message":"Succesfully connected to db","level":"info","timestamp":"2021-08-25T11:57:26.360Z"}
+{"message":"Succesfully connected to db","level":"info","timestamp":"2021-08-25T11:58:04.115Z"}
+{"message":"Succesfully connected to db","level":"info","timestamp":"2021-08-25T11:58:23.174Z"}
+{"message":"Succesfully connected to db","level":"info","timestamp":"2021-08-25T11:59:43.841Z"}
+{"message":"Succesfully connected to db","level":"info","timestamp":"2021-08-25T12:00:16.307Z"}
+{"message":"Password reset succesfully","level":"info","timestamp":"2021-08-25T12:00:18.638Z"}
+{"message":"Email id found","level":"info","timestamp":"2021-08-25T12:00:50.270Z"}
+{"message":"Password is valid","level":"info","timestamp":"2021-08-25T12:00:50.397Z"}
+{"message":"Succesfully connected to db","level":"info","timestamp":"2021-08-25T17:24:15.680Z"}
+{"message":"User registered suucesfully","level":"info","timestamp":"2021-08-25T17:24:16.023Z"}
+{"message":"User registered","level":"info","timestamp":"2021-08-25T17:24:16.079Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-25T17:24:16.205Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-25T17:24:16.223Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-25T17:24:16.265Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-25T17:24:16.316Z"}
+{"message":"Email id found","level":"info","timestamp":"2021-08-25T17:24:16.516Z"}
+{"message":"Password is valid","level":"info","timestamp":"2021-08-25T17:24:16.749Z"}
+{"message":"Email id doesnt exists","level":"error","timestamp":"2021-08-25T17:24:16.787Z"}
+{"level":"error","message":"Error in service","timestamp":"2021-08-25T17:24:16.787Z"}
+{"message":"Email id doesnt exists","level":"error","timestamp":"2021-08-25T17:24:16.850Z"}
+{"level":"error","message":"Error in service","timestamp":"2021-08-25T17:24:16.851Z"}
+{"message":"Email id found","level":"info","timestamp":"2021-08-25T17:24:16.910Z"}
+{"message":"Invalid password","level":"error","timestamp":"2021-08-25T17:24:17.123Z"}
+{"message":"250 2.0.0 OK  1629912261 b18sm331357pfi.199 - gsmtp","level":"info","timestamp":"2021-08-25T17:24:20.436Z"}
+{"message":"Reset link sent succesfully","level":"info","timestamp":"2021-08-25T17:24:20.440Z"}
+{"message":"Succesfully connected to db","level":"info","timestamp":"2021-08-25T17:25:13.680Z"}
+{"message":"Error detected in model","level":"error","timestamp":"2021-08-25T17:25:14.031Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-25T17:25:14.054Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-25T17:25:14.083Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-25T17:25:14.100Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-25T17:25:14.116Z"}
+{"message":"Email id found","level":"info","timestamp":"2021-08-25T17:25:14.178Z"}
+{"message":"Password is valid","level":"info","timestamp":"2021-08-25T17:25:14.306Z"}
+{"message":"Email id doesnt exists","level":"error","timestamp":"2021-08-25T17:25:14.325Z"}
+{"level":"error","message":"Error in service","timestamp":"2021-08-25T17:25:14.326Z"}
+{"message":"Email id doesnt exists","level":"error","timestamp":"2021-08-25T17:25:14.345Z"}
+{"level":"error","message":"Error in service","timestamp":"2021-08-25T17:25:14.345Z"}
+{"message":"Email id found","level":"info","timestamp":"2021-08-25T17:25:14.360Z"}
+{"message":"Invalid password","level":"error","timestamp":"2021-08-25T17:25:14.467Z"}
+{"message":"250 2.0.0 OK  1629912317 v63sm579753pgv.59 - gsmtp","level":"info","timestamp":"2021-08-25T17:25:17.048Z"}
+{"message":"Reset link sent succesfully","level":"info","timestamp":"2021-08-25T17:25:17.051Z"}
+{"message":"Succesfully connected to db","level":"info","timestamp":"2021-08-25T17:31:06.946Z"}
+{"message":"Error detected in model","level":"error","timestamp":"2021-08-25T17:31:07.171Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-25T17:31:07.192Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-25T17:31:07.216Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-25T17:31:07.230Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-25T17:31:07.246Z"}
+{"message":"Email id found","level":"info","timestamp":"2021-08-25T17:31:07.290Z"}
+{"message":"Password is valid","level":"info","timestamp":"2021-08-25T17:31:07.404Z"}
+{"message":"Email id doesnt exists","level":"error","timestamp":"2021-08-25T17:31:07.426Z"}
+{"level":"error","message":"Error in service","timestamp":"2021-08-25T17:31:07.427Z"}
+{"message":"Email id doesnt exists","level":"error","timestamp":"2021-08-25T17:31:07.448Z"}
+{"level":"error","message":"Error in service","timestamp":"2021-08-25T17:31:07.449Z"}
+{"message":"Email id found","level":"info","timestamp":"2021-08-25T17:31:07.464Z"}
+{"message":"Invalid password","level":"error","timestamp":"2021-08-25T17:31:07.564Z"}
+{"message":"250 2.0.0 OK  1629912671 p30sm371855pfh.116 - gsmtp","level":"info","timestamp":"2021-08-25T17:31:10.332Z"}
+{"message":"Reset link sent succesfully","level":"info","timestamp":"2021-08-25T17:31:10.336Z"}
+{"message":"Succesfully connected to db","level":"info","timestamp":"2021-08-25T17:33:46.053Z"}
+{"message":"Error detected in model","level":"error","timestamp":"2021-08-25T17:33:46.257Z"}
+{"message":"Error occured while registering new user","level":"error","timestamp":"2021-08-25T17:33:46.260Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-25T17:33:46.311Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-25T17:33:46.324Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-25T17:33:46.336Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-25T17:33:46.357Z"}
+{"message":"Email id found","level":"info","timestamp":"2021-08-25T17:33:46.405Z"}
+{"message":"Password is valid","level":"info","timestamp":"2021-08-25T17:33:46.521Z"}
+{"message":"Email id doesnt exists","level":"error","timestamp":"2021-08-25T17:33:46.537Z"}
+{"level":"error","message":"Error in service","timestamp":"2021-08-25T17:33:46.538Z"}
+{"message":"Email id doesnt exists","level":"error","timestamp":"2021-08-25T17:33:46.553Z"}
+{"level":"error","message":"Error in service","timestamp":"2021-08-25T17:33:46.554Z"}
+{"message":"Email id found","level":"info","timestamp":"2021-08-25T17:33:46.569Z"}
+{"message":"Invalid password","level":"error","timestamp":"2021-08-25T17:33:46.676Z"}
+{"message":"250 2.0.0 OK  1629912830 y16sm383384pfn.42 - gsmtp","level":"info","timestamp":"2021-08-25T17:33:49.296Z"}
+{"message":"Reset link sent succesfully","level":"info","timestamp":"2021-08-25T17:33:49.300Z"}

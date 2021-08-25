@@ -22,5 +22,9 @@ const authenticateLogin = Joi.object({
     pattern(new RegExp('^[a-zA-Z0-9]+([+_.-][a-zA-Z0-9]+)*[@][a-zA-Z0-9]+[.][a-zA-Z]{2,4}([.][a-zA-Z]{2,4})?'))
      .required()
 })
+const validateReset = Joi.object({
+    password : Joi.string().min(8)
+    .pattern(new RegExp('^(?=.*[!@#$%^&+=])(?=.*\\d)(?=.*[a-z])(?=.*[A-Z]).{8,}$'))
 
-module.exports = {authenticate,authenticateLogin};
+})
+module.exports = {authenticate,authenticateLogin,validateReset};

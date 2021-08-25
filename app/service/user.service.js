@@ -42,6 +42,7 @@ class Service{
                     return callback(err,null);
                 }
                 else{
+                    console.log(data)
                     let bool = bcrypt.compareSync(credentials.password,data.password);
                     if(bool){
                         const token = auth.generateToken(data);
@@ -66,7 +67,7 @@ class Service{
                 return callback(err,null);
             }
             else{
-                  mailUser.sendEmail(data,(err,resetLink)=>{
+                  mailUser.sendEmail(data,(err,res)=>{
                       if(err){
                           logger.error("Error occured while sending reset link",err);
                           return callback("Error occured while sending reset link",null);
@@ -76,20 +77,39 @@ class Service{
                           logger.info("Reset link sent succesfully");
                           const link = {
                               "id" :data._id,
-                              "link":resetLink
+                              "link":res.link
                           };
-                          UserSchema.addReset(link,(err,confirmaton)=>{
-                              if (err){
-                                  return callback(err,null);
-                              }
-                              else{
-                                  return callback(null,confirmaton);
-                              }
-                          });
-                      }
+                          return callback(null,"Link sent");
+                        }
                   });
                 }
-            })
+        })
     }    
+
+    resetPassword = (req,callback)=>{
+        const token = req.token
+         auth.verifyToken(token,(err,data)=>{
+            if(err){
+                logger.error(err); 
+                console.log("Error occured while verifying",err);
+                return callback(err,null);
+            }
+            else{
+                const credentials = {
+                    id:data.dataForToken.id,
+                    password : req.password
+                }
+                UserSchema.resetPassword(credentials,(err,data)=>{
+                    if(err){
+                        return callback(err,null);
+                    }
+                    else{
+                         return callback(null,data);
+                    }
+
+                });
+            }
+        });
+    }
 }
 module.exports = new Service();

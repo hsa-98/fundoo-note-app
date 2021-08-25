@@ -19,3 +19,73 @@
 {"message":"Invalid password","level":"error","timestamp":"2021-08-23T03:03:08.277Z"}
 {"level":"error","timestamp":"2021-08-23T03:54:32.988Z"}
 {"level":"error","timestamp":"2021-08-23T03:57:26.117Z"}
+{"level":"error","timestamp":"2021-08-23T19:27:38.837Z"}
+{"level":"error","message":"Error occured while sending reset link","timestamp":"2021-08-23T19:27:38.838Z"}
+{"level":"error","timestamp":"2021-08-23T19:28:54.365Z"}
+{"level":"error","message":"Error occured while sending reset link","timestamp":"2021-08-23T19:28:54.365Z"}
+{"message":"Invalid password","level":"error","timestamp":"2021-08-24T01:52:56.206Z"}
+{"message":"Invalid password","level":"error","timestamp":"2021-08-24T20:15:11.210Z"}
+{"message":"Invalid password","level":"error","timestamp":"2021-08-24T20:15:36.270Z"}
+{"message":"Email id doesnt exists","level":"error","timestamp":"2021-08-24T20:22:05.382Z"}
+{"level":"error","message":"Error in service","timestamp":"2021-08-24T20:22:05.383Z"}
+{"stringValue":"\"Promise {\n  <rejected> Error: data must be a string or Buffer and salt must either be a salt string or a number of rounds\n      at Object.hash (C:\\Users\\visha\\Desktop\\nodeprojects\\fundoo-note-app\\node_modules\\bcrypt\\bcrypt.js:144:17)\n      at C:\\Users\\visha\\Desktop\\nodeprojects\\fundoo-note-app\\node_modules\\bcrypt\\promises.js:29:12\n      at new Promise (<anonymous>)\n      at Object.module.exports.promise (C:\\Users\\visha\\Desktop\\nodeprojects\\fundoo-note-app\\node_modules\\bcrypt\\promises.js:20:12)\n      at Object.hash (C:\\Users\\visha\\Desktop\\nodeprojects\\fundoo-note-app\\node_modules\\bcrypt\\bcrypt.js:133:25)\n      at Registration.resetPassword (C:\\Users\\visha\\Desktop\\nodeprojects\\fundoo-note-app\\app\\models\\user.model.js:120:40)\n      at C:\\Users\\visha\\Desktop\\nodeprojects\\fundoo-note-app\\app\\service\\user.service.js:102:28\n      at Object.exports.verifyToken (C:\\Users\\visha\\Desktop\\nodeprojects\\fundoo-note-app\\app\\middleware\\authenticate.js:20:17)\n      at Service.resetPassword (C:\\Users\\visha\\Desktop\\nodeprojects\\fundoo-note-app\\app\\service\\user.service.js:91:15)\n      at resetPassword (C:\\Users\\visha\\Desktop\\nodeprojects\\fundoo-note-app\\app\\controller\\user.controller.js:134:17)\n      at Layer.handle [as handle_request] (C:\\Users\\visha\\Desktop\\nodeprojects\\fundoo-note-app\\node_modules\\express\\lib\\router\\layer.js:95:5)\n      at next (C:\\Users\\visha\\Desktop\\nodeprojects\\fundoo-note-app\\node_modules\\express\\lib\\router\\route.js:137:13)\n      at Route.dispatch (C:\\Users\\visha\\Desktop\\nodeprojects\\fundoo-note-app\\node_modules\\express\\lib\\router\\route.js:112:3)\n      at Layer.handle [as handle_request] (C:\\Users\\visha\\Desktop\\nodeprojects\\fundoo-note-app\\node_modules\\express\\lib\\router\\layer.js:95:5)\n      at C:\\Users\\visha\\Desktop\\nodeprojects\\fundoo-note-app\\node_modules\\express\\lib\\router\\index.js:281:22\n      at Function.process_params (C:\\Users\\visha\\Desktop\\nodeprojects\\fundoo-note-app\\node_modules\\express\\lib\\router\\index.js:335:12)\n}\"","kind":"string","value":{},"path":"password","reason":null,"valueType":"Promise","level":"error","timestamp":"2021-08-25T01:18:49.789Z"}
+{"message":"Invalid password","level":"error","timestamp":"2021-08-25T01:25:41.203Z"}
+{"message":"Invalid password","level":"error","timestamp":"2021-08-25T01:31:29.230Z"}
+{"message":"Invalid password","level":"error","timestamp":"2021-08-25T01:38:46.658Z"}
+{"message":"Invalid password","level":"error","timestamp":"2021-08-25T01:42:00.976Z"}
+{"message":"Invalid password","level":"error","timestamp":"2021-08-25T02:16:11.849Z"}
+{"message":"Invalid password","level":"error","timestamp":"2021-08-25T10:10:54.941Z"}
+{"message":"Invalid password","level":"error","timestamp":"2021-08-25T10:13:51.198Z"}
+{"message":"Invalid password","level":"error","timestamp":"2021-08-25T10:27:23.385Z"}
+{"message":"Invalid password","level":"error","timestamp":"2021-08-25T10:29:48.539Z"}
+{"message":"Invalid password","level":"error","timestamp":"2021-08-25T10:33:56.590Z"}
+{"errno":-4062,"code":"ESOCKET","syscall":"connect","address":"2404:6800:4003:c04::6d","port":465,"command":"CONN","level":"error","timestamp":"2021-08-25T11:16:28.696Z"}
+{"level":"error","message":"Error occured while sending reset link","timestamp":"2021-08-25T11:16:28.697Z"}
+{"errno":-4062,"code":"ESOCKET","syscall":"connect","address":"2404:6800:4003:c04::6d","port":465,"command":"CONN","level":"error","timestamp":"2021-08-25T11:16:33.163Z"}
+{"level":"error","message":"Error occured while sending reset link","timestamp":"2021-08-25T11:16:33.163Z"}
+{"errno":-4062,"code":"ESOCKET","syscall":"connect","address":"2404:6800:4003:c04::6d","port":465,"command":"CONN","level":"error","timestamp":"2021-08-25T11:19:09.225Z"}
+{"level":"error","message":"Error occured while sending reset link","timestamp":"2021-08-25T11:19:09.226Z"}
+{"message":"Invalid password","level":"error","timestamp":"2021-08-25T11:21:43.811Z"}
+{"message":"Invalid password","level":"error","timestamp":"2021-08-25T11:52:29.204Z"}
+{"message":"Email id doesnt exists","level":"error","timestamp":"2021-08-25T11:53:41.199Z"}
+{"level":"error","message":"Error in service","timestamp":"2021-08-25T11:53:41.199Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-25T17:24:16.205Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-25T17:24:16.223Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-25T17:24:16.265Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-25T17:24:16.316Z"}
+{"message":"Email id doesnt exists","level":"error","timestamp":"2021-08-25T17:24:16.787Z"}
+{"level":"error","message":"Error in service","timestamp":"2021-08-25T17:24:16.788Z"}
+{"message":"Email id doesnt exists","level":"error","timestamp":"2021-08-25T17:24:16.851Z"}
+{"level":"error","message":"Error in service","timestamp":"2021-08-25T17:24:16.851Z"}
+{"message":"Invalid password","level":"error","timestamp":"2021-08-25T17:24:17.123Z"}
+{"message":"Error detected in model","level":"error","timestamp":"2021-08-25T17:25:14.031Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-25T17:25:14.054Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-25T17:25:14.083Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-25T17:25:14.100Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-25T17:25:14.116Z"}
+{"message":"Email id doesnt exists","level":"error","timestamp":"2021-08-25T17:25:14.325Z"}
+{"level":"error","message":"Error in service","timestamp":"2021-08-25T17:25:14.326Z"}
+{"message":"Email id doesnt exists","level":"error","timestamp":"2021-08-25T17:25:14.345Z"}
+{"level":"error","message":"Error in service","timestamp":"2021-08-25T17:25:14.345Z"}
+{"message":"Invalid password","level":"error","timestamp":"2021-08-25T17:25:14.468Z"}
+{"message":"Error detected in model","level":"error","timestamp":"2021-08-25T17:31:07.171Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-25T17:31:07.192Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-25T17:31:07.217Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-25T17:31:07.230Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-25T17:31:07.246Z"}
+{"message":"Email id doesnt exists","level":"error","timestamp":"2021-08-25T17:31:07.426Z"}
+{"level":"error","message":"Error in service","timestamp":"2021-08-25T17:31:07.427Z"}
+{"message":"Email id doesnt exists","level":"error","timestamp":"2021-08-25T17:31:07.448Z"}
+{"level":"error","message":"Error in service","timestamp":"2021-08-25T17:31:07.449Z"}
+{"message":"Invalid password","level":"error","timestamp":"2021-08-25T17:31:07.564Z"}
+{"message":"Error detected in model","level":"error","timestamp":"2021-08-25T17:33:46.257Z"}
+{"message":"Error occured while registering new user","level":"error","timestamp":"2021-08-25T17:33:46.260Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-25T17:33:46.311Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-25T17:33:46.324Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-25T17:33:46.337Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-25T17:33:46.357Z"}
+{"message":"Email id doesnt exists","level":"error","timestamp":"2021-08-25T17:33:46.538Z"}
+{"level":"error","message":"Error in service","timestamp":"2021-08-25T17:33:46.538Z"}
+{"message":"Email id doesnt exists","level":"error","timestamp":"2021-08-25T17:33:46.553Z"}
+{"level":"error","message":"Error in service","timestamp":"2021-08-25T17:33:46.554Z"}
+{"message":"Invalid password","level":"error","timestamp":"2021-08-25T17:33:46.676Z"}

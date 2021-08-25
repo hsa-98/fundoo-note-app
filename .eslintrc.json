@@ -16,7 +16,7 @@
             "error",
             "always"
         ],
-        "no-console": "off",
+        "no-console": "error",
         "quotes": 
         [
             "error",

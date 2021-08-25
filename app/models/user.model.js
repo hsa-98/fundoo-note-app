@@ -23,10 +23,7 @@ const userSchema = mongoose.Schema({
         type: String,
         required: true
     },
-    resetLink:{
-        data:String,
-        default:''
-    }
+    
 }, {
     timestamps : true
 });
@@ -64,7 +61,7 @@ class Registration{
                 if(error){
                     logger.error("Error detected in model")
                     console.log("Error detected in model");
-                    return callback(err, null);
+                    return callback(error, null);
                 }
                 else{
                     logger.info("User registered suucesfully")
@@ -116,16 +113,20 @@ class Registration{
             }
         })
     };
-    addReset = (link,callback)=>{
-        userRegister.findByIdAndUpdate(link.id,{resetLink:link.link},(err,message)=>{
+    
+    
+    resetPassword = (credentials,callback)=>{
+        const hashedPassword = bcrypt.hashSync(credentials.password,10);
+        userRegister.findByIdAndUpdate(credentials.id,{$set:{password:hashedPassword}},{new: true} ,(err,message)=>{
             if(err){
                 logger.error(err);
                 return callback(err,null);
             }
-            else{
-                return callback(null,"Reset link added successfully")
+            else{ 
+                logger.info("Password reset succesfully")
+                return callback(null,"Password reset succesfully");
             }
-        })
+        });
     }
 }
 module.exports = new Registration();

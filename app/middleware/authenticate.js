@@ -14,7 +14,12 @@ exports.generateToken = (data)=>{
     return jwt.sign({dataForToken},process.env.ACCESS_TOKEN_KEY,{expiresIn:'1H'});
 }
 
-exports.verifyToken = (data)=>{
-    const token = data.token;
-      
+exports.verifyToken = (token,callback)=>{
+     const data = jwt.verify(token,process.env.ACCESS_TOKEN_KEY);
+     if(data){
+         return callback(null,data);
+     }
+     else{
+        return callback("Invalid token",null);
+     }
 }
