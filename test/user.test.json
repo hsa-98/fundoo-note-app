@@ -48,5 +48,26 @@
             "emailId":"sarthgupta123@gmail.com",
             "password":"ParthGupta!1"
         }
+    },
+    "forgotPassword":{
+        "validEmail":{"emailId":"harshsanjayagrawal89@gmail.com"},
+        "invalidEmail":{"emailId":"yug@gmail"},
+        "validEmailButDoesntExist":{"email":"vivek@gmail.com"}
+
+    },
+    "resetPassword":{
+        "invalidToken":{
+          "token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhRm9yVG9rZW4iOnsiaWQiOiI2MTIzZWM2ZTNmYmI4MzRlMzBlZDcxODYiLCJuYW1lIjoiSGFyc2giLCJsYXN0TmFtZSI6IkFncmF3YWwiLCJlbWFpbElkIjoiaGFyc2hzYW5qYXlhZ3Jhd2FsODlAZ21haWwuY29tIn0sImlhdCI6MTYyOTk4NTc5NiwiZXhwIjoxNjI5OTg5Mzk2fQ.Gz2iPSYlkbn3_wQA1A4Gb6EvalH0ciYPn3cRuQJ_Mzw",
+          "password":"Whatis!@123"
+        },
+        "invalidPassword":{
+            "token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhRm9yVG9rZW4iOnsiaWQiOiI2MTIzZWM2ZTNmYmI4MzRlMzBlZDcxODYiLCJuYW1lIjoiSGFyc2giLCJsYXN0TmFtZSI6IkFncmF3YWwiLCJlbWFpbElkIjoiaGFyc2hzYW5qYXlhZ3Jhd2FsODlAZ21haWwuY29tIn0sImlhdCI6MTYyOTk4NTc5NiwiZXhwIjoxNjI5OTg5Mzk2fQ.Gz2iPSYlkbn3_wQA1A4Gb6EvalH0ciYPn3cRuQJ_Mzw",
+            "password":"harsh123"
+        },
+        "validTokenAndPassword":{
+            "token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhRm9yVG9rZW4iOnsiaWQiOiI2MTIzZWM2ZTNmYmI4MzRlMzBlZDcxODYiLCJuYW1lIjoiSGFyc2giLCJsYXN0TmFtZSI6IkFncmF3YWwiLCJlbWFpbElkIjoiaGFyc2hzYW5qYXlhZ3Jhd2FsODlAZ21haWwuY29tIn0sImlhdCI6MTYyOTk5NDc1OCwiZXhwIjoxNjI5OTk4MzU4fQ.FZc82MkDizcEaQhp_Bz6qmQCT-kwDuvsQwXUJEPs2Z4",
+            "password":"Kamerkar!123"
+        }
     }
+
 }

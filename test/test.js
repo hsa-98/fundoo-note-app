@@ -143,3 +143,107 @@ describe('login',()=>{
 
     })
 });
+describe('forgotPassword',()=>{
+
+    it('givenInValidEMail_ShouldReturnStatus400AndError',(done)=>{
+        const email = user.forgotPassword.invalidEmail;
+        chai.request(server)
+        .post('/forgotpassword')
+        .send(email)
+        .end((err,res)=>{
+            if(err){
+                return done(err);
+            }
+            res.should.have.status(400);
+            res.body.should.be.a('object');
+            res.body.should.have.property('success').eql(false);
+            res.body.should.have.property('message').eql('Invalid email please try again');
+            done();
+        })
+    })
+
+    it('givenNonRegisteredEMail_ShouldReturnStatus400AndError',(done)=>{
+        const email = user.forgotPassword.validEmailButDoesntExist;
+        chai.request(server)
+        .post('/forgotpassword')
+        .send(email)
+        .end((err,res)=>{
+            if(err){
+                return done(err);
+            }
+            res.should.have.status(400);
+            res.body.should.be.a('object');
+            res.body.should.have.property('success').eql(false);
+            res.body.should.have.property('message').eql('Invalid email please try again');
+            done();
+        })
+    })
+
+    it('givenCorrectEmail_ShouldReturnStatus200AndSendLink',(done)=>{
+        const email = user.forgotPassword.validEmail;
+        chai.request(server)
+        .post('/forgotpassword')
+        .send(email)
+        .end((err,res)=>{
+            if(err){
+                return done(err);
+            }
+            res.should.have.status(200);
+            res.body.should.have.property('message').eql('Email reset link sent succesfully');
+            res.body.should.have.property('success').eql(true);
+            done();
+        })
+    })
+})   
+
+describe('resetpassword',()=>{
+        it('givenCorrectPasswordAndToken_ShouldResetPassword_ReturnStatus200',(done)=>{
+            const credentials = user.resetPassword.validTokenAndPassword;
+            chai.request(server)
+            .put('/resetPassword')
+            .send(credentials)
+            .end((err,res)=>{
+                if(err){
+                    return done(err);
+                }
+                res.should.have.status(200);
+                res.should.be.a('object');
+                res.body.should.have.property('success').eql(true);
+                res.body.should.have.property('message').eql("Password reset succesfully");
+                done();
+            })
+        })
+        it('givenInvalidPassword_ShouldReturnStatus400',(done)=>{
+            const credentials = user.resetPassword.invalidPassword;
+            chai.request(server)
+            .put('/resetPassword')
+            .send(credentials)
+            .end((err,res)=>{
+                if(err){
+                    return done(err);
+                }
+                res.should.have.status(400);
+                res.should.be.a('object');
+                res.body.should.have.property('success').eql(false);
+                res.body.should.have.property('message').eql("Invalid password please try again");
+                done();
+        });
+    });
+    it('givenInvalidToken_ShouldReturnStatus400',(done)=>{
+        const credentials = user.resetPassword.invalidToken;
+            chai.request(server)
+            .put('/resetPassword')
+            .send(credentials)
+            .end((err,res)=>{
+                if(err){
+                    return done(err);
+                }
+                res.should.have.status(400);
+                res.should.be.a('object');
+                res.body.should.have.property('success').eql(false);
+                res.body.should.have.property('message').eql("Invalid Token");
+                done();
+        });
+
+    })    
+})
