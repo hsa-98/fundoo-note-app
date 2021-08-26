@@ -3,8 +3,10 @@ require('dotenv').config;
 const dbConfig  = require('./config/db.config');
 const swaggerUI = require('swagger-ui-express');
 const swaggerDoc = require('./swagger/swagger.json');
+const cors = require('cors');
 const app = express();
 
+app.use(cors);
 app.use(express.urlencoded({extended:true}));
 app.use(express.json());
 app.use("/api-docs",swaggerUI.serve,swaggerUI.setup(swaggerDoc));
@@ -15,7 +17,6 @@ app.get('/',(req,res) => {
 });
 
 require('./app/routes/note.routes')(app);
-app.use("/api-docs",swaggerUI.serve,swaggerUI.setup(swaggerDoc));
 
 app.listen(process.env.PORT,() =>{
     console.log("App is listening on port number",process.env.PORT);
