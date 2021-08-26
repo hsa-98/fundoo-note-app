@@ -95,15 +95,9 @@ class Service{
      * @param {*} callback 
      */
     resetPassword = (req,callback)=>{
-        const token = req.token
+        const token = req.token;
         //verifies token
-         auth.verifyToken(token,(err,data)=>{
-            if(err){
-                logger.error(err); 
-                console.log("Error occured while verifying",err);
-                return callback(err,null);
-            }
-            else{//object containing necessary data
+        const data =  auth.verifyToken(token);
                 const credentials = {
                     id:data.dataForToken.id,
                     password : req.password
@@ -111,15 +105,15 @@ class Service{
                 //object is passed to model layer
                 UserSchema.resetPassword(credentials,(err,data)=>{
                     if(err){
+                        console.log(err);
                         return callback(err,null);
                     }
                     else{
                          return callback(null,data);
                     }
 
-                });
-            }
-        });
+                });   
+        
     }
 }
 module.exports = new Service();

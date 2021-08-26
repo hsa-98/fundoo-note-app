@@ -1,6 +1,7 @@
 const service = require('../service/user.service')
 const { authenticate, authenticateLogin,validateReset } = require('../middleware/joiValidation');
 const logger = require('../../logger/logger');
+const { bool } = require('joi');
 
 class User {
     /**
@@ -103,27 +104,30 @@ class User {
         const email = req.body;
         //validates the email id
         const loginValid = authenticateLogin.validate(email);
-        if(loginValid.err){
+        if(loginValid.error){
             logger.error("Invalid email id")
-            res.status(400).send({
+           return res.status(400).send({
                 success:false,
-                message:err
-            })
-            return;
+                message:"Invalid email please try again"
+            });
+        
         }
-        service.forgotPassword(email,(error,data)=>{
-            if(error){
-                return res.status(400).send({error});
-            }
-            else{
-                console.log("link sent");
-                return res.status(200).json({
-                    success:true,
-                    message:"Email reset link sent succesfully",
-                    data:data
-                })
-            }
-        })
+        else{
+            service.forgotPassword(email,(error,data)=>{
+                if(error){
+                    return res.status(400).send({ success:false,
+                        message:"Email id doesnt exist"});
+                }
+                else{
+                    console.log("link sent");
+                    return res.status(200).json({
+                        success:true,
+                        message:"Email reset link sent succesfully",
+                        data:data
+                    })
+                }
+            })
+        }
     }
     /**
      * @description:calls service layer to reset password
@@ -133,35 +137,45 @@ class User {
      */
     resetPassword = (req,res)=>{
         //checks if the new password is valid
-        const resetValid = validateReset.validate(req.body.password)
-        if(resetValid.err){
-            res.status(400).send({
-                success: false,
-                message: err 
-            })
-            return;
-        }
-        //object containing required data to reset password
+        try{
         const data ={
             token:req.body.token,
             password:req.body.password
         }
-        
-        service.resetPassword(data,(err,data)=>{
-            if(err){
-                res.status(500).send({
-                    success:false,
-                    message:err
-                })
-            }
-            else{
-                res.status(200).send({
-                    success:true,
-                    message:data
-                });
-            }
+        const resetValid = validateReset.validate(data);
+        if(resetValid.error){
+            console.log("1");
+            return res.status(400).send({
+                success: false,
+                message: "Invalid password please try again" 
+            });
+        }
+        else{
+            //object containing required data to reset password
+            service.resetPassword(data,(err,data)=>{
+                if(err){
+                    console.log("2");
+                    return res.status(400).send({
+                        message:"Failed to reset password",
+                        success:false
+                        
+                    });
+                }
+                else{
+                    return res.status(200).send({
+                        success:true,
+                        message:data
+                    });
+                }
+            })
+        }
+    }catch(error){
+        console.log("3");
+        return res.status(400).json({
+            success:false,
+            message:"Invalid Token"
         })
-
+    }
     }
 }
 

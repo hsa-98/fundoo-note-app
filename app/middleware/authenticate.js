@@ -16,10 +16,6 @@ exports.generateToken = (data)=>{
 
 exports.verifyToken = (token,callback)=>{
      const data = jwt.verify(token,process.env.ACCESS_TOKEN_KEY);
-     if(data){
-         return callback(null,data);
-     }
-     else{
-        return callback("Invalid token",null);
-     }
+       return data;
+     
 }

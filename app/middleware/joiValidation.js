@@ -18,13 +18,14 @@ const authenticate = Joi.object({
 });
 
 const authenticateLogin = Joi.object({
-    emailId :Joi.string().
-    pattern(new RegExp('^[a-zA-Z0-9]+([+_.-][a-zA-Z0-9]+)*[@][a-zA-Z0-9]+[.][a-zA-Z]{2,4}([.][a-zA-Z]{2,4})?'))
-     .required()
+    emailId :Joi.string()
+    .required()
+    .pattern(new RegExp('^[a-zA-Z0-9]+([+_.-][a-zA-Z0-9]+)*[@][a-zA-Z0-9]+[.][a-zA-Z]{2,4}([.][a-zA-Z]{2,4})?'))
 })
 const validateReset = Joi.object({
+    token: Joi.string().required(),
     password : Joi.string().min(8)
     .pattern(new RegExp('^(?=.*[!@#$%^&+=])(?=.*\\d)(?=.*[a-z])(?=.*[A-Z]).{8,}$'))
-
+    .required()
 })
 module.exports = {authenticate,authenticateLogin,validateReset};
