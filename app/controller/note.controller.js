@@ -1,4 +1,5 @@
 
+const { data } = require('../../logger/logger');
 const validateToken = require('../middleware/authenticate')
 const service = require('../service/note.service')
 class Note {
@@ -50,6 +51,36 @@ class Note {
             })
         
         }else{
+            return res.status(400).json({
+                message:"Please enter valid token"
+            })
+        }
+    }
+
+    updateNote = (req,res)=>{
+        try{
+            const  validToken = validateToken.verifyToken(req.body.token);
+            const updatedNote = {
+                id : req.body.id,
+                note : req.body.note
+            }
+            service.updateNote(updatedNote,(err,data)=>{
+                if(err){
+                    return res.status(500).json({
+                        message:"Note not updated",
+                        success:false
+                    })
+                }
+                else{
+                    return res.status(200).json({
+                        message:"Note updated",
+                        success:true,
+                        data:data
+                    });
+                }
+            });
+        }
+        catch{
             return res.status(400).json({
                 message:"Please enter valid token"
             })

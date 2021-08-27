@@ -21,6 +21,17 @@ class Service{
             }
         })
     }
+
+    updateNote = (updatedNote,callback)=>{
+        model.updateNote(updatedNote,(err,data)=>{
+            if(err){
+                return callback(err,null);
+            }
+            else{
+                return callback(null,data);
+            }
+        })
+    }
 }
  
 module.exports = new Service();

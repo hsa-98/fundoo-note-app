@@ -14,4 +14,5 @@ app.put('/resetpassword',user.resetPassword);
 //CRUD for notes
 app.post('/createnotes',note.createNote);
 app.get('/getnotes',note.getNote);
+app.put('/updatenotes',note.updateNote);
 }
