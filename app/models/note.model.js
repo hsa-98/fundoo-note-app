@@ -52,6 +52,21 @@ class Model{
             }
         })
     }
+
+    deleteNote = (id,callback)=>{
+        try{
+            noteRegister.findByIdAndDelete(id.id,(err,data)=>{
+                if(err){
+                    return callback(err,null);
+                }
+                else{
+                    return callback(null,data);
+                }
+            })
+        }catch{
+            return callback(err,null);
+        }
+    }
 }
 
 module.exports = new Model();

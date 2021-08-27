@@ -86,6 +86,26 @@ class Note {
             })
         }
     }
+
+    deleteNote = (req,res)=>{
+            const valid = validateToken.verifyToken(req.body.token);
+            const id = {id:req.body.id}
+            service.deleteNote(id,(err,data)=>{
+                if(err){
+                    return res.status(500).json({
+                        message:"failed to delete",
+                        success:false
+                    });
+                }
+                else{
+                    return res.status(200).json({
+                        message:"Note deleted",
+                        success:true
+                    })                
+                }
+
+            })
+    }
 }
 
  module.exports = new Note();

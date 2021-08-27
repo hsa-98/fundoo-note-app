@@ -15,4 +15,5 @@ app.put('/resetpassword',user.resetPassword);
 app.post('/createnotes',note.createNote);
 app.get('/getnotes',note.getNote);
 app.put('/updatenotes',note.updateNote);
+app.delete('/deletenotes',note.deleteNote);
 }

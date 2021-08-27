@@ -11,15 +11,15 @@ exports.generateToken = (data)=>{
         lastName : data.lastName,
         emailId : data.emailId
     }
-    return jwt.sign({dataForToken},process.env.ACCESS_TOKEN_KEY,{expiresIn:'1H'});
+    return jwt.sign({dataForToken},process.env.ACCESS_TOKEN_KEY,{expiresIn:'24H'});
 }
 
-exports.verifyToken = (token,callback)=>{
+exports.verifyToken = (token)=>{
      const data = jwt.verify(token,process.env.ACCESS_TOKEN_KEY);
      if(data){
          return data;
      }
      else{
-        return ;
+        return "couldnt verify" ;
      }
 }
