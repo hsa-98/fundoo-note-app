@@ -1,4 +1,5 @@
 const user = require('../controller/user.controller');
+const note = require('../controller/note.controller')
 module.exports=(app)=>{
 //api for user registration
 
@@ -9,4 +10,8 @@ app.post('/login',user.loginUser);
 app.post('/forgotpassword',user.forgotPassword);
 //api for reset password
 app.put('/resetpassword',user.resetPassword);
+
+//CRUD for notes
+app.post('/createnotes',note.createNote);
+app.get('/getnotes',note.getNote);
 }

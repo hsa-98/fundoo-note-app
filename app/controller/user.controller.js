@@ -82,11 +82,15 @@ class User {
                     return res.status(401).send({ message: error });
                 }
                 else {
+                    const userInfo={
+                        emailId:data.data.emailId,
+                        token:data.token
+                    }
                     return res.status(200).json({
                         success: true,
                         message: "Logged in succesfully",
-                        data: data.data,
-                        token: data.token
+                        data: userInfo
+                        
                     })
                 }
             });
@@ -170,7 +174,6 @@ class User {
             })
         }
     }catch(error){
-        console.log("3");
         return res.status(400).json({
             success:false,
             message:"Invalid Token"
