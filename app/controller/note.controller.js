@@ -2,26 +2,37 @@
 const { data } = require('../../logger/logger');
 const validateToken = require('../middleware/authenticate')
 const service = require('../service/note.service')
+const {validateNote} = require('../middleware/joiValidation');
 class Note {
     createNote =(req,res)=>{        
-       const  validToken = validateToken.verifyToken(req.body.token);
+       
+       const  validToken = validateToken.validateNoteToken(req.headers.authorization);
         if(validToken){
-            service.createNote(req.body.note,(err,data)=>{
-                if(err){
-                    return res.status(500).json({
-                        message:"failed to post note",
-                        success:false
-                    });
-                }
-                else{
-                    return res.status(201).json({
-                        message: "Successfully inserted note",
-                        success:true,
-                        data:data
-                    })
-                }
+            const valid = validateNote.validate(req.body.note);
+            if(valid.error){
+                res.status(400).send({
+                    success:false,
+                    message:"Please enter valid note"
+                })
+            }
+            else{
+                service.createNote(req.body.note,(err,data)=>{
+                    if(err){
+                        return res.status(500).json({
+                            message:"failed to post note",
+                            success:false
+                        });
+                    }
+                    else{
+                        return res.status(201).send({
+                            message: "Successfully inserted note",
+                            success:true,
+                            data:data
+                        })
+                    }
 
-            })
+                })
+            }
         }
         else{
              return res.status(400).json({
@@ -32,7 +43,11 @@ class Note {
     }
 
     getNote = (req,res)=>{
-        const  validToken = validateToken.verifyToken(req.body.token);
+        const header = req.headers.authorization;
+        const myArr = header.split(" ");
+        const token = myArr[1];
+        console.log(token)
+        const  validToken = validateToken.verifyToken(token);
         if(validToken){
             service.getNote((err,data)=>{
                 if(err){
@@ -59,9 +74,13 @@ class Note {
 
     updateNote = (req,res)=>{
         try{
-            const  validToken = validateToken.verifyToken(req.body.token);
+            const header = req.headers.authorization;
+            const myArr = header.split(" ");
+            const token = myArr[1];
+            console.log(token)
+           const  validToken = validateToken.verifyToken(token);
             const updatedNote = {
-                id : req.body.id,
+                id : req.params.id,
                 note : req.body.note
             }
             service.updateNote(updatedNote,(err,data)=>{
@@ -88,8 +107,11 @@ class Note {
     }
 
     deleteNote = (req,res)=>{
-            const valid = validateToken.verifyToken(req.body.token);
-            const id = {id:req.body.id}
+        const header = req.headers.authorization;
+        const myArr = header.split(" ");
+        const token = myArr[1];
+        const  validToken = validateToken.verifyToken(token);
+            const id = {id:req.params.id}
             service.deleteNote(id,(err,data)=>{
                 if(err){
                     return res.status(500).json({

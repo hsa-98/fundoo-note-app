@@ -28,4 +28,12 @@ const validateReset = Joi.object({
     .pattern(new RegExp('^(?=.*[!@#$%^&+=])(?=.*\\d)(?=.*[a-z])(?=.*[A-Z]).{8,}$'))
     .required()
 })
-module.exports = {authenticate,authenticateLogin,validateReset};
+
+const validateNote = Joi.object({
+    title:Joi.string()
+    .required(),
+
+    note:Joi.string()
+    .required()
+})
+module.exports = {authenticate,authenticateLogin,validateReset,validateNote};

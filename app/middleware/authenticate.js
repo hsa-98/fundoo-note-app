@@ -1,3 +1,4 @@
+const Joi = require('joi');
 const jwt = require('jsonwebtoken')
 /**
  * @description: Generates a jwt token and returns to the user
@@ -23,3 +24,17 @@ exports.verifyToken = (token)=>{
         return "couldnt verify" ;
      }
 }
+
+exports.validateNoteToken = (data)=>{
+    const header = data;
+    const myArr = header.split(" ");
+    const token = myArr[1];
+    const verify = jwt.verify(token,process.env.ACCESS_TOKEN_KEY);
+    if(verify){
+        return true
+    }
+    else{
+        return false
+    }
+}
+
