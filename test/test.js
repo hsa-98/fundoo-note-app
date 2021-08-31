@@ -4,7 +4,7 @@ chai.should();
 const server = require('../server');
 const user = require('./user.test.json');
 chai.use(chaiHttp);
-
+/*
 describe('register',()=>{
     it('givenValidDetails_shouldUpdateDbAndRegister_Return201',(done)=>{
             const userDetails = user.user.validDetails;
@@ -193,7 +193,7 @@ describe('forgotPassword',()=>{
             res.body.should.have.property('success').eql(true);
             done();
         })
-    })
+    }).timeout(10000);
 })   
 
 describe('resetpassword',()=>{
@@ -246,4 +246,85 @@ describe('resetpassword',()=>{
         });
 
     })    
+})
+*/
+describe('createnotes',()=>{
+    it('givenValidNote_ShouldreturnStatus201',(done)=>{
+        const note = user.createnotes.validNote.data;
+        const token = user.createnotes.validNote.token;
+        chai.request(server)
+        .post('/createnotes')
+        .set({authorization:token})
+        .send(note)
+        .end((err,res)=>{
+            if(err){
+                return done(err);
+            }
+        
+            res.should.have.status(201);
+            res.body.should.be.a('object');
+            res.body.should.have.property('success').eql(true);
+            done();
+        })
+    })
+    it('givenNoTitle_ShouldReturnStatus400',(done)=>{
+        const note = user.createnotes.invalidNoteWithNote.data;
+        const token = user.createnotes.invalidNoteWithNote.token;
+        chai.request(server)
+        .post('/createnotes')
+        .set({authorization:token})
+        .send(note)
+        .end((err,res)=>{
+            if(err){
+                return done(err);
+            }
+        
+            res.should.have.status(400);
+            res.body.should.be.a('object');
+            res.body.should.have.property('success').eql(false);
+            res.body.should.have.property('message').eql('Please enter valid note')
+            done();
+        })
+    })
+
+    it('givenNoNote_ShouldReturnStatus400',(done)=>{
+        const note = user.createnotes.invalidNoteWithTitle.data;
+        const token = user.createnotes.invalidNoteWithTitle.token;
+        chai.request(server)
+        .post('/createnotes')
+        .set({authorization:token})
+        .send(note)
+        .end((err,res)=>{
+            if(err){
+                return done(err);
+            }
+        
+            res.should.have.status(400);
+            res.body.should.be.a('object');
+            res.body.should.have.property('success').eql(false);
+            res.body.should.have.property('message').eql('Please enter valid note')
+            done();
+        })
+    })
+    
+    it('givenInvalidToken_ShouldReturnStatus400',(done)=>{
+        const note = user.createnotes.invalidToken.data;
+        const token = user.createnotes.invalidToken.token;
+        chai.request(server)
+        .post('/createnotes')
+        .set({authorization:token})
+        .send(note)
+        .end((err,res)=>{
+            if(err){
+                return done(err);
+            }
+        
+            res.should.have.status(400);
+            res.body.should.be.a('object');
+            res.body.should.have.property('success').eql(false);
+            res.body.should.have.property('message').eql('Invalid Token')
+            done();
+        })
+    })
+    
 })

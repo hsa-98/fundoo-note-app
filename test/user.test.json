@@ -1,9 +1,9 @@
 {
     "user":{
         "validDetails":{
-            "firstName":"Manoj",
+            "firstName":"Saur",
             "lastName":"Gupta",
-            "emailId":"manojkushwaha@gmail.com",
+            "emailId":"Saur@gmail.com",
             "password":"ParthGupta!123"
         },
         "detailsWithInvalidFirstName":{
@@ -51,7 +51,7 @@
     },
     "forgotPassword":{
         "validEmail":{"emailId":"harshsanjayagrawal89@gmail.com"},
-        "invalidEmail":{"emailId":"yug@gmail"},
+        "invalidEmail":{"emailId":"yuggmail"},
         "validEmailButDoesntExist":{"email":"vivek@gmail.com"}
 
     },
@@ -65,8 +65,44 @@
             "password":"harsh123"
         },
         "validTokenAndPassword":{
-            "token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhRm9yVG9rZW4iOnsiaWQiOiI2MTIzZWM2ZTNmYmI4MzRlMzBlZDcxODYiLCJuYW1lIjoiSGFyc2giLCJsYXN0TmFtZSI6IkFncmF3YWwiLCJlbWFpbElkIjoiaGFyc2hzYW5qYXlhZ3Jhd2FsODlAZ21haWwuY29tIn0sImlhdCI6MTYyOTk5NDc1OCwiZXhwIjoxNjI5OTk4MzU4fQ.FZc82MkDizcEaQhp_Bz6qmQCT-kwDuvsQwXUJEPs2Z4",
-            "password":"Kamerkar!123"
+            "token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhRm9yVG9rZW4iOnsiaWQiOiI2MTIzZWM2ZTNmYmI4MzRlMzBlZDcxODYiLCJuYW1lIjoiSGFyc2giLCJsYXN0TmFtZSI6IkFncmF3YWwiLCJlbWFpbElkIjoiaGFyc2hzYW5qYXlhZ3Jhd2FsODlAZ21haWwuY29tIn0sImlhdCI6MTYzMDAzMDQ3OCwiZXhwIjoxNjMwMDM0MDc4fQ.2qbgbdN-CR9EXpb3d6nGXvqe9LmhpEHmyleqq92mbBs",
+            "password":"Letssee!123"
+        }
+    },
+    "createnotes":{
+        "validNote":{
+            "token":"bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhRm9yVG9rZW4iOnsiaWQiOiI2MTIzZWM2ZTNmYmI4MzRlMzBlZDcxODYiLCJuYW1lIjoiSGFyc2giLCJsYXN0TmFtZSI6IkFncmF3YWwiLCJlbWFpbElkIjoiaGFyc2hzYW5qYXlhZ3Jhd2FsODlAZ21haWwuY29tIn0sImlhdCI6MTYzMDM5ODk5OSwiZXhwIjoxNjMwNDg1Mzk5fQ.5_2pIJYJnCJ_SQ_scTplJzXZq-65sK8Jck_RLq-1MEE",
+            "data":{
+                "note":{
+                    "title":"Test",
+                    "note":"My test note"
+                }
+            }
+        },
+        "invalidNoteWithNote":{
+            "token":"bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhRm9yVG9rZW4iOnsiaWQiOiI2MTIzZWM2ZTNmYmI4MzRlMzBlZDcxODYiLCJuYW1lIjoiSGFyc2giLCJsYXN0TmFtZSI6IkFncmF3YWwiLCJlbWFpbElkIjoiaGFyc2hzYW5qYXlhZ3Jhd2FsODlAZ21haWwuY29tIn0sImlhdCI6MTYzMDM5ODk5OSwiZXhwIjoxNjMwNDg1Mzk5fQ.5_2pIJYJnCJ_SQ_scTplJzXZq-65sK8Jck_RLq-1MEE",
+            "data":{
+                "note":{
+                    "note":"Test"
+                }
+            }
+        },
+        "invalidNoteWithTitle":{
+            "token":"bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhRm9yVG9rZW4iOnsiaWQiOiI2MTIzZWM2ZTNmYmI4MzRlMzBlZDcxODYiLCJuYW1lIjoiSGFyc2giLCJsYXN0TmFtZSI6IkFncmF3YWwiLCJlbWFpbElkIjoiaGFyc2hzYW5qYXlhZ3Jhd2FsODlAZ21haWwuY29tIn0sImlhdCI6MTYzMDM5ODk5OSwiZXhwIjoxNjMwNDg1Mzk5fQ.5_2pIJYJnCJ_SQ_scTplJzXZq-65sK8Jck_RLq-1MEE",
+            "data":{
+                "note":{
+                    "note":"Test"
+                }
+            }
+        },
+        "invalidToken":{
+            "token":"ey6IkpXVCJ9.eyJkYXRhRm9yVG9rZW4iOnsiaWQiOiI2MTIzZWM2ZTNmYmI4MzRlMzBlZDcxODYiLCJuYW1lIjoiSGFyc2giLCJsYXN0TmFtZSI6IkFncmF3YWwiLCJlbWFpbElkIjoiaGFyc2hzYW5qYXlhZ3Jhd2FsODlAZ21haWwuY29tIn0sImlhdCI6MTYzMDM5ODk5OSwiZXhwIjoxNjMwNDg1Mzk5fQ.5_2pIJYJnCJ_SQ_scTplJzXZq-65sK8Jck_RLq-1MEE",
+            "data":{
+                "note":{
+                    "title":"Test",
+                    "note":"Test"
+                }
+            }
         }
     }
 
