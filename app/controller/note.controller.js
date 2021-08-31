@@ -5,42 +5,44 @@ const service = require('../service/note.service')
 const {validateNote} = require('../middleware/joiValidation');
 class Note {
     createNote =(req,res)=>{        
-       
-       const  validToken = validateToken.validateNoteToken(req.headers.authorization);
-        if(validToken){
-            const valid = validateNote.validate(req.body.note);
-            if(valid.error){
-                res.status(400).send({
-                    success:false,
-                    message:"Please enter valid note"
-                })
-            }
-            else{
-                service.createNote(req.body.note,(err,data)=>{
-                    if(err){
-                        return res.status(500).json({
-                            message:"failed to post note",
-                            success:false
-                        });
-                    }
-                    else{
-                        return res.status(201).send({
-                            message: "Successfully inserted note",
-                            success:true,
-                            data:data
-                        })
-                    }
+       try{
+            validateToken.validateNoteToken(req.headers.authorization);
+                const valid = validateNote.validate(req.body.note);
+                if(valid.error){
+                    res.status(400).send({
+                        success:false,
+                        message:"Please enter valid note"
+                    })
+                }
+                else{
+                    service.createNote(req.body.note,(err,data)=>{
+                        if(err){
+                            return res.status(500).json({
+                                message:"failed to post note",
+                                success:false
+                            });
+                        }
+                        else{
+                            return res.status(201).send({
+                                message: "Successfully inserted note",
+                                success:true,
+                                data:data
+                            })
+                        }
 
-                })
+                    })
             }
-        }
-        else{
-             return res.status(400).json({
-                message:"Please enter valid token"
+        }catch{
+            return res.status(400).send({
+                message:"Invalid Token",
+                success:false
             })
-
         }
     }
+        
+
+        
+    
 
     getNote = (req,res)=>{
         const header = req.headers.authorization;
