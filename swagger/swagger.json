@@ -44,7 +44,7 @@
                   }
                 }
             }
-        },
+         },
             "/login":{
                 "post": {
                   "tags": ["Login"],
@@ -116,6 +116,118 @@
 
               }
             }
+          },
+          "/createnotes":{
+            "post":{
+              "tags":["Create note"],
+              "description":"Create a note",
+              "parameters":[{
+                "in":"header",
+                "name":"authorization",
+                "description":"Token for validation",
+                "schema":{
+                  "type":"string",
+                  "required":true
+                }
+              },
+              {
+                "in":"body",
+                "name":"Note",
+                "description":"Note body",
+                "schema":{"$ref":"#/definitions/notes"}
+
+              }],"produces":["application/json"],
+              "responses":{
+                "201":{
+                  "description":"Note inserted succesfully"
+                },
+                "400":{
+                  "description":"Please enter valid token"
+                },
+                "500":{"description":"Internal server error"}
+
+              }
+            }
+          },
+          "/updatenotes/{id}":{
+            "put":{
+              "tags":["Update notes"],
+              "description":"Update note",
+              "parameters":[
+                {"in":"header",
+                "name":"authorization",
+                "description":"Token for validation",
+                "schema":{
+                  "type":"string",
+                  "required":true
+                }
+              },
+              {
+                "in":"path",
+                "name":"id",
+                "description":"Id of note you want to update",
+                "schema":{"type":"string"}
+              },
+              {
+                "in":"body",
+                "name":"Note",
+                "description":"Note body",
+                "schema":{"$ref":"#/definitions/notes"}
+              }
+              ],"produces":["application/json"],
+              "responses":{
+                "200":{"description":"Note updated successfully"},
+                "400":{"description":"Please enter valid token"},
+                "500":{"description":"Internal server error"}
+              }
+            }
+          },
+          "/getnotes":{
+            "get":{
+              "tags":["Get notes"],
+              "description":"Get notes",
+              "parameters":[{
+                "in":"header",
+                "name":"authorization",
+                "description":"Token for validation",
+                "schema":{"type":"string"
+                }
+              }],
+              "produces":["application/json"],
+              "responses":{
+                "200":{"description":"Note retrieved successfully"},
+                "400":{"description":"Please enter valid token"},
+                "500":{"description":"Internal server error"}
+              }
+            }
+          },
+          "/deletenotes/{id}":{
+            "delete":{
+              "tags":["Delete note"],
+              "description":"Delete notes",
+              "parameters":[
+                {"in":"header",
+                "name":"authorization",
+                "description":"Token for validation",
+                "schema":{
+                  "type":"string",
+                  "required":true
+                }
+              },
+              {
+                "in":"path",
+                "name":"id",
+                "description":"Id of note you want to update",
+                "schema":{"type":"string"}
+              }
+              ],"produces":["application/json"],
+              "responses":{
+                "200":{"description":"Note deleted successfully"},
+                "400":{"description":"Please enter valid token"},
+                "500":{"description":"Internal server error"}
+              }
+
+            }
           }
         },
         "definitions": {
@@ -165,6 +277,22 @@
                     "type":"string"
                   }
                 }
+              },
+              "notes":{
+                "type":"object",
+                "properties":{
+                  "note":{
+                    "type":"object",
+                    "properties":{
+                      "title":{
+                        "type":"string"
+                      },
+                      "note":{
+                        "type":"string"
+                      }
+                    }
+                  }
+                }
               }
-            }
+          }
         }
