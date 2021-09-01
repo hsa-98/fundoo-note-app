@@ -12,7 +12,7 @@ exports.generateToken = (data)=>{
         lastName : data.lastName,
         emailId : data.emailId
     }
-    return jwt.sign({dataForToken},process.env.ACCESS_TOKEN_KEY,{expiresIn:'24H'});
+    return jwt.sign({dataForToken},process.env.ACCESS_TOKEN_KEY,{expiresIn:'7d'});
 }
 
 exports.verifyToken = (token)=>{

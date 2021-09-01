@@ -6,10 +6,10 @@ const {validateNote} = require('../middleware/joiValidation');
 class Note {
     createNote =(req,res)=>{        
        try{
-            validateToken.validateNoteToken(req.headers.authorization);
+            const validate = validateToken.validateNoteToken(req.headers.authorization);
                 const valid = validateNote.validate(req.body.note);
                 if(valid.error){
-                    res.status(400).send({
+                   return res.status(400).send({
                         success:false,
                         message:"Please enter valid note"
                     })
@@ -106,7 +106,7 @@ class Note {
 
     deleteNote = (req,res)=>{
         try{
-            validateToken.validateNoteToken(req.headers.authorization);
+         validateToken.validateNoteToken(req.headers.authorization);
             const id = {id:req.params.id}
             service.deleteNote(id,(err,data)=>{
                 if(err){
