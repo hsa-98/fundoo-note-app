@@ -1,5 +1,6 @@
 const chai = require('chai');
 const chaiHttp = require('chai-http');
+const { data } = require('../logger/logger');
 chai.should();
 const server = require('../server');
 const user = require('./user.test.json');
@@ -326,5 +327,153 @@ describe('createnotes',()=>{
             done();
         })
     })
-    
+})
+describe('getnotes',()=>{
+    it('givenValidToken_ShouldReturnAllNotes',(done)=>{
+        const token = user.getnotes.validToken;
+        chai.request(server)
+        .get('/getnotes')
+        .set({authorization:token})
+        .end((err,res)=>{
+            if(err){
+                return done(err);
+            }else{
+            res.should.have.status(200);
+            res.body.should.be.a('object');
+            res.body.should.have.property('message').eql('Notes retieved succesfully');
+            res.body.should.have.property('success').eql(true);
+            done();
+            }
+        })
+    }),
+    it('giveninvalidToken_ShouldReturnError',(done)=>{
+        const token = user.getnotes.invalidToken;
+        chai.request(server)
+        .get('/getnotes')
+        .set({authorization:token})
+        .end((err,res)=>{
+            if(err){
+                return done(err);
+            }
+            res.should.have.status(400);
+            res.body.should.be.a('object');
+            res.body.should.have.property('message').eql('Please enter valid token');
+            done();
+        })
+    })
+})
+
+describe('updatenotes',()=>{
+    it('givenPoperDetails_ShouldUpdateNote',(done)=>{
+        const token = user.updatenotes.validData.token;
+        const note = user.updatenotes.validData.data;
+        chai.request(server)
+        .put('/updatenotes/6129a4f353113b101862368c')
+        .set({authorization:token})
+        .send(note)
+        .end((err,res)=>{
+            if(err){
+                return done(err);
+            }
+            res.should.have.status(200);
+            res.body.should.be.a('object');
+            res.body.should.have.property('message').eql('Note updated');
+            res.body.should.have.property('success').eql(true);
+            done();
+        })
+    })
+
+    it('givenInvalidNote_ShouldReturnError',(done)=>{
+        const token = user.updatenotes.invalidNote.token;
+        const note = user.updatenotes.invalidNote.data;
+        chai.request(server)
+        .put('/updatenotes/6129a4f353113b101862368c')
+        .set({authorization:token})
+        .send(note)
+        .end((err,res)=>{
+            if(err){
+                return done(err);
+            }
+            res.should.have.status(400);
+            res.body.should.be.a('object');
+            res.body.should.have.property('message').eql('Enter valid note');
+            res.body.should.have.property('success').eql(false);
+            done();
+        })
+    })
+
+    it('givenInvalidToken_ShouldReturnError',(done)=>{
+        const token = user.updatenotes.invalidToken.token;
+        const note = user.updatenotes.invalidToken.data;
+        chai.request(server)
+        .put('/updatenotes/6129a4f353113b101862368c')
+        .set({authorization:token})
+        .send(note)
+        .end((err,res)=>{
+            if(err){
+                return done(err);
+            }
+            res.should.have.status(400);
+            res.body.should.be.a('object');
+            res.body.should.have.property('message').eql('Please enter valid token');
+            done();
+        })
+    })
+
+    it('givenNoteWithoutNote_ShouldReturnError',(done)=>{
+        const token = user.updatenotes.noteWithoutNote.token;
+        const note = user.updatenotes.noteWithoutNote.data;
+        chai.request(server)
+        .put('/updatenotes/6129a4f353113b101862368c')
+        .set({authorization:token})
+        .send(note)
+        .end((err,res)=>{
+            if(err){
+                return done(err);
+            }
+            res.should.have.status(400);
+            res.body.should.be.a('object');
+            res.body.should.have.property('message').eql('Enter valid note');
+            res.body.should.have.property('success').eql(false);
+            done();
+        })
+
+    })
+})
+
+describe('deletenotes',()=>{
+    it('givenValidIdAndToken_ShouldDeleteNote_ReturnStatus',(done)=>{
+        const token = user.deletenotes.validToken;
+        chai.request(server)
+        .delete('/deletenotes/612e5b654b798c48744b7a92')
+        .set({authorization:token})
+        .end((err,res)=>{
+            if(err){
+                return done(err);
+            }
+            res.should.have.status(200);
+            res.body.should.be.a('object');
+            res.body.should.have.property('message').eql('Note deleted');
+            res.body.should.have.property('success').eql(true);
+            done();
+        })
+        
+    })
+    it('givenInvalidToken_ShouldReturnError_FailtoDeleteNote',(done)=>{
+        const token = user.deletenotes.invalidToken;
+        chai.request(server)
+        .delete('/deletenotes/612e5b654b798c48744b7a92')
+        .set({authorization:token})
+        .end((err,res)=>{
+            if(err){
+                return done(err);
+            }
+            res.should.have.status(400);
+            res.body.should.be.a('object');
+            res.body.should.have.property('message').eql('Invalid Token');
+            res.body.should.have.property('success').eql(false);
+            done();
+        })
+
+    })
 })
