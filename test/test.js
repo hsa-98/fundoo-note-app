@@ -330,10 +330,10 @@ describe('createnotes',()=>{
 })
 describe('getnotes',()=>{
     it('givenValidToken_ShouldReturnAllNotes',(done)=>{
-        const token = user.getnotes.validToken;
+        const token = user.getnotes.validToken.token;
         chai.request(server)
         .get('/getnotes')
-        .set({authorization:token})
+        .set('authorization',token)
         .end((err,res)=>{
             if(err){
                 return done(err);
@@ -443,9 +443,10 @@ describe('updatenotes',()=>{
 
 describe('deletenotes',()=>{
     it('givenValidIdAndToken_ShouldDeleteNote_ReturnStatus',(done)=>{
-        const token = user.deletenotes.validToken;
+        const token = user.deletenotes.validToken.token;
         chai.request(server)
-        .delete('/deletenotes/612e5b654b798c48744b7a92')
+        .delete('/deletenotes/612ef7e8ffe65e5cd8c482eb')
+        .send('612ef7e8ffe65e5cd8c482eb')
         .set({authorization:token})
         .end((err,res)=>{
             if(err){
@@ -456,13 +457,12 @@ describe('deletenotes',()=>{
             res.body.should.have.property('message').eql('Note deleted');
             res.body.should.have.property('success').eql(true);
             done();
-        })
-        
+        }) 
     })
     it('givenInvalidToken_ShouldReturnError_FailtoDeleteNote',(done)=>{
         const token = user.deletenotes.invalidToken;
         chai.request(server)
-        .delete('/deletenotes/612e5b654b798c48744b7a92')
+        .delete('/deletenotes/612e59fb7ec8de4a50bd81ce')
         .set({authorization:token})
         .end((err,res)=>{
             if(err){
@@ -474,6 +474,5 @@ describe('deletenotes',()=>{
             res.body.should.have.property('success').eql(false);
             done();
         })
-
     })
 })
