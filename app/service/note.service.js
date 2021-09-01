@@ -35,7 +35,7 @@ class Service{
 
     deleteNote = (id,callback)=>{
         model.deleteNote(id,(err,data)=>{
-            if(err){
+            if(err){        
                 return callback(err,null);
             }
             else{

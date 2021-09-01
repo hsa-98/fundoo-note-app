@@ -39,18 +39,10 @@ class Note {
             })
         }
     }
-        
-
-        
-    
 
     getNote = (req,res)=>{
-        const header = req.headers.authorization;
-        const myArr = header.split(" ");
-        const token = myArr[1];
-        console.log(token)
-        const  validToken = validateToken.verifyToken(token);
-        if(validToken){
+        try{ 
+            validateToken.validateNoteToken(req.headers.authorization);
             service.getNote((err,data)=>{
                 if(err){
                     return res.status(500).json({
@@ -66,8 +58,7 @@ class Note {
                     })
                 }
             })
-        
-        }else{
+        }catch{
             return res.status(400).json({
                 message:"Please enter valid token"
             })
@@ -76,30 +67,35 @@ class Note {
 
     updateNote = (req,res)=>{
         try{
-            const header = req.headers.authorization;
-            const myArr = header.split(" ");
-            const token = myArr[1];
-            console.log(token)
-           const  validToken = validateToken.verifyToken(token);
-            const updatedNote = {
-                id : req.params.id,
-                note : req.body.note
+            const valid = validateToken.validateNoteToken(req.headers.authorization);
+            const validNote = validateNote.validate(req.body.note);
+            if(validNote.error){
+                return res.status(400).send({
+                    message:"Enter valid note",
+                    success:false               
+                 })
             }
-            service.updateNote(updatedNote,(err,data)=>{
-                if(err){
-                    return res.status(500).json({
-                        message:"Note not updated",
-                        success:false
-                    })
+            else{
+                 const updatedNote = {
+                    id : req.params.id,
+                    note : req.body.note
                 }
-                else{
-                    return res.status(200).json({
-                        message:"Note updated",
-                        success:true,
-                        data:data
-                    });
-                }
-            });
+                service.updateNote(updatedNote,(err,data)=>{
+                    if(err){
+                        return res.status(500).json({
+                            message:"Note not updated",
+                            success:false
+                        })
+                    }
+                    else{
+                        return res.status(200).json({
+                            message:"Note updated",
+                            success:true,
+                            data:data
+                        });
+                    }
+                });
+            }
         }
         catch{
             return res.status(400).json({
@@ -109,10 +105,8 @@ class Note {
     }
 
     deleteNote = (req,res)=>{
-        const header = req.headers.authorization;
-        const myArr = header.split(" ");
-        const token = myArr[1];
-        const  validToken = validateToken.verifyToken(token);
+        try{
+            validateToken.validateNoteToken(req.headers.authorization);
             const id = {id:req.params.id}
             service.deleteNote(id,(err,data)=>{
                 if(err){
@@ -129,6 +123,13 @@ class Note {
                 }
 
             })
+        }catch{
+            return res.status(400).send({
+                message : "Invalid Token",
+                success:false
+            })
+        }
+        
     }
 }
 

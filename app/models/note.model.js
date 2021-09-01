@@ -45,6 +45,7 @@ class Model{
         noteRegister.findByIdAndUpdate(updatedNote.id,{title:updatedNote.note.title,
         note:updatedNote.note.note},{new:true},(err,data)=>{
             if(err){
+                console.log(err);
                 return callback(err,null);
             }
             else{

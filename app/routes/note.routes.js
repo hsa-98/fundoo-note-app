@@ -1,5 +1,6 @@
 const user = require('../controller/user.controller');
 const note = require('../controller/note.controller')
+const notepromise = require('../controller/note.promisecontroller')
 module.exports=(app)=>{
 //api for user registration
 
@@ -14,6 +15,6 @@ app.put('/resetpassword',user.resetPassword);
 //CRUD for notes
 app.post('/createnotes',note.createNote);
 app.get('/getnotes',note.getNote);
-app.put('/updatenotes',note.updateNote);
-app.delete('/deletenotes',note.deleteNote);
+app.put('/updatenotes/:id',note.updateNote);
+app.delete('/deletenotes/:id',note.deleteNote);
 }

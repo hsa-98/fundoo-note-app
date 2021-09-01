@@ -148,7 +148,6 @@ class User {
         }
         const resetValid = validateReset.validate(data);
         if(resetValid.error){
-            console.log("1");
             return res.status(400).send({
                 success: false,
                 message: "Invalid password please try again" 
