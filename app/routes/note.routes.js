@@ -23,4 +23,6 @@ app.delete('/deletenotes/:id',note.deleteNote);
 app.post('/createlabel/:id',middleware.validateToken,label.createLabel);
 app.get('/getlabels',middleware.validateToken,label.getLabel);
 app.get('/getlabel/:id',middleware.validateToken,label.getLabelById);
+app.put('/updatelabel/:id',middleware.validateToken,label.updateLabel);
+app.delete('/deletelabel/:id',middleware.validateToken,label.deleteLabel);
 }

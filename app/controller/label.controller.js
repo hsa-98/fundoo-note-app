@@ -61,5 +61,41 @@ class Label{
             })
         })
     }
+    
+    updateLabel =(req,res)=>{
+        const label = {
+            labelName:req.body.labelName,
+            labelId : req.params.id
+        }
+        service.updateLabel(label).then((data)=>{
+            res.status(200).send({
+                message:"label updated",
+                success:true,
+                data:data
+            })
+        }).catch(()=>{
+            res.status(500).send({
+                message:"Failed to update label",
+                success: false
+            })
+        })
+    }
+
+    deleteLabel = (req,res)=>{
+        const id = {id:req.params.id};
+        service.deleteLabel(id).then((data)=>{
+            res.status(200).send({
+                message:"Deleted label",
+                success:true,
+                data:data
+            })
+        }).catch((err)=>{
+            res.status(400).send({
+                message:"Failed to delete label",
+                success:false
+            })
+        })
+    }
+
 }
 module.exports = new Label();

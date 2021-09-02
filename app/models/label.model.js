@@ -41,10 +41,20 @@ class Model{
         return new Promise((resolve,reject)=>{
             labelRegister.findById(id.id).then((data)=>{
                 resolve(data)
-            }).catch(()=>reject())
-        })
+            }).catch((err)=>reject(err))
+        });
     }
 
+    async updateLabel(data){
+        const label = new labelRegister({
+            labelName: data.labelName
+        });
+         await labelRegister.findByIdAndUpdate(data.labelId,{labelName:data.labelName},
+                {new:true}).then((data)=>{return data}).catch((err)=>{return err})
+    }
+    async deleteLabel(id){
+        labelRegister.findByIdAndDelete(id.id).then((data)=>data).catch((err)=>err);
+    }
 }
 
 module.exports = new Model();
