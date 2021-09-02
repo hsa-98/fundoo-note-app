@@ -4,10 +4,8 @@ const model = require('../models/label.model')
 class Service{
     createLabel = (label)=>{
         return new Promise((resolve,reject)=>{
-            model.createLabel(label).then(()=>{
-               resolve();
-            }
-            ).catch( reject());
+            model.createLabel(label).then(()=>resolve()
+            ).catch( ()=>reject());
         })
     }
 }

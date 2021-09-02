@@ -19,8 +19,8 @@ class Label{
                 })
                 .catch(()=>{
                     res.status(500).send({
-                        message:"Label not created",
-                        success : false})
+                    message:"Label not created",
+                    success : false})
                 })
 
         }catch{
