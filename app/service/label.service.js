@@ -8,6 +8,13 @@ class Service{
             ).catch( ()=>reject());
         })
     }
+
+    getLabel =()=>{
+        return new Promise((resolve,reject)=>{
+            model.getLabel().then((data)=>{resolve(data)})
+            .catch( ()=>{reject()});
+        })
+    }
 }
 
 module.exports = new Service();

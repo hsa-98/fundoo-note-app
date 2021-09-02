@@ -5,7 +5,6 @@ const validateToken = require('../middleware/authenticate')
 class Label{
      createLabel = (req,res)=>{
         try{
-            const validate = validateToken.validateNoteToken(req.headers.authorization);
             const label = {
                 labelName:req.body.labelName,
                 noteId : req.params.id
@@ -24,11 +23,27 @@ class Label{
                 })
 
         }catch{
-            return res.status(400).send({
-                message:"Please enter valid token",
+            return res.status(500).send({
+                message:"Error occured",
                 success:false
             })
         }        
     }
+    getLabel = (req,res)=>{
+        service.getLabel()
+            .then((data)=>{
+                res.status(200).send({
+                    message:"labels retrieved",
+                    success: true,
+                    data:data
+                })
+            })
+            .catch(()=>{
+                res.status(500).send({
+                    message:"Couldnt retrieve labels",
+                    success:false
+                })
+            })
+    }       
 }
 module.exports = new Label();

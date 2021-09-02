@@ -24,7 +24,22 @@ exports.verifyToken = (token)=>{
         return "couldnt verify" ;
      }
 }
+exports.validateToken = (req,res,next)=>{
+    const header = req.headers.authorization;
+    const myArr = header.split(" ");
+    const token = myArr[1];
+    const verify = jwt.verify(token,process.env.ACCESS_TOKEN_KEY);
+    if(verify){
+        next();
+    }
+    else{
+       return  res.status(400).send({
+           message:"Invalid Token",
+           success:false
+       })
+    }
 
+}
 exports.validateNoteToken = (data)=>{
     const header = data;
     const myArr = header.split(" ");
