@@ -36,6 +36,15 @@ class Model{
                 .catch(()=>reject())
         })
     }
+
+    getLabelById = (id)=>{
+        return new Promise((resolve,reject)=>{
+            labelRegister.findById(id.id).then((data)=>{
+                resolve(data)
+            }).catch(()=>reject())
+        })
+    }
+
 }
 
 module.exports = new Model();

@@ -44,6 +44,22 @@ class Label{
                     success:false
                 })
             })
-    }       
+    }
+    
+    getLabelById = (req,res)=>{
+        const id = {id:req.params.id}
+        service.getLabelById(id).then((data)=>{
+            res.status(200).send({
+                message:"label Found",
+                success:true,
+                data:data
+            })
+        }).catch(()=>{
+            res.status(500).send({
+                message:"label not Found",
+                success:false
+            })
+        })
+    }
 }
 module.exports = new Label();

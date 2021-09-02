@@ -15,6 +15,13 @@ class Service{
             .catch( ()=>{reject()});
         })
     }
+
+    getLabelById = (id)=>{
+        return new Promise((resolve,reject)=>{
+            model.getLabelById(id).then((data)=>{resolve(data)})
+            .catch( ()=>{reject()})
+        })
+    }
 }
 
 module.exports = new Service();

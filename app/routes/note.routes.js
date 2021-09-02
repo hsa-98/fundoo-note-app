@@ -22,4 +22,5 @@ app.delete('/deletenotes/:id',note.deleteNote);
 //api for label
 app.post('/createlabel/:id',middleware.validateToken,label.createLabel);
 app.get('/getlabels',middleware.validateToken,label.getLabel);
+app.get('/getlabel/:id',middleware.validateToken,label.getLabelById);
 }
