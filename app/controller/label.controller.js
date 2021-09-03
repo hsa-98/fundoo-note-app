@@ -10,10 +10,11 @@ class Label{
                 noteId : req.params.id
             }
             service.createLabel(label)
-                .then(()=>{
+                .then((data)=>{
                     res.status(201).send({
                         message:"Label created successfully",
-                        success : true
+                        success : true,
+                        data:data
                     })
                 })
                 .catch(()=>{

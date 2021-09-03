@@ -24,7 +24,7 @@ class Model{
                 labelName : data.labelName,
                 noteId : data.noteId
             })
-            label.save().then(()=>resolve())
+            label.save().then((data)=>resolve(data))
                     .catch(()=> reject())
         })
     }
@@ -39,21 +39,29 @@ class Model{
 
     getLabelById = (id)=>{
         return new Promise((resolve,reject)=>{
-            labelRegister.findById(id.id).then((data)=>{
+            const data = labelRegister.findById(id.id);
+            (data!=null).then((data)=>{
                 resolve(data)
             }).catch((err)=>reject(err))
         });
     }
 
-    async updateLabel(data){
+    async updateLabel(labelData){
         const label = new labelRegister({
-            labelName: data.labelName
+            labelName: labelData.labelName
         });
-         await labelRegister.findByIdAndUpdate(data.labelId,{labelName:data.labelName},
-                {new:true}).then((data)=>{return data}).catch((err)=>{return err})
+         const data = await labelRegister.findByIdAndUpdate(labelData.labelId,{labelName:data.labelName},{new:true})
+                (data!=null)
+                .then((data)=>{return data})
+                .catch((err)=>{return err})
     }
     async deleteLabel(id){
-        labelRegister.findByIdAndDelete(id.id).then((data)=>data).catch((err)=>err);
+        const data =labelRegister.findByIdAndRemove(id.id)
+            (data)!=null.then((data)=>{
+                console.log(data);
+                return data
+            })
+            .catch((err)=>err);
     }
 }
 

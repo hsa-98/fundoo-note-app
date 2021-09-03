@@ -5,7 +5,7 @@ class Service{
     createLabel = (label)=>{
         return new Promise((resolve,reject)=>{
             model.createLabel(label)
-            .then(()=>resolve()
+            .then((data)=>resolve(data)
             ).catch( ()=>reject());
         })
     }
