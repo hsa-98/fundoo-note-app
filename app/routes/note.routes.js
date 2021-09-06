@@ -14,10 +14,10 @@ app.post('/forgotpassword',user.forgotPassword);
 app.put('/resetpassword',user.resetPassword);
 
 //CRUD api for notes
-app.post('/createnotes',note.createNote);
-app.get('/getnotes',note.getNote);
-app.put('/updatenotes/:id',note.updateNote);
-app.delete('/deletenotes/:id',note.deleteNote);
+app.post('/createnotes',middleware.validateToken,note.createNote);
+app.get('/getnotes',middleware.validateToken,note.getNote);
+app.put('/updatenotes/:id',middleware.validateToken,note.updateNote);
+app.delete('/deletenotes/:id',middleware.validateToken,note.deleteNote);
 
 //api for label
 app.post('/createlabel/:id',middleware.validateToken,label.createLabel);

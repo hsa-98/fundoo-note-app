@@ -1,10 +1,17 @@
 const mongoose = require('mongoose');
 const { info } = require('../../logger/logger');
+const userRegister = require('../models/user.model')
 const noteSchema = mongoose.Schema({
+
+    /*user:{
+        type: Schema.Types.ObjectId,
+        ref: "userRegister"
+    },*/
+
     title:{
         type:String
     },
-    note:{
+    description:{
         type:String,
         required: true,
         minlength:2
@@ -18,7 +25,7 @@ class Model{
     createNote = (info,callback)=>{
         const note= new noteRegister({
             title:info.title,
-            note:info.note
+            description:info.description
         });
         note.save((error,data)=>{
             if(error){
@@ -42,8 +49,8 @@ class Model{
     }
 
     updateNote = (updatedNote,callback)=>{
-        noteRegister.findByIdAndUpdate(updatedNote.id,{title:updatedNote.note.title,
-        note:updatedNote.note.note},{new:true},(err,data)=>{
+        noteRegister.findByIdAndUpdate(updatedNote.id,{title:updatedNote.title,
+        description:updatedNote.description},{new:true},(err,data)=>{
             if(err){
                 console.log(err);
                 return callback(err,null);
