@@ -33,7 +33,7 @@ const validateNote = Joi.object({
     title:Joi.string()
     .required(),
 
-    note:Joi.string()
+    description:Joi.string()
     .required()
 })
 module.exports = {authenticate,authenticateLogin,validateReset,validateNote};

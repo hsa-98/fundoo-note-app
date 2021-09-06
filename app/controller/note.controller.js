@@ -76,8 +76,7 @@ class Note {
     }
 
     updateNote = (req,res)=>{
-        try{
-            const valid = validateToken.validateNoteToken(req.headers.authorization);
+        
             const validNote = validateNote.validate(req.body);
             if(validNote.error){
                 return res.status(400).send({
@@ -86,9 +85,13 @@ class Note {
                  })
             }
             else{
+                const tokenData = verifyToken(req.headers.authorization.split(" ")[1]);
+            const userId = {id:tokenData.dataForToken.id}
                  const updatedNote = {
                     id : req.params.id,
-                    note : req.body.note
+                    title: req.body.title,
+                    description : req.body.description,
+                    userId: tokenData.dataForToken.id
                 }
                 service.updateNote(updatedNote,(err,data)=>{
                     if(err){
@@ -106,12 +109,7 @@ class Note {
                     }
                 });
             }
-        }
-        catch{
-            return res.status(400).json({
-                message:"Please enter valid token"
-            })
-        }
+        
     }
 
     deleteNote = (req,res)=>{

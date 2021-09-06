@@ -55,7 +55,7 @@ class Model{
     }
 
     updateNote = (updatedNote,callback)=>{
-        noteRegister.findByIdAndUpdate(updatedNote.id,{title:updatedNote.title,
+        noteRegister.findOneAndUpdate({$and:[{_id:updatedNote.id},{userId:updatedNote.userId}]},{title:updatedNote.title,
         description:updatedNote.description},{new:true},(err,data)=>{
             if(err){
                 console.log(err);
