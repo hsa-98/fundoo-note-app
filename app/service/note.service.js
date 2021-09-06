@@ -11,8 +11,8 @@ class Service{
     }
     )}
 
-    getNote = (callback)=>{
-        model.getNote((err,data)=>{
+    getNote = (id,callback)=>{
+        model.getNote(id,(err,data)=>{
             if(err){
                 return callback(err,null);
             }

@@ -1,12 +1,12 @@
 
 const { data } = require('../../logger/logger');
-const validateToken = require('../middleware/authenticate')
+const {validateToken,verifyToken} = require('../middleware/authenticate')
 const service = require('../service/note.service')
 const {validateNote} = require('../middleware/joiValidation');
 class Note {
     createNote =(req,res)=>{        
-       try{
-           
+       
+        try{
             const valid = validateNote.validate(req.body.note);
             if(valid.error){
                 return res.status(400).send({
@@ -14,8 +14,16 @@ class Note {
                     message:"Please enter valid note"
                 })
             }
-            else{
-                service.createNote(req.body,(err,data)=>{
+            else{const header = req.headers.authorization;
+                const myArr = header.split(" ");
+                const token = myArr[1];
+                const tokenData = verifyToken(token);
+                const note = {
+                    userId:tokenData.dataForToken.id,
+                    title:req.body.title,
+                    description:req.body.description
+                };
+                service.createNote(note,(err,data)=>{
                     if(err){
                          return res.status(500).json({
                             message:"failed to post note",
@@ -33,17 +41,19 @@ class Note {
                 })
             }
         }catch{
-            return res.status(500).send({
-                message:"Error!",
+            return res.status(500).json({
+                message:"Error occured",
                 success:false
             })
         }
+        
     }
 
     getNote = (req,res)=>{
         try{ 
-            validateToken.validateNoteToken(req.headers.authorization);
-            service.getNote((err,data)=>{
+            const tokenData = verifyToken(req.headers.authorization.split(" ")[1]);
+            const id = {id:tokenData.dataForToken.id}
+            service.getNote((id),(err,data)=>{
                 if(err){
                     return res.status(500).json({
                         message:"failed to get note",

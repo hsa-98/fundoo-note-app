@@ -1,3 +1,4 @@
+const { string } = require('joi');
 const mongoose = require('mongoose');
 const { info } = require('../../logger/logger');
 const userRegister = require('../models/user.model')
@@ -7,6 +8,7 @@ const noteSchema = mongoose.Schema({
         type: Schema.Types.ObjectId,
         ref: "userRegister"
     },*/
+    userId: { type: mongoose.Schema.Types.ObjectId, ref: 'userRegister' },
 
     title:{
         type:String
@@ -15,7 +17,10 @@ const noteSchema = mongoose.Schema({
         type:String,
         required: true,
         minlength:2
-    }
+    },
+   /* labels:{
+        type:[String]
+    }*/
 },{
     timestamps : true
 });
@@ -24,6 +29,7 @@ const noteRegister = mongoose.model('noteRegister',noteSchema);
 class Model{
     createNote = (info,callback)=>{
         const note= new noteRegister({
+            userId:info.userId,
             title:info.title,
             description:info.description
         });
@@ -37,8 +43,8 @@ class Model{
         })
     }
 
-    getNote = (callback)=>{
-        noteRegister.find({},(err,data)=>{
+    getNote = (id,callback)=>{
+        noteRegister.find({userId:id.id},(err,data)=>{
             if(err){
                  return callback(err,null);
             }
