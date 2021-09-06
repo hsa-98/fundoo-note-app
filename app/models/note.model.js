@@ -57,7 +57,7 @@ class Model{
     updateNote = (updatedNote,callback)=>{
         noteRegister.findOneAndUpdate({$and:[{_id:updatedNote.id},{userId:updatedNote.userId}]},{title:updatedNote.title,
         description:updatedNote.description},{new:true},(err,data)=>{
-            if(err){
+            if(err|| data === null){
                 console.log(err);
                 return callback(err,null);
             }
@@ -67,9 +67,9 @@ class Model{
         })
     }
 
-    deleteNote = (id,callback)=>{
+    deleteNote = (ids,callback)=>{
         try{
-            noteRegister.findByIdAndDelete(id.id,(err,data)=>{
+            noteRegister.findOneAndDelete({$and:[{_id:ids.id},{userId:ids.userId}]},(err,data)=>{
                 if(err){
                     return callback(err,null);
                 }
@@ -77,7 +77,7 @@ class Model{
                     return callback(null,data);
                 }
             })
-        }catch{
+        }catch(err){
             return callback(err,null);
         }
     }

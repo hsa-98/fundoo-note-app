@@ -76,7 +76,7 @@ class Note {
     }
 
     updateNote = (req,res)=>{
-        
+        try{
             const validNote = validateNote.validate(req.body);
             if(validNote.error){
                 return res.status(400).send({
@@ -86,7 +86,6 @@ class Note {
             }
             else{
                 const tokenData = verifyToken(req.headers.authorization.split(" ")[1]);
-            const userId = {id:tokenData.dataForToken.id}
                  const updatedNote = {
                     id : req.params.id,
                     title: req.body.title,
@@ -97,7 +96,8 @@ class Note {
                     if(err){
                         return res.status(500).json({
                             message:"Note not updated",
-                            success:false
+                            success:false,
+                            data:err
                         })
                     }
                     else{
@@ -109,18 +109,28 @@ class Note {
                     }
                 });
             }
-        
+        }catch(err){
+            return res.status(500).json({
+                message:"Note not updated",
+                success:false,
+                data:err
+            })
+        } 
     }
 
     deleteNote = (req,res)=>{
-        try{
-         validateToken.validateNoteToken(req.headers.authorization);
-            const id = {id:req.params.id}
-            service.deleteNote(id,(err,data)=>{
+        
+            const tokenData = verifyToken(req.headers.authorization.split(" ")[1]);
+            const ids = {
+                id:req.params.id,
+                userId:tokenData.dataForToken.id
+            }
+            service.deleteNote(ids,(err,data)=>{
                 if(err){
                     return res.status(500).json({
                         message:"failed to delete",
-                        success:false
+                        success:false,
+                        data:err
                     });
                 }
                 else{
@@ -131,12 +141,8 @@ class Note {
                 }
 
             })
-        }catch{
-            return res.status(400).send({
-                message : "Invalid Token",
-                success:false
-            })
-        }
+        
+        
         
     }
 }
