@@ -3,14 +3,15 @@ const { data } = require('../../logger/logger');
 require('../../logger/logger');
 
 const labelSchema = mongoose.Schema({
+    userId:{ type: mongoose.Schema.Types.ObjectId, ref: 'userRegister'},
+
+    noteId:{type:mongoose.Schema.Types.ObjectId, ref :'noteRegister'},
+ 
     labelName : {
         type:String,
         required:true
     },
-    noteId : {
-        type:String,
-        required : true
-    }
+   
 },{
     timestamps : true
 })
@@ -21,8 +22,9 @@ class Model{
         
         return new Promise((resolve,reject)=>{
             const label = new labelRegister({
-                labelName : data.labelName,
-                noteId : data.noteId
+                userId : data.userId,
+                noteId : data.noteId,
+                labelName : data.labelName
             })
             label.save().then((data)=>resolve(data))
                     .catch(()=> reject())

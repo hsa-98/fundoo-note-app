@@ -1,13 +1,18 @@
 const service = require('../service/label.service');
 const { data } = require('../../logger/logger');
-const validateToken = require('../middleware/authenticate')
+const {validateToken,verifyToken} = require('../middleware/authenticate')
 
 class Label{
      createLabel = (req,res)=>{
         try{
+            const header = req.headers.authorization;
+            const myArr = header.split(" ");
+            const token = myArr[1];
+            const tokenData = verifyToken(token);
             const label = {
                 labelName:req.body.labelName,
-                noteId : req.params.id
+                noteId : req.params.id,
+                userId : tokenData.dataForToken.id
             }
             service.createLabel(label)
                 .then((data)=>{
