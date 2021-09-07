@@ -229,7 +229,7 @@
 
             }
           },
-          "/createlabel":{
+          "/createlabel/{id}":{
             "post":{
               "tags":["create label"],
               "description":"Creates a new label",
@@ -242,6 +242,14 @@
                   "type":"string",
                   "required":true
                 }
+                },
+                {
+                  "in":"path",
+                  "name":"id",
+                  "description":"Note id",
+                  "schema":{
+                    "type":"string"
+                  }
                 },
                 {
                   "in":"body",
@@ -340,6 +348,35 @@
                 "400":{"description":"Invalid Token"}
               }
             }
+          },
+          "/deletelabel/{id}":{
+            "delete":{
+              "tags":["Delete Label"],
+              "description":"Deletes a label",
+              "parameters":[{
+                "in":"header",
+                  "name":"authorization",
+                  "description":"Token for validation",
+                  "schema":{
+                    "type":"string",
+                    "required":true
+                }
+              },{
+                "in":"path",
+                "name":"id",
+                "description":"Label id",
+                "schema":{
+                  "type":"string",
+                  "required":true
+                }
+              }],
+              "produces":["application/json"],
+              "responses":{
+                "200":{"description":"Deleted label"},
+                "500":{"description":"Failed to delete label"},
+                "400":{"description":"Invalid Token"}
+              }
+            }
           }
         },
         "definitions": {
@@ -405,9 +442,6 @@
                 "type":"object",
                 "properties":{
                   "labelName":{
-                    "type":"string"
-                  },
-                  "noteId":{
                     "type":"string"
                   }
                 }
