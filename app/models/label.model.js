@@ -31,9 +31,9 @@ class Model{
         })
     }
 
-    getLabel = ()=>{
+    getLabel = (id)=>{
         return new Promise((resolve,reject)=>{
-         labelRegister.find({}).then((data)=>{
+         labelRegister.find({userId:id.id}).then((data)=>{
                 resolve(data)})
                 .catch(()=>reject())
         })
@@ -41,29 +41,29 @@ class Model{
 
     getLabelById = (id)=>{
         return new Promise((resolve,reject)=>{
-            const data = labelRegister.findById(id.id);
-            (data!=null).then((data)=>{
+         labelRegister.findById(id).then((data)=>{
                 resolve(data)
             }).catch((err)=>reject(err))
         });
     }
 
-    async updateLabel(labelData){
-        const label = new labelRegister({
-            labelName: labelData.labelName
-        });
-         const data = await labelRegister.findByIdAndUpdate(labelData.labelId,{labelName:data.labelName},{new:true})
-                (data!=null)
-                .then((data)=>{return data})
-                .catch((err)=>{return err})
+    async updateLabel(label){
+        try{
+      
+         return await labelRegister.findOneAndUpdate({$and:[{_id:label.labelId},
+            {userId:label.userId}]},{labelName:label.labelName},{new:true});
+              
+         }catch(error){
+            return error;
+         }
     }
+
     async deleteLabel(id){
-        const data =labelRegister.findByIdAndRemove(id.id)
-            (data)!=null.then((data)=>{
-                console.log(data);
-                return data
-            })
-            .catch((err)=>err);
+        try{
+            return await labelRegister.findByIdAndDelete(id.id);
+        }catch(err){
+            return err;
+        }
     }
 }
 

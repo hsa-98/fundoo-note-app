@@ -2,19 +2,16 @@ const { data } = require('../../logger/logger');
 const model = require('../models/label.model')
 
 class Service{
-    createLabel = (label)=>{
-        return new Promise((resolve,reject)=>{
+    createLabel = (label,resolve,reject)=>{
             model.createLabel(label)
-            .then((data)=>resolve(data)
-            ).catch( ()=>reject());
-        })
-    }
+            .then((data)=>resolve(data))
+            .catch( ()=>reject());
+        }
+    
 
-    getLabel =()=>{
-        return new Promise((resolve,reject)=>{
-            model.getLabel().then((data)=>{resolve(data)})
-            .catch( ()=>{reject()});
-        })
+    getLabel =(id,callback)=>{
+            model.getLabel(id).then((data)=>{callback(data,null)})
+            .catch( (err)=>{callback(null,err)});
     }
 
     getLabelById = (id)=>{
@@ -25,12 +22,21 @@ class Service{
     }
 
     async updateLabel(label){
-          await model.updateLabel(label).then((data)=>{return data})
+        try{return await model.updateLabel(label)
             
+        }catch(error){
+            return error;
+        }
+                    
     }
 
     async deleteLabel(id){
-        await model.deleteLabel(id).then((data)=>{return data})
+        try{
+            return await model.deleteLabel(id); 
+        }catch(error){
+            return error;
+        }
+        
     
     }
 }

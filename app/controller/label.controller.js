@@ -5,28 +5,25 @@ const {validateToken,verifyToken} = require('../middleware/authenticate')
 class Label{
      createLabel = (req,res)=>{
         try{
-            const header = req.headers.authorization;
-            const myArr = header.split(" ");
-            const token = myArr[1];
-            const tokenData = verifyToken(token);
+            const tokenData = verifyToken(req.headers.authorization.split(" ")[1]);
             const label = {
                 labelName:req.body.labelName,
                 noteId : req.params.id,
                 userId : tokenData.dataForToken.id
             }
-            service.createLabel(label)
-                .then((data)=>{
+                 service.createLabel(label,resolve,reject)
+                function resolve(data){
                     res.status(201).send({
                         message:"Label created successfully",
                         success : true,
                         data:data
                     })
-                })
-                .catch(()=>{
+                }
+                function reject(){
                     res.status(500).send({
                     message:"Label not created",
                     success : false})
-                })
+                }
 
         }catch{
             return res.status(500).send({
@@ -36,24 +33,27 @@ class Label{
         }        
     }
     getLabel = (req,res)=>{
-        service.getLabel()
-            .then((data)=>{
+        const tokenData = verifyToken(req.headers.authorization.split(" ")[1]);
+        const id = {id:tokenData.dataForToken.id}
+        service.getLabel(id,(resolve,reject)=>{
+            if(resolve){
                 res.status(200).send({
                     message:"labels retrieved",
                     success: true,
-                    data:data
+                    data:resolve
                 })
-            })
-            .catch(()=>{
+            }
+            else{
                 res.status(500).send({
                     message:"Couldnt retrieve labels",
                     success:false
                 })
-            })
+            }
+        })
     }
     
     getLabelById = (req,res)=>{
-        const id = {id:req.params.id}
+        const id = req.params.id
         service.getLabelById(id).then((data)=>{
             res.status(200).send({
                 message:"label Found",
@@ -68,40 +68,46 @@ class Label{
         })
     }
     
-    updateLabel =(req,res)=>{
-        const label = {
-            labelName:req.body.labelName,
-            labelId : req.params.id
-        }
-        service.updateLabel(label).then((data)=>{
-            res.status(200).send({
-                message:"label updated",
-                success:true,
-                data:data
-            })
-        }).catch(()=>{
+    updateLabel =async(req,res)=>{
+        try{
+            const tokenData = verifyToken(req.headers.authorization.split(" ")[1]);
+            const label = {
+                userId : tokenData.dataForToken.id,
+                labelName : req.body.labelName,
+                labelId : req.params.id
+            }
+            const updatedlabel =await  service.updateLabel(label)
+                res.status(200).send({
+                    message:"label updated",
+                    success:true,
+                    data:updatedlabel
+                }
+            )
+            }catch(error){
             res.status(500).send({
                 message:"Failed to update label",
-                success: false
+                success: false,
+                data:error
             })
-        })
+        }
     }
 
-    deleteLabel = (req,res)=>{
-        const id = {id:req.params.id};
-        service.deleteLabel(id).then((data)=>{
+    deleteLabel = async(req,res)=>{
+        try{
+            const id = {id:req.params.id};
+             await service.deleteLabel(id)
             res.status(200).send({
                 message:"Deleted label",
                 success:true,
-                data:data
             })
-        }).catch((err)=>{
+        }catch(err){
             res.status(400).send({
                 message:"Failed to delete label",
-                success:false
+                success:false,
+                data:err
             })
-        })
+        
+        }
     }
-
 }
 module.exports = new Label();
