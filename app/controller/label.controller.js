@@ -34,7 +34,7 @@ class Label{
     }
     getLabel = (req,res)=>{
         const tokenData = verifyToken(req.headers.authorization.split(" ")[1]);
-        const id = {id:tokenData.dataForToken.id}
+        const id = tokenData.dataForToken.id
         service.getLabel(id,(resolve,reject)=>{
             if(resolve){
                 res.status(200).send({
@@ -54,18 +54,21 @@ class Label{
     
     getLabelById = (req,res)=>{
         const id = req.params.id
-        service.getLabelById(id).then((data)=>{
-            res.status(200).send({
-                message:"label Found",
-                success:true,
-                data:data
-            })
-        }).catch(()=>{
-            res.status(500).send({
-                message:"label not Found",
-                success:false
-            })
-        })
+        service.getLabelById(id,(resolve,reject)=>{
+            if(resolve){
+                res.status(200).send({
+                    message:"label Found",
+                    success:true,
+                    data:resolve
+                })
+            }
+            else{
+                res.status(500).send({
+                    message:"label not Found",
+                    success:false
+                })
+            }
+        })    
     }
     
     updateLabel =async(req,res)=>{
@@ -76,13 +79,15 @@ class Label{
                 labelName : req.body.labelName,
                 labelId : req.params.id
             }
-            const updatedlabel =await  service.updateLabel(label)
+             const updatedlabel = await  service.updateLabel(label);
+             if(updatedlabel == null){
+                 throw "Note not found"
+             }
                 res.status(200).send({
                     message:"label updated",
                     success:true,
                     data:updatedlabel
-                }
-            )
+                })
             }catch(error){
             res.status(500).send({
                 message:"Failed to update label",
@@ -94,14 +99,19 @@ class Label{
 
     deleteLabel = async(req,res)=>{
         try{
-            const id = {id:req.params.id};
-             await service.deleteLabel(id)
-            res.status(200).send({
-                message:"Deleted label",
-                success:true,
-            })
+            const tokenData = verifyToken(req.headers.authorization.split(" ")[1]);
+            const id = {
+                userId : tokenData.dataForToken.id,
+                labelId : req.params.id};
+             const data = await service.deleteLabel(id)
+             console.log(data);
+                res.status(200).send({
+                    message:"Deleted label",
+                    success:true,
+                })
+             
         }catch(err){
-            res.status(400).send({
+            res.status(500).send({
                 message:"Failed to delete label",
                 success:false,
                 data:err

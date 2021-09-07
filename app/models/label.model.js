@@ -33,7 +33,7 @@ class Model{
 
     getLabel = (id)=>{
         return new Promise((resolve,reject)=>{
-         labelRegister.find({userId:id.id}).then((data)=>{
+         labelRegister.find({userId:id}).then((data)=>{
                 resolve(data)})
                 .catch(()=>reject())
         })
@@ -42,25 +42,24 @@ class Model{
     getLabelById = (id)=>{
         return new Promise((resolve,reject)=>{
          labelRegister.findById(id).then((data)=>{
-                resolve(data)
+                resolve(data);
             }).catch((err)=>reject(err))
         });
     }
 
     async updateLabel(label){
         try{
-      
-         return await labelRegister.findOneAndUpdate({$and:[{_id:label.labelId},
-            {userId:label.userId}]},{labelName:label.labelName},{new:true});
-              
-         }catch(error){
-            return error;
+              const data =await labelRegister.findOneAndUpdate({$and:[{_id:label.labelId},
+                            {userId:label.userId}]},{labelName:label.labelName},{new:true});
+               
+         }catch(err){
+            return err;
          }
     }
 
-    async deleteLabel(id){
+    async deleteLabel(label){
         try{
-            return await labelRegister.findByIdAndDelete(id.id);
+            return await labelRegister.findByIdAndDelete({$and:[{_id:label.labelId},{userId:label.userId}]});
         }catch(err){
             return err;
         }

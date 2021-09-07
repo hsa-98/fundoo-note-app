@@ -14,15 +14,15 @@ class Service{
             .catch( (err)=>{callback(null,err)});
     }
 
-    getLabelById = (id)=>{
-        return new Promise((resolve,reject)=>{
-            model.getLabelById(id).then((data)=>{resolve(data)})
-            .catch( (err)=>{reject(err)})
-        })
-    }
+    getLabelById = (id,callback)=>{
+            model.getLabelById(id).then((data)=>{callback(data,null)})
+            .catch( (err)=>{callback(null,err)})
+        }
+    
 
     async updateLabel(label){
-        try{return await model.updateLabel(label)
+        try{
+            return await model.updateLabel(label)
             
         }catch(error){
             return error;
@@ -32,7 +32,7 @@ class Service{
 
     async deleteLabel(id){
         try{
-            return await model.deleteLabel(id); 
+             await model.deleteLabel(id).then((data)=>data); 
         }catch(error){
             return error;
         }
