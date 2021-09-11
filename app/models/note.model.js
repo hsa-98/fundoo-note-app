@@ -4,10 +4,7 @@ const { info } = require('../../logger/logger');
 const userRegister = require('../models/user.model')
 const noteSchema = mongoose.Schema({
 
-    /*user:{
-        type: Schema.Types.ObjectId,
-        ref: "userRegister"
-    },*/
+ 
     userId: { type: mongoose.Schema.Types.ObjectId, ref: 'userRegister' },
 
     title:{
@@ -18,12 +15,13 @@ const noteSchema = mongoose.Schema({
         required: true,
         minlength:2
     },
-   /* labels:{
-        type:[String]
-    }*/
+    labels:{
+        type:[{ type: mongoose.Schema.Types.ObjectId, ref: 'labelRegister'}]
+}
 },{
     timestamps : true
-});
+}
+);
 
 const noteRegister = mongoose.model('noteRegister',noteSchema);
 class Model{
@@ -56,20 +54,22 @@ class Model{
 
     updateNote = (updatedNote,callback)=>{
         try{
-            const data = noteRegister.findOneAndUpdate({$and:[{_id:updatedNote.id},{userId:updatedNote.userId}]},{title:updatedNote.title,
-                description:updatedNote.description},{new:true});
-                    if( data == null){
-                        
-                        return callback("Note not found",null);
+            noteRegister.findByIdAndUpdate(updatedNote.id,{title:updatedNote.title,
+                description:updatedNote.description},{new:true},(err,data)=>{
+                    if (err){
+                        return callback(err,null);
                     }
                     else{
                         return callback(null,data);
                     }
-        }catch(err){
+                });
+          }catch(err){
             return callback(err,null)
         }
         
     }
+
+    
     
 
     deleteNote = (ids,callback)=>{
@@ -86,6 +86,34 @@ class Model{
             return callback(err,null);
         }
     }
+
+    addLabel = async(id)=>{
+        try{
+            return await noteRegister.findByIdAndUpdate(id.noteId,
+                {$push:{"labels": {$each:id.labelId}} }, {new:true});
+        }catch(err){
+            return error
+        }
+    }
+
+    deleteLabel = async(id)=>{
+        try{
+            return await noteRegister.findByIdAndUpdate(id.noteId,
+                {$pull : {"labels":id.labelId}});
+        }catch(error){
+            return error;
+        }
+    }
+
+    // addLabel = async(id)=>{
+    //     try{
+    //         const data =await  noteRegister.find({_id:id.noteId}).populate("labels").then(noteRegister=>noteRegister)
+    //         console.log(data)
+    //         return data
+    //     }catch(error){
+    //         return error
+    //     }
+    // }
 }
 
 module.exports = new Model();

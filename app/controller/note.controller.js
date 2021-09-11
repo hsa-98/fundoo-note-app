@@ -14,7 +14,8 @@ class Note {
                     message:"Please enter valid note"
                 })
             }
-            else{const header = req.headers.authorization;
+            else{
+                const header = req.headers.authorization;
                 const myArr = header.split(" ");
                 const token = myArr[1];
                 const tokenData = verifyToken(token);
@@ -92,12 +93,12 @@ class Note {
                     description : req.body.description,
                     userId: tokenData.dataForToken.id
                 }
-                service.updateNote(updatedNote,(err,data)=>{
-                    if(err){
+                service.updateNote(updatedNote,(error,data)=>{
+                    if(error){
                         return res.status(500).json({
                             message:"Note not updated",
                             success:false,
-                            data:err
+                            error:error
                         })
                     }
                     else{
@@ -140,10 +141,50 @@ class Note {
                     })                
                 }
 
+            })    
+    }
+
+    addLabel = async(req,res)=>{
+        try{
+            const id = {
+                noteId:req.params.id,
+                labelId:req.body.labelId
+            }
+            const labels = await service.addLabel(id);
+            res.status(200).send({
+                message:"Label added",
+                success:true,
+                data:labels
             })
-        
-        
-        
+        }catch(err){
+            res.status(500).send({
+                message:"Label wasnt added",
+                success:false,
+                error:err
+            })
+        }
+    }
+
+    deleteLabel = async(req,res)=>{
+        try{
+            const id = {
+            labelId:req.body.labelId,
+            noteId:req.params.id
+            }
+            const data = await service.deleteLabel(id);
+            res.status(200).send({
+                message:"Label deleted",
+                success:true,
+                data:data
+            })
+
+        }catch(err){
+            res.status(500).send({
+                message:"Label wasnt deleted",
+                success:false,
+                error:err
+            })
+        }
     }
 }
 
