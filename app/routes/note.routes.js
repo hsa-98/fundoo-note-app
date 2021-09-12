@@ -18,9 +18,11 @@ app.post('/createnotes',middleware.validateToken,note.createNote);
 app.get('/getnotes',middleware.validateToken,note.getNote);
 app.put('/updatenotes/:id',middleware.validateToken,note.updateNote);
 app.delete('/deletenotes/:id',middleware.validateToken,note.deleteNote);
+app.post('/addlabel/:id',middleware.validateToken,note.addLabel);
+app.post('/deletelabelfromnote/:id',middleware.validateToken,note.deleteLabel)
 
 //api for label
-app.post('/createlabel/:id',middleware.validateToken,label.createLabel);
+app.post('/createlabel',middleware.validateToken,label.createLabel);
 app.get('/getlabels',middleware.validateToken,label.getLabel);
 app.get('/getlabel/:id',middleware.validateToken,label.getLabelById);
 app.put('/updatelabel/:id',middleware.validateToken,label.updateLabel);
