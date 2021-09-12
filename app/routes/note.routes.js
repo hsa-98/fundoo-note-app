@@ -16,6 +16,7 @@ app.put('/resetpassword',user.resetPassword);
 //CRUD api for notes
 app.post('/createnotes',middleware.validateToken,note.createNote);
 app.get('/getnotes',middleware.validateToken,note.getNote);
+app.get('/getnote/:id',middleware.validateToken,note.getNoteById);
 app.put('/updatenotes/:id',middleware.validateToken,note.updateNote);
 app.delete('/deletenotes/:id',middleware.validateToken,note.deleteNote);
 app.post('/addlabel/:id',middleware.validateToken,note.addLabel);

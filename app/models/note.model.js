@@ -52,6 +52,16 @@ class Model{
         })
     }
 
+    getNoteById = async (id)=>{
+        try{
+            return await noteRegister.find({$and:[{_id:id.noteId},{userId:id.userId}]});
+            
+        }catch(err){
+            return err;
+        }
+        
+    }
+
     updateNote = (updatedNote,callback)=>{
         try{
             noteRegister.findByIdAndUpdate(updatedNote.id,{title:updatedNote.title,
