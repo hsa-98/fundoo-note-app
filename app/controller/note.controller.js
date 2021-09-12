@@ -76,6 +76,36 @@ class Note {
         }
     }
 
+    getNoteById = async (req,res)=>{
+        try{
+            const tokenData = verifyToken(req.headers.authorization.split(" ")[1]);
+            const id = {userId:tokenData.dataForToken.id,
+                noteId:req.params.id};
+            const data = await service.getNoteById(id);
+            if(data.length == 0){
+                throw 'Not authorized to access note'
+            }
+            if(data.message){
+                return res.status(404).json({
+                    message:"Note not found",
+                    success:false,
+                }) 
+            }
+            return res.status(200).json({
+                message:"Note retieved succesfully",
+                success:true,
+                data:data
+            })
+
+
+        }catch(err){
+            return res.status(401).json({
+                error:err,
+                success:false
+            });
+        }
+    }
+
     updateNote = (req,res)=>{
         try{
             const validNote = validateNote.validate(req.body);

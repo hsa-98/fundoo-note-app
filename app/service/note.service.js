@@ -44,6 +44,14 @@ class Service{
             }
         })
     }
+    getNoteById = async(id)=>{
+        try{
+            return await model.getNoteById(id);
+        }catch(err){
+            return err;
+        }
+         
+    }
     
     addLabel = async(id)=>{
         try{
