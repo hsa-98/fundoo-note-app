@@ -1,30 +1,40 @@
 const service = require('../service/label.service');
-const { data } = require('../../logger/logger');
-const {validateToken,verifyToken} = require('../middleware/authenticate')
-
+const { data, error } = require('../../logger/logger');
+const {verifyToken} = require('../middleware/authenticate');
+const {validateLabel} = require('../middleware/joiValidation');
+const { valid } = require('joi');
 class Label{
      createLabel = (req,res)=>{
         try{
-            const tokenData = verifyToken(req.headers.authorization.split(" ")[1]);
-            const label = {
-                labelName:req.body.labelName,
-                noteId : req.params.id,
-                userId : tokenData.dataForToken.id
+            const valid = validateLabel.validate(req.body);
+            if(valid.error){
+               return res.status(400).send({
+                    message:"Please enter valid label",
+                    success:false,
+                    error:valid.error
+                })
             }
-                 service.createLabel(label,resolve,reject)
-                function resolve(data){
-                    res.status(201).send({
-                        message:"Label created successfully",
-                        success : true,
-                        data:data
-                    })
+            else{
+                console.log(req.headers.authorization)
+                const tokenData = verifyToken(req.headers.authorization.split(" ")[1]);
+                const label = {
+                    labelName:req.body.labelName,
+                    userId : tokenData.dataForToken.id
                 }
-                function reject(){
-                    res.status(500).send({
-                    message:"Label not created",
-                    success : false})
-                }
-
+                     service.createLabel(label,resolve,reject)
+                    function resolve(data){
+                        res.status(201).send({
+                            message:"Label created successfully",
+                            success : true,
+                            data:data
+                        })
+                    }
+                    function reject(){
+                        res.status(500).send({
+                        message:"Label not created",
+                        success : false})
+                    }
+            }
         }catch{
             return res.status(500).send({
                 message:"Error occured",
@@ -32,11 +42,13 @@ class Label{
             })
         }        
     }
+
+
     getLabel = (req,res)=>{
         const tokenData = verifyToken(req.headers.authorization.split(" ")[1]);
         const id = tokenData.dataForToken.id
-        service.getLabel(id,(resolve,reject)=>{
-            if(resolve){
+        service.getLabel(id,(resolve,reject)=>{ 
+            if( resolve.length > 0){
                 res.status(200).send({
                     message:"labels retrieved",
                     success: true,
@@ -44,8 +56,8 @@ class Label{
                 })
             }
             else{
-                res.status(500).send({
-                    message:"Couldnt retrieve labels",
+                res.status(404).send({
+                    message:"Labels not found ",
                     success:false
                 })
             }
@@ -73,23 +85,34 @@ class Label{
     
     updateLabel =async(req,res)=>{
         try{
-            const tokenData = verifyToken(req.headers.authorization.split(" ")[1]);
+            const valid = validateLabel.validate(req.body);
+            if(valid.error){
+                return res.status(400).send({
+                    message:"Please enter valid label",
+                    success:false,
+                    error:valid.error
+                })
+            }
+            else{
             const label = {
-                userId : tokenData.dataForToken.id,
                 labelName : req.body.labelName,
                 labelId : req.params.id
             }
              const updatedlabel = await  service.updateLabel(label);
-             if(updatedlabel == null){
-                 throw "Note not found"
+             if(updatedlabel.message){
+                return res.status(404).send({
+                    message:"Label Not Found",
+                    success: false})
              }
-                res.status(200).send({
+               return  res.status(200).send({
                     message:"label updated",
                     success:true,
                     data:updatedlabel
                 })
-            }catch(error){
-            res.status(500).send({
+            }
+            
+        }catch(error){
+            return res.status(500).send({
                 message:"Failed to update label",
                 success: false,
                 data:error
@@ -104,10 +127,9 @@ class Label{
                 userId : tokenData.dataForToken.id,
                 labelId : req.params.id};
              const data = await service.deleteLabel(id)
-             console.log(data);
                 res.status(200).send({
                     message:"Deleted label",
-                    success:true,
+                    success:true
                 })
              
         }catch(err){

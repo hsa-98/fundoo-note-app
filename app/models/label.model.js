@@ -4,8 +4,6 @@ require('../../logger/logger');
 
 const labelSchema = mongoose.Schema({
     userId:{ type: mongoose.Schema.Types.ObjectId, ref: 'userRegister'},
-
-    noteId:{type:mongoose.Schema.Types.ObjectId, ref :'noteRegister'},
  
     labelName : {
         type:String,
@@ -23,7 +21,6 @@ class Model{
         return new Promise((resolve,reject)=>{
             const label = new labelRegister({
                 userId : data.userId,
-                noteId : data.noteId,
                 labelName : data.labelName
             })
             label.save().then((data)=>resolve(data))
@@ -49,8 +46,7 @@ class Model{
 
     async updateLabel(label){
         try{
-              const data =await labelRegister.findOneAndUpdate({$and:[{_id:label.labelId},
-                            {userId:label.userId}]},{labelName:label.labelName},{new:true});
+              return await labelRegister.findByIdAndUpdate(label.labelId,{labelName:label.labelName},{new:true});
                
          }catch(err){
             return err;
@@ -59,7 +55,7 @@ class Model{
 
     async deleteLabel(label){
         try{
-            return await labelRegister.findByIdAndDelete({$and:[{_id:label.labelId},{userId:label.userId}]});
+            return await labelRegister.findByIdAndDelete(label.labelId);
         }catch(err){
             return err;
         }
