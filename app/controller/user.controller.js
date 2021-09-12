@@ -60,10 +60,10 @@ class User {
      */
     loginUser = (req, res) => {
         //check if email id is empty
-        try {
+    
             const credentials = {
                 emailId: req.body.emailId,
-                password: req.body.password
+                password: req.body.password,
             };
 
             const loginValid = authenticateLogin.validate(credentials);
@@ -83,6 +83,7 @@ class User {
                 }
                 else {
                     const userInfo={
+                        id: data.data._id,
                         emailId:data.data.emailId,
                         token:data.token
                     }
@@ -90,13 +91,10 @@ class User {
                         success: true,
                         message: "Logged in succesfully",
                         data: userInfo
-                        
                     })
                 }
             });
-        } catch (error) {
-            console.log(error);
-        }
+        
     }
     /**
      * @description:Calls service layer to send reset password link

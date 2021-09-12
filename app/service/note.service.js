@@ -1,3 +1,4 @@
+const { data } = require('../../logger/logger');
 const model = require('../models/note.model');
 class Service{
     createNote = (note,callback)=>{
@@ -42,6 +43,26 @@ class Service{
                 return callback(null,data);
             }
         })
+    }
+    
+    addLabel = async(id)=>{
+        try{
+            const data = await model.addLabel(id);
+            return data;
+        }
+        catch(error){
+            return error
+        }
+    }
+
+    deleteLabel = async(id)=>{
+        try{
+            const data = await model.deleteLabel(id);
+            return data;
+
+        }catch(error){
+            return error
+        }
     }
 }
  

@@ -34,7 +34,7 @@ class Service{
      * @param {*} callback 
      */
     loginUser = (credentials,callback)=>{
-        try{
+        
             //call model layer
             UserSchema.loginUser(credentials,(err,data)=>{
                 if(err){
@@ -55,9 +55,6 @@ class Service{
                     }
                 }
             });
-        }catch(err){
-            console.log("Error occured");
-        }
     }
     /**
      * @description:calls nodemailer if emailid exists in database
