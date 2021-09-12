@@ -40,7 +40,7 @@ exports.validateToken = (req,res,next)=>{
             })
         }
     }catch{
-        return  res.status(400).send({
+        return  res.status(401).send({
             message:"Invalid Token",
             success:false
         })
