@@ -36,4 +36,9 @@ const validateNote = Joi.object({
     description:Joi.string()
     .required()
 })
-module.exports = {authenticate,authenticateLogin,validateReset,validateNote};
+
+const validateLabel = Joi.object({
+    labelName: Joi.string()
+    .required()
+})
+module.exports = {authenticate,authenticateLogin,validateReset,validateNote,validateLabel};
