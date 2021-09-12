@@ -80,7 +80,7 @@ describe('createnotes',()=>{
         })
     })
     
-    it('givenInvalidToken_ShouldReturnStatus400',(done)=>{
+    it('givenInvalidToken_ShouldReturnStatus401',(done)=>{
         const note = user.notes.createnotes.invalidToken;
         const token = user.notes.createnotes.invalidToken.token;
         chai.request(server)
@@ -92,7 +92,7 @@ describe('createnotes',()=>{
                 return done(err);
             }
         
-            res.should.have.status(400);
+            res.should.have.status(401);
             res.body.should.be.a('object');
             res.body.should.have.property('success').eql(false);
             res.body.should.have.property('message').eql('Invalid Token')
@@ -127,7 +127,7 @@ describe('getnotes',()=>{
             if(err){
                 return done(err);
             }
-            res.should.have.status(400);
+            res.should.have.status(401);
             res.body.should.be.a('object');
             res.body.should.have.property('message').eql('Invalid Token');
             done();
@@ -183,7 +183,7 @@ describe('updatenotes',()=>{
             if(err){
                 return done(err);
             }
-            res.should.have.status(400);
+            res.should.have.status(401);
             res.body.should.be.a('object');
             res.body.should.have.property('message').eql('Invalid Token');
             done();
@@ -236,7 +236,7 @@ describe('deletenotes',()=>{
             if(err){
                 return done(err);
             }
-            res.should.have.status(400);
+            res.should.have.status(401);
             res.body.should.be.a('object');
             res.body.should.have.property('message').eql('Invalid Token');
             res.body.should.have.property('success').eql(false);

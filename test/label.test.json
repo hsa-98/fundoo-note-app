@@ -1,0 +1,32 @@
+{
+    "label":{
+        "createLabel":{
+            "validLabel":{
+                "labelName":"This is a test label"
+            },
+            "invalidLabel":{
+                
+            },
+            "invalidToken":{
+                "token":"udvhsuhvnksnvskvj",
+                "labelName":"This is a test label"
+            }
+        },
+        "getLabel":{
+            "validTokenButNoLabels":{
+                "token":" bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhRm9yVG9rZW4iOnsiaWQiOiI2MTNjZDZiN2I3NGYwMTNlYjQ1NzhmNTYiLCJuYW1lIjoiWWFzaCIsImxhc3ROYW1lIjoiR3VwdGUiLCJlbWFpbElkIjoieWFzaGpvc2hpQGdtYWlsLmNvbSJ9LCJpYXQiOjE2MzEzNzcxMDMsImV4cCI6MTYzMTk4MTkwM30.7H04fY4FesCQXmMFBzjcJiSEG3u_M7_a660cMHfGgto"
+            },
+            "invalidToken":{
+                "token":"fytf8tiufuoguyfoufufuyfyiuy"
+            }
+        },
+        "updateLabel":{
+            "validLabel":{
+                "labelName":"This is a test label updated"
+            },
+            "invalidLabel":{
+                
+            }
+        }
+    }
+}
