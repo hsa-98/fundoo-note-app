@@ -149,6 +149,25 @@
               }
             }
           },
+          "/getnotes":{
+            "get":{
+              "tags":["Get notes"],
+              "description":"Get notes",
+              "parameters":[{
+                "in":"header",
+                "name":"authorization",
+                "description":"Token for validation",
+                "schema":{"type":"string"
+                }
+              }],
+              "produces":["application/json"],
+              "responses":{
+                "200":{"description":"Note retrieved successfully"},
+                "400":{"description":"Please enter valid token"},
+                "500":{"description":"Internal server error"}
+              }
+            }
+          },
           "/updatenotes/{id}":{
             "put":{
               "tags":["Update notes"],
@@ -182,25 +201,7 @@
               }
             }
           },
-          "/getnotes":{
-            "get":{
-              "tags":["Get notes"],
-              "description":"Get notes",
-              "parameters":[{
-                "in":"header",
-                "name":"authorization",
-                "description":"Token for validation",
-                "schema":{"type":"string"
-                }
-              }],
-              "produces":["application/json"],
-              "responses":{
-                "200":{"description":"Note retrieved successfully"},
-                "400":{"description":"Please enter valid token"},
-                "500":{"description":"Internal server error"}
-              }
-            }
-          },
+         
           "/deletenotes/{id}":{
             "delete":{
               "tags":["Delete note"],
@@ -223,10 +224,86 @@
               ],"produces":["application/json"],
               "responses":{
                 "200":{"description":"Note deleted successfully"},
-                "400":{"description":"Please enter valid token"},
+                "401":{"description":"Please enter valid token"},
                 "500":{"description":"Internal server error"}
               }
 
+            }
+          },
+          "/addlabel/{id}":{
+            "post":{
+              "tags":["Add Label"],
+              "description":"Add label to note",
+              "parameters":[
+                {
+                  "in":"path",
+                  "name":"noteId",
+                  "description":"Note to which label is to be added",
+                  "schema":{
+                    "type":"string",
+                    "required":true
+                  }
+                },
+                {
+                  "in":"body",
+                  "name":"labelId",
+                  "description":"Label Id",
+                  "schema":{
+                    "type":"string",
+                    "required":true
+                  }
+                },
+                {"in":"header",
+                  "name":"authorization",
+                  "description":"Token for validation",
+                  "schema":{
+                    "type":"string",
+                    "required":true
+                  }
+                }
+              ],"produces":["application/json"],
+              "responses":{
+                "200":{"description":"Label was attached to note"},
+                "500":{"description":"Label wasnt added"}
+              }
+            }
+          },
+          "/deletelabelfromnote/{id}":{
+            "post":{
+              "tags":["Remove Label"],
+              "description":"Remove label from note",
+              "parameters":[
+                {
+                  "in":"path",
+                  "name":"noteId",
+                  "description":"Note from which label is to be removed",
+                  "schema":{
+                    "type":"string",
+                    "required":true
+                  }
+                },
+                {
+                  "in":"body",
+                  "name":"labelId",
+                  "description":"Label Id",
+                  "schema":{
+                    "type":"string",
+                    "required":true
+                  }
+                },
+                {"in":"header",
+                  "name":"authorization",
+                  "description":"Token for validation",
+                  "schema":{
+                    "type":"string",
+                    "required":true
+                  }
+                }
+              ],"produces":["application/json"],
+              "responses":{
+                "200":{"description":"Label was removed"},
+                "500":{"description":"Label wasnt removed"}
+              }
             }
           },
           "/createlabel/{id}":{
