@@ -3,6 +3,7 @@ const { data } = require('../../logger/logger');
 const {validateToken,verifyToken} = require('../middleware/authenticate')
 const service = require('../service/note.service')
 const {validateNote} = require('../middleware/joiValidation');
+const redis = require('../middleware/redis')
 class Note {
     createNote =(req,res)=>{        
        
@@ -62,6 +63,8 @@ class Note {
                     });
                 }
                 else{
+                    const value = JSON.stringify(data);
+                    redis.setData("notes",3600,value);
                     return res.status(200).json({
                         message:"Notes retieved succesfully",
                         success:true,
