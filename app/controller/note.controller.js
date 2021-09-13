@@ -3,13 +3,15 @@ const { data } = require('../../logger/logger');
 const {validateToken,verifyToken} = require('../middleware/authenticate')
 const service = require('../service/note.service')
 const {validateNote} = require('../middleware/joiValidation');
-const redis = require('../middleware/redis')
+const redis = require('../middleware/redis');
+const logger = require('../../logger/logger');
 class Note {
     createNote =(req,res)=>{        
        
         try{
             const valid = validateNote.validate(req.body.note);
             if(valid.error){
+                logger.error("Invalid Note");
                 return res.status(400).send({
                     success:false,
                     message:"Please enter valid note"
@@ -33,6 +35,7 @@ class Note {
                         });
                     }
                     else{
+                        logger.info("Note inserted successfully")
                         return res.status(201).send({
                             message: "Successfully inserted note",
                             success:true,
@@ -57,14 +60,15 @@ class Note {
             const id = {id:tokenData.dataForToken.id}
             service.getNote((id),(err,data)=>{
                 if(err){
+                    logger.error("Failed to get all notes");
                     return res.status(500).json({
                         message:"failed to get note",
                         success:false
                     });
                 }
                 else{
-                    const value = JSON.stringify(data);
-                    redis.setData("notes",3600,value);
+                    redis.clearCache();
+                    logger.info("All notes retrieved")
                     return res.status(200).json({
                         message:"Notes retieved succesfully",
                         success:true,
@@ -73,8 +77,9 @@ class Note {
                 }
             })
         }catch{
-            return res.status(400).json({
-                message:"Please enter valid token"
+            logger.error("Error occured while retrieving notes");
+            return res.status(500).json({
+                message:"internal Error"
             })
         }
     }
@@ -94,6 +99,8 @@ class Note {
                     success:false,
                 }) 
             }
+            const value = JSON.stringify(data);
+            redis.setData("notes",3600,value);
             return res.status(200).json({
                 message:"Note retieved succesfully",
                 success:true,
@@ -135,6 +142,7 @@ class Note {
                         })
                     }
                     else{
+                        redis.clearCache();
                         return res.status(200).json({
                             message:"Note updated",
                             success:true,
@@ -168,6 +176,7 @@ class Note {
                     });
                 }
                 else{
+                    redis.clearCache();
                     return res.status(200).json({
                         message:"Note deleted",
                         success:true
