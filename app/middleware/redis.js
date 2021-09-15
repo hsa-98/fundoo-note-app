@@ -52,10 +52,17 @@ class Redis{
        client.SETEX(key,time,data);
    }
    
-   clearCache = ()=>{
-       client.flushall();
-       console.log("Cache cleared");
-       logger.info("Cache clearer");
+   clearCache = (key)=>{
+        client.del(key,(err,res)=>{
+            if(err){
+                logger.error("cache not cleared");
+            }
+            else{
+                console.log("Cache cleared");
+                logger.info("Cache clearer");
+            }
+        })
+       
    }
 }
 module.exports = new Redis();
