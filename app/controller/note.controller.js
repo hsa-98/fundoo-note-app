@@ -5,6 +5,7 @@ const service = require('../service/note.service')
 const {validateNote} = require('../middleware/joiValidation');
 const redis = require('../middleware/redis');
 const logger = require('../../logger/logger');
+const label = require('../controller/label.controller');
 class Note {
     createNote =(req,res)=>{        
        
@@ -142,7 +143,7 @@ class Note {
                         })
                     }
                     else{
-                        redis.clearCache();
+                        redis.clearCache("notes");
                         return res.status(200).json({
                             message:"Note updated",
                             success:true,
@@ -176,7 +177,7 @@ class Note {
                     });
                 }
                 else{
-                    redis.clearCache();
+                    redis.clearCache("notes");
                     return res.status(200).json({
                         message:"Note deleted",
                         success:true
@@ -192,12 +193,21 @@ class Note {
                 noteId:req.params.id,
                 labelId:req.body.labelId
             }
-            const labels = await service.addLabel(id);
-            res.status(200).send({
-                message:"Label added",
-                success:true,
-                data:labels
-            })
+            const exists = await label.labelExists(id);
+            if(exists){const labels = await service.addLabel(id);
+                await label.addNoteId(id);
+                res.status(200).send({
+                    message:"Label added",
+                    success:true,
+                    data:labels
+                })
+            }else{
+                res.status(400).send({
+                    message:"Invalid label id",
+                    success:false,
+                })
+            }
+            
         }catch(err){
             res.status(500).send({
                 message:"Label wasnt added",

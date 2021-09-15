@@ -2,9 +2,12 @@ const service = require('../service/label.service');
 const { data, error } = require('../../logger/logger');
 const {verifyToken} = require('../middleware/authenticate');
 const {validateLabel} = require('../middleware/joiValidation');
-const { valid } = require('joi');
+const { valid, string, array } = require('joi');
 const logger = require('../../logger/logger');
-const redis = require('../middleware/redis')
+const redis = require('../middleware/redis');
+let HashMap = require('hashmap');
+var map = new HashMap();
+
 class Label{
      createLabel = (req,res)=>{
         try{
@@ -26,7 +29,6 @@ class Label{
                      service.createLabel(label,resolve,reject)
                     function resolve(data){
                         logger.info("Label inserted");
-                        redis.clearCache();
                         res.status(201).send({
                             message:"Label created successfully",
                             success : true,
@@ -94,6 +96,7 @@ class Label{
             }
         })    
     }
+
     
     updateLabel =async(req,res)=>{
         try{
@@ -119,7 +122,7 @@ class Label{
                     success: false})
              }
                 logger.info("label updated");
-                redis.clearCache();
+                redis.clearCache("label");
                return  res.status(200).send({
                     message:"label updated",
                     success:true,
@@ -145,7 +148,7 @@ class Label{
                 labelId : req.params.id};
              const data = await service.deleteLabel(id);
              logger.info("Label deleted");
-             redis.clearCache();
+             redis.clearCache("label");
                 res.status(200).send({
                     message:"Deleted label",
                     success:true
@@ -159,6 +162,42 @@ class Label{
                 data:err
             })
         
+        }
+    }
+    //  addNoteId = async(id,res)=>{
+    //      try{
+    //         // let a = map.get(id);
+    //         // if(a.length == 0 || a == null){
+    //         //     a = [id.noteId];
+    //         //     map.set(id.labelId,a);
+    //         //     for( var i in map){
+    //         //         console.log('key : ' + keys[i] + ' val : ' + map[keys[i]]);
+    //         //     }
+    //         // }
+    //         // else{
+    //         //     a.push(id.noteId);
+    //         //     map.set(id.labelId,a);
+    //         //     for( var i in map){
+    //         //         console.log('key : ' + keys[i] + ' val : ' + map[keys[i]]);
+    //         //     }
+    //         //     }
+
+    //         const data = await service.addNoteId(id);
+    //         redis.clearCache("label");
+    //         return;
+    //      }  
+    //      catch(err){
+    //          return err
+    //      }
+    //  }
+
+     
+    labelExists = async(id)=>{
+        try{
+        let [data,err] =  await service.labelExists(id);
+        if (err) throw new Error('Could not fetch data'); 
+        }catch(err){
+            return false;   
         }
     }
 }

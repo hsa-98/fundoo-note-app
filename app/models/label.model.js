@@ -4,7 +4,11 @@ require('../../logger/logger');
 
 const labelSchema = mongoose.Schema({
     userId:{ type: mongoose.Schema.Types.ObjectId, ref: 'userRegister'},
- 
+    
+    noteId:{
+        type:[{type:mongoose.Schema.Types.ObjectId,ref:'noteRegister'}]
+    },
+
     labelName : {
         type:String,
         required:true
@@ -60,6 +64,26 @@ class Model{
             return err;
         }
     }
+
+    async addNoteId(id){
+        try{
+            const data = await labelRegister.findByIdAndUpdate(id.labelId,{$push:{"noteId":id.noteId}},{new:true});
+            console.log(data);
+        }catch(err){
+            return err;
+        }
+    }
+
+    async labelExists(id){
+       return new Promise((resolve,reject)=>{
+        labelRegister.find(id.labelId).then((data)=>{
+            resolve([data,null]);
+        }).catch((err)=>reject([null,err]));
+       })
+    }
+
+
+    
 }
 
 module.exports = new Model();

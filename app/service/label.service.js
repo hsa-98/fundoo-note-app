@@ -32,12 +32,22 @@ class Service{
 
     async deleteLabel(id){
         try{
-             await model.deleteLabel(id).then((data)=>data); 
+            return await model.deleteLabel(id).then((data)=>data); 
         }catch(error){
             return error;
         }
+    }
+    async addNoteId(id){
+        try{
+            return await model.addNoteId(id)
+        }catch(err){
+            return err;
+        }
+    }
+
+    async labelExists(id){
         
-    
+          return await model.labelExists(id);
     }
 }
 
