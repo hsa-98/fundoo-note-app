@@ -198,7 +198,10 @@ class Note {
             }
             const exists = await labels.labelExists(id);
             if(exists){
-                await service.labelAdded(id);
+                const added = await service.labelAdded(id);
+                if(added){
+                    throw new Error('Label already added');
+                }
                 const labels = await service.addLabel(id);
                 await label.addNoteId(id);
                 redis.clearCache(id.noteId);

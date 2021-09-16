@@ -147,9 +147,7 @@ class Label{
                 userId : tokenData.dataForToken.id,
                 labelId : req.params.id};
             const data = await service.deleteLabel(id);
-            console.log(data);
-            const ok = await note.removeLabel(data.noteId,id.labelId);
-            console.log(ok);
+            await note.removeLabel(data.noteId,id.labelId);
             logger.info("Label deleted");
             redis.clearCache(req.params.id);
             res.status(200).send({

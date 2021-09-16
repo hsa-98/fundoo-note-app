@@ -92,9 +92,16 @@ class Service{
         }
     }
 
-    // labelAdded = async(id)=>{
-    //     const data = await model.getNoteById(id);
-    // }
+    labelAdded = async(id)=>{
+        const data = await model.getNoteById(id);
+        for( let i = 0;i < data.labelId.length;i++ ){
+            if( data.labelId[i] == id.labelId){
+                return true;
+            }
+        }
+        return false;
+
+    }
 
 }
  
