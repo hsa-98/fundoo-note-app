@@ -31,11 +31,9 @@ class Service{
     }
 
     async deleteLabel(id){
-        try{
-            return await model.deleteLabel(id).then((data)=>data); 
-        }catch(error){
-            return error;
-        }
+        
+            return await model.deleteLabel(id); 
+       
     }
     async addNoteId(id){
         try{
@@ -45,9 +43,15 @@ class Service{
         }
     }
 
-    async labelExists(id){
-        
-          return await model.labelExists(id);
+    labelExists = async(id)=>{
+        try{
+        const data = await model.labelExists(id);
+        console.log(data);
+         return true 
+        }catch(err){
+            console.log(err);
+            return false;   
+        }
     }
 }
 

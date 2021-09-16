@@ -57,9 +57,12 @@ class Model{
          }
     }
 
-    async deleteLabel(label){
+    async deleteLabel(id){
         try{
-            return await labelRegister.findByIdAndDelete(label.labelId);
+            const data = await labelRegister.findById(id.labelId);
+            console.log(data);
+            await labelRegister.findByIdAndDelete(id.labelId);
+             return data;
         }catch(err){
             return err;
         }
@@ -75,10 +78,11 @@ class Model{
     }
 
     async labelExists(id){
-       return new Promise((resolve,reject)=>{
-        labelRegister.find(id.labelId).then((data)=>{
-            resolve([data,null]);
-        }).catch((err)=>reject([null,err]));
+        const labelId = {labelId : id.labelId}
+       return await new Promise((resolve,reject)=>{
+        labelRegister.find(labelId).then((data)=>{
+            resolve(data);
+        }).catch((err)=>reject(err));
        })
     }
 

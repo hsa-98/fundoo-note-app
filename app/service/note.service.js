@@ -1,5 +1,7 @@
-const { data } = require('../../logger/logger');
+
 const model = require('../models/note.model');
+const redis = require('../middleware/redis');
+const { not } = require('joi');
 class Service{
     createNote = (note,callback)=>{
         model.createNote(note,(err,data)=>{
@@ -72,6 +74,28 @@ class Service{
             return error
         }
     }
+
+    removeLabel = async(note,label)=>{
+        try{
+            let a = []
+            for(let i = 0; i < note.length ; i++){
+                console.log(note[i]);
+                 a.push(await model.removeLabel(note[i],label));
+                 redis.clearCache(note[i]);
+
+                }
+            return a;
+
+        }
+        catch(err){
+            return err;
+        }
+    }
+
+    // labelAdded = async(id)=>{
+    //     const data = await model.getNoteById(id);
+    // }
+
 }
  
 module.exports = new Service();

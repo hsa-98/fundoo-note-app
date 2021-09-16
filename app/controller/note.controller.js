@@ -6,6 +6,7 @@ const {validateNote} = require('../middleware/joiValidation');
 const redis = require('../middleware/redis');
 const logger = require('../../logger/logger');
 const label = require('../controller/label.controller');
+const labels = require('../service/label.service')
 class Note {
     createNote =(req,res)=>{        
        
@@ -189,13 +190,18 @@ class Note {
 
     addLabel = async(req,res)=>{
         try{
+            const tokenData = verifyToken(req.headers.authorization.split(" ")[1]);
             const id = {
                 noteId:req.params.id,
-                labelId:req.body.labelId
+                labelId:req.body.labelId,
+                userId:tokenData.dataForToken.id
             }
-            const exists = await label.labelExists(id);
-            if(exists){const labels = await service.addLabel(id);
+            const exists = await labels.labelExists(id);
+            if(exists){
+                await service.labelAdded(id);
+                const labels = await service.addLabel(id);
                 await label.addNoteId(id);
+                redis.clearCache(id.noteId);
                 res.status(200).send({
                     message:"Label added",
                     success:true,
@@ -216,6 +222,9 @@ class Note {
             })
         }
     }
+
+
+    
 
     deleteLabel = async(req,res)=>{
         try{

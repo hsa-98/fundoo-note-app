@@ -100,7 +100,7 @@ class Model{
     addLabel = async(id)=>{
         try{
             return await noteRegister.findByIdAndUpdate(id.noteId,
-                {$push:{"labels": {$each:id.labelId}} }, {new:true});
+                {$push:{"labels": id.labelId} }, {new:true});
         }catch(err){
             return error
         }
@@ -112,6 +112,21 @@ class Model{
                 {$pull : {"labels":id.labelId}});
         }catch(error){
             return error;
+        }
+    }
+
+    removeLabel = async(note,label)=>{
+        try{
+        const id = {
+            note : note,
+            label:label
+        };
+        console.log(id.note);
+        return await noteRegister.findByIdAndUpdate(id.note,
+            {$pull : {"labels": id.label}});
+        }catch(err){
+            console.log(err);
+            return err;
         }
     }
 

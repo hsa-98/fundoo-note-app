@@ -7,7 +7,8 @@ const client = redis.createClient(process.env.REDIS_PORT)
 class Redis{
 
     noteCache = (req,res,next)=>{
-        client.get("notes",(err,data)=>{
+        const noteId = req.params.id;
+        client.get(noteId,(err,data)=>{
             if(err){
                 logger.error("Error while getting cache for note");
                 console.log("Error while retrieving");
@@ -28,7 +29,7 @@ class Redis{
     }
 
     labelCache = (req,res,next)=>{
-        client.get("label",(err,data)=>{
+        client.get(req.params.id,(err,data)=>{
             if(err){
                 logger.error("Error occured while getting label cache");
                 console.log("Error while getiing label cache");
@@ -49,7 +50,8 @@ class Redis{
     }
 
    setData = (key,time,data)=>{
-       client.SETEX(key,time,data);
+    const key1 = key.toString();
+       client.SETEX(key1,time,data);
    }
    
    clearCache = (key)=>{

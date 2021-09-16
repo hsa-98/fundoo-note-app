@@ -1,12 +1,12 @@
 const service = require('../service/label.service');
-const { data, error } = require('../../logger/logger');
+ require('../../logger/logger');
 const {verifyToken} = require('../middleware/authenticate');
 const {validateLabel} = require('../middleware/joiValidation');
-const { valid, string, array } = require('joi');
+ require('joi');
 const logger = require('../../logger/logger');
 const redis = require('../middleware/redis');
-let HashMap = require('hashmap');
-var map = new HashMap();
+const note = require('../service/note.service');
+
 
 class Label{
      createLabel = (req,res)=>{
@@ -80,12 +80,12 @@ class Label{
             if(resolve){
                 logger.info("Found label by id");
                 const data = JSON.stringify(resolve);
-                redis.setData("label",3600,data);
+                redis.setData(id,3600,data);
                 res.status(200).send({
                     message:"label Found",
                     success:true,
                     data:resolve
-                })
+                });
             }
             else{
                 logger.error("Label not found by id")
@@ -122,7 +122,7 @@ class Label{
                     success: false})
              }
                 logger.info("label updated");
-                redis.clearCache("label");
+                redis.clearCache(req.params.id);
                return  res.status(200).send({
                     message:"label updated",
                     success:true,
@@ -146,26 +146,29 @@ class Label{
             const id = {
                 userId : tokenData.dataForToken.id,
                 labelId : req.params.id};
-             const data = await service.deleteLabel(id);
-             logger.info("Label deleted");
-             redis.clearCache("label");
-                res.status(200).send({
-                    message:"Deleted label",
-                    success:true
-                })
+            const data = await service.deleteLabel(id);
+            console.log(data);
+            const ok = await note.removeLabel(data.noteId,id.labelId);
+            console.log(ok);
+            logger.info("Label deleted");
+            redis.clearCache(req.params.id);
+            res.status(200).send({
+                message:"Deleted label",
+                success:true
+            })
              
         }catch(err){
             logger.error("Label not deleted")
             res.status(500).send({
                 message:"Failed to delete label",
                 success:false,
-                data:err
+                Error:err
             })
         
         }
     }
-    //  addNoteId = async(id,res)=>{
-    //      try{
+     addNoteId = async(id,res)=>{
+          
     //         // let a = map.get(id);
     //         // if(a.length == 0 || a == null){
     //         //     a = [id.noteId];
@@ -181,24 +184,17 @@ class Label{
     //         //         console.log('key : ' + keys[i] + ' val : ' + map[keys[i]]);
     //         //     }
     //         //     }
-
-    //         const data = await service.addNoteId(id);
-    //         redis.clearCache("label");
-    //         return;
-    //      }  
-    //      catch(err){
-    //          return err
-    //      }
-    //  }
+    try{
+            await service.addNoteId(id);
+            redis.clearCache(id.labelId);
+            return;
+         }  
+         catch(err){
+             return err
+         }
+     }
 
      
-    labelExists = async(id)=>{
-        try{
-        let [data,err] =  await service.labelExists(id);
-        if (err) throw new Error('Could not fetch data'); 
-        }catch(err){
-            return false;   
-        }
-    }
+    
 }
 module.exports = new Label();
