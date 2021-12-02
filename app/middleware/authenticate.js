@@ -27,6 +27,7 @@ exports.verifyToken = (token)=>{
 exports.validateToken = (req,res,next)=>{
     try{
         const header = req.headers.authorization;
+        console.log(header);
         const myArr = header.split(" ");
         const token = myArr[1];
         const verify = jwt.verify(token,process.env.ACCESS_TOKEN_KEY);

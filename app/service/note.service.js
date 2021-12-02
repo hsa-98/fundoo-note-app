@@ -94,8 +94,11 @@ class Service{
 
     labelAdded = async(id)=>{
         const data = await model.getNoteById(id);
-        for( let i = 0;i < data.labelId.length;i++ ){
-            if( data.labelId[i] == id.labelId){
+        console.log(data);
+        const labels = data.labels;
+        console.log(labels);
+        for( let i = 0;i < data.labels.length;i++ ){
+            if( data.labels[i] == id.labelId){
                 return true;
             }
         }

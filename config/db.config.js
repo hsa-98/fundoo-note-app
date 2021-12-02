@@ -7,7 +7,7 @@ mongoose.connect(process.env.URL,{
     useNewUrlParser:true,
     useUnifiedTopology:true,
     useCreateIndex:true ,
-    useFindAndModify:true
+    useFindAndModify:false
 }).then(()=>{
     logger.info("Succesfully connected to db")
     console.log("Succesfully connected to db ")}

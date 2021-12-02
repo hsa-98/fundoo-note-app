@@ -72,6 +72,7 @@ class Model{
         try{
             const data = await labelRegister.findByIdAndUpdate(id.labelId,{$push:{"noteId":id.noteId}},{new:true});
             console.log(data);
+            return data;
         }catch(err){
             return err;
         }

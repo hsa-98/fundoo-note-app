@@ -6,8 +6,11 @@ chai.should();
 const server = require('../server');
 const userInput = require('./user.test.json');
 chai.use(chaiHttp);
+const redis = require('../app/middleware/redis');
+var assert = require('chai').assert;
 
 const user = require('./note.test.json');
+require('joi');
 let token  = '';
 
 beforeEach((done) => {
@@ -244,4 +247,45 @@ describe('deletenotes',()=>{
         })
     })
 
+   
+
+})
+
+describe('getnotesById',()=>{
+    it('givenValidTokenAndId_ShouldReturnNote',(done)=>{
+       
+        chai.request(server)
+        .get('/getnote/613640b07d73d289f0da2f4d')
+        .set('authorization',token)
+        .end((err,res)=>{
+            if(err){
+                return done(err);
+            }else{
+            res.should.have.status(200);
+            res.body.should.be.a('object');
+            res.body.should.have.property('message').eql('Note retieved succesfully');
+            res.body.should.have.property('success').eql(true);
+            const  key ="613640b07d73d289f0da2f4d";
+            const data = redis.cacheForTest(key);
+            assert.equal(data,res.body.data);
+            done();
+            }
+        })
+    }),
+
+    it('giveninvalidToken_ShouldReturnError',(done)=>{
+        const token = user.notes.getnotes.invalidToken;
+        chai.request(server)
+        .get('/getnotes')
+        .set({authorization:token})
+        .end((err,res)=>{
+            if(err){
+                return done(err);
+            }
+            res.should.have.status(401);
+            res.body.should.be.a('object');
+            res.body.should.have.property('message').eql('Invalid Token');
+            done();
+        })
+    })
 })

@@ -54,7 +54,7 @@ class Model{
 
     getNoteById = async (id)=>{
         try{
-            return await noteRegister.find({$and:[{_id:id.noteId},{userId:id.userId}]});
+            return await noteRegister.findOne({$and:[{_id:id.noteId},{userId:id.userId}]});
             
         }catch(err){
             return err;

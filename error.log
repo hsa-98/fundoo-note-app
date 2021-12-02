@@ -89,3 +89,1239 @@
 {"message":"Email id doesnt exists","level":"error","timestamp":"2021-08-25T17:33:46.553Z"}
 {"level":"error","message":"Error in service","timestamp":"2021-08-25T17:33:46.554Z"}
 {"message":"Invalid password","level":"error","timestamp":"2021-08-25T17:33:46.676Z"}
+{"message":"Error detected in model","level":"error","timestamp":"2021-08-25T17:47:12.109Z"}
+{"message":"Error occured while registering new user","level":"error","timestamp":"2021-08-25T17:47:12.112Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-25T17:47:12.161Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-25T17:47:12.175Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-25T17:47:12.188Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-25T17:47:12.212Z"}
+{"message":"Email id doesnt exists","level":"error","timestamp":"2021-08-25T17:47:12.391Z"}
+{"level":"error","message":"Error in service","timestamp":"2021-08-25T17:47:12.392Z"}
+{"message":"Email id doesnt exists","level":"error","timestamp":"2021-08-25T17:47:12.408Z"}
+{"level":"error","message":"Error in service","timestamp":"2021-08-25T17:47:12.408Z"}
+{"message":"Invalid password","level":"error","timestamp":"2021-08-25T17:47:12.525Z"}
+{"message":"Error detected in model","level":"error","timestamp":"2021-08-25T17:55:49.468Z"}
+{"message":"Error occured while registering new user","level":"error","timestamp":"2021-08-25T17:55:49.471Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-25T17:55:49.518Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-25T17:55:49.533Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-25T17:55:49.545Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-25T17:55:49.561Z"}
+{"message":"Email id doesnt exists","level":"error","timestamp":"2021-08-25T17:55:49.743Z"}
+{"level":"error","message":"Error in service","timestamp":"2021-08-25T17:55:49.744Z"}
+{"message":"Email id doesnt exists","level":"error","timestamp":"2021-08-25T17:55:49.760Z"}
+{"level":"error","message":"Error in service","timestamp":"2021-08-25T17:55:49.760Z"}
+{"message":"Invalid password","level":"error","timestamp":"2021-08-25T17:55:49.884Z"}
+{"message":"Error detected in model","level":"error","timestamp":"2021-08-25T17:58:53.850Z"}
+{"message":"Error occured while registering new user","level":"error","timestamp":"2021-08-25T17:58:53.854Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-25T17:58:53.906Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-25T17:58:53.921Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-25T17:58:53.936Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-25T17:58:53.952Z"}
+{"message":"Email id doesnt exists","level":"error","timestamp":"2021-08-25T17:58:54.132Z"}
+{"level":"error","message":"Error in service","timestamp":"2021-08-25T17:58:54.133Z"}
+{"message":"Email id doesnt exists","level":"error","timestamp":"2021-08-25T17:58:54.150Z"}
+{"level":"error","message":"Error in service","timestamp":"2021-08-25T17:58:54.150Z"}
+{"message":"Invalid password","level":"error","timestamp":"2021-08-25T17:58:54.273Z"}
+{"message":"Error detected in model","level":"error","timestamp":"2021-08-25T18:01:06.500Z"}
+{"message":"Error occured while registering new user","level":"error","timestamp":"2021-08-25T18:01:06.502Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-25T18:01:06.547Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-25T18:01:06.559Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-25T18:01:06.575Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-25T18:01:06.596Z"}
+{"message":"Email id doesnt exists","level":"error","timestamp":"2021-08-25T18:01:06.774Z"}
+{"level":"error","message":"Error in service","timestamp":"2021-08-25T18:01:06.774Z"}
+{"message":"Email id doesnt exists","level":"error","timestamp":"2021-08-25T18:01:06.793Z"}
+{"level":"error","message":"Error in service","timestamp":"2021-08-25T18:01:06.794Z"}
+{"message":"Invalid password","level":"error","timestamp":"2021-08-25T18:01:06.920Z"}
+{"message":"Error detected in model","level":"error","timestamp":"2021-08-25T18:01:28.382Z"}
+{"message":"Error occured while registering new user","level":"error","timestamp":"2021-08-25T18:01:28.384Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-25T18:01:28.445Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-25T18:01:28.464Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-25T18:01:28.481Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-25T18:01:28.498Z"}
+{"message":"Email id doesnt exists","level":"error","timestamp":"2021-08-25T18:01:28.675Z"}
+{"level":"error","message":"Error in service","timestamp":"2021-08-25T18:01:28.676Z"}
+{"message":"Email id doesnt exists","level":"error","timestamp":"2021-08-25T18:01:28.693Z"}
+{"level":"error","message":"Error in service","timestamp":"2021-08-25T18:01:28.693Z"}
+{"message":"Invalid password","level":"error","timestamp":"2021-08-25T18:01:28.811Z"}
+{"message":"Error detected in model","level":"error","timestamp":"2021-08-25T18:11:20.465Z"}
+{"message":"Error occured while registering new user","level":"error","timestamp":"2021-08-25T18:11:20.467Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-25T18:11:20.515Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-25T18:11:20.528Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-25T18:11:20.542Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-25T18:11:20.561Z"}
+{"message":"Email id doesnt exists","level":"error","timestamp":"2021-08-25T18:11:20.738Z"}
+{"level":"error","message":"Error in service","timestamp":"2021-08-25T18:11:20.739Z"}
+{"message":"Email id doesnt exists","level":"error","timestamp":"2021-08-25T18:11:20.756Z"}
+{"level":"error","message":"Error in service","timestamp":"2021-08-25T18:11:20.757Z"}
+{"message":"Invalid password","level":"error","timestamp":"2021-08-25T18:11:20.878Z"}
+{"message":"Error detected in model","level":"error","timestamp":"2021-08-25T18:12:11.829Z"}
+{"message":"Error occured while registering new user","level":"error","timestamp":"2021-08-25T18:12:11.832Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-25T18:12:11.887Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-25T18:12:11.907Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-25T18:12:11.921Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-25T18:12:11.938Z"}
+{"message":"Email id doesnt exists","level":"error","timestamp":"2021-08-25T18:12:12.118Z"}
+{"level":"error","message":"Error in service","timestamp":"2021-08-25T18:12:12.119Z"}
+{"message":"Email id doesnt exists","level":"error","timestamp":"2021-08-25T18:12:12.135Z"}
+{"level":"error","message":"Error in service","timestamp":"2021-08-25T18:12:12.135Z"}
+{"message":"Invalid password","level":"error","timestamp":"2021-08-25T18:12:12.253Z"}
+{"message":"Error detected in model","level":"error","timestamp":"2021-08-25T18:13:15.994Z"}
+{"message":"Error occured while registering new user","level":"error","timestamp":"2021-08-25T18:13:15.999Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-25T18:13:16.063Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-25T18:13:16.082Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-25T18:13:16.099Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-25T18:13:16.115Z"}
+{"message":"Email id doesnt exists","level":"error","timestamp":"2021-08-25T18:13:16.294Z"}
+{"level":"error","message":"Error in service","timestamp":"2021-08-25T18:13:16.294Z"}
+{"message":"Email id doesnt exists","level":"error","timestamp":"2021-08-25T18:13:16.307Z"}
+{"level":"error","message":"Error in service","timestamp":"2021-08-25T18:13:16.307Z"}
+{"message":"Invalid password","level":"error","timestamp":"2021-08-25T18:13:16.441Z"}
+{"message":"Error detected in model","level":"error","timestamp":"2021-08-26T02:05:57.219Z"}
+{"message":"Error occured while registering new user","level":"error","timestamp":"2021-08-26T02:05:57.241Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-26T02:05:57.327Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-26T02:05:57.387Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-26T02:05:57.412Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-26T02:05:57.430Z"}
+{"message":"Email id doesnt exists","level":"error","timestamp":"2021-08-26T02:05:57.774Z"}
+{"level":"error","message":"Error in service","timestamp":"2021-08-26T02:05:57.775Z"}
+{"message":"Email id doesnt exists","level":"error","timestamp":"2021-08-26T02:05:57.834Z"}
+{"level":"error","message":"Error in service","timestamp":"2021-08-26T02:05:57.835Z"}
+{"message":"Invalid password","level":"error","timestamp":"2021-08-26T02:05:57.960Z"}
+{"message":"User with email id doesnt exists","level":"error","timestamp":"2021-08-26T02:05:59.998Z"}
+{"message":"User with email id doesnt exists","level":"error","timestamp":"2021-08-26T02:05:59.999Z"}
+{"message":"Error detected in model","level":"error","timestamp":"2021-08-26T02:06:36.069Z"}
+{"message":"Error occured while registering new user","level":"error","timestamp":"2021-08-26T02:06:36.070Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-26T02:06:36.120Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-26T02:06:36.137Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-26T02:06:36.153Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-26T02:06:36.168Z"}
+{"message":"Email id doesnt exists","level":"error","timestamp":"2021-08-26T02:06:36.346Z"}
+{"level":"error","message":"Error in service","timestamp":"2021-08-26T02:06:36.347Z"}
+{"message":"Email id doesnt exists","level":"error","timestamp":"2021-08-26T02:06:36.360Z"}
+{"level":"error","message":"Error in service","timestamp":"2021-08-26T02:06:36.360Z"}
+{"message":"Invalid password","level":"error","timestamp":"2021-08-26T02:06:36.478Z"}
+{"message":"User with email id doesnt exists","level":"error","timestamp":"2021-08-26T02:06:38.507Z"}
+{"message":"User with email id doesnt exists","level":"error","timestamp":"2021-08-26T02:06:38.509Z"}
+{"message":"Error detected in model","level":"error","timestamp":"2021-08-26T02:07:08.189Z"}
+{"message":"Error occured while registering new user","level":"error","timestamp":"2021-08-26T02:07:08.191Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-26T02:07:08.241Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-26T02:07:08.259Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-26T02:07:08.273Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-26T02:07:08.286Z"}
+{"message":"Email id doesnt exists","level":"error","timestamp":"2021-08-26T02:07:08.466Z"}
+{"level":"error","message":"Error in service","timestamp":"2021-08-26T02:07:08.467Z"}
+{"message":"Email id doesnt exists","level":"error","timestamp":"2021-08-26T02:07:08.482Z"}
+{"level":"error","message":"Error in service","timestamp":"2021-08-26T02:07:08.482Z"}
+{"message":"Invalid password","level":"error","timestamp":"2021-08-26T02:07:08.599Z"}
+{"message":"User with email id doesnt exists","level":"error","timestamp":"2021-08-26T02:07:10.635Z"}
+{"message":"User with email id doesnt exists","level":"error","timestamp":"2021-08-26T02:07:10.636Z"}
+{"message":"Error detected in model","level":"error","timestamp":"2021-08-26T02:08:33.212Z"}
+{"message":"Error occured while registering new user","level":"error","timestamp":"2021-08-26T02:08:33.214Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-26T02:08:33.262Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-26T02:08:33.274Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-26T02:08:33.287Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-26T02:08:33.305Z"}
+{"message":"Email id doesnt exists","level":"error","timestamp":"2021-08-26T02:08:33.480Z"}
+{"level":"error","message":"Error in service","timestamp":"2021-08-26T02:08:33.481Z"}
+{"message":"Email id doesnt exists","level":"error","timestamp":"2021-08-26T02:08:33.498Z"}
+{"level":"error","message":"Error in service","timestamp":"2021-08-26T02:08:33.498Z"}
+{"message":"Invalid password","level":"error","timestamp":"2021-08-26T02:08:33.621Z"}
+{"message":"User with email id doesnt exists","level":"error","timestamp":"2021-08-26T02:08:35.641Z"}
+{"message":"User with email id doesnt exists","level":"error","timestamp":"2021-08-26T02:08:35.641Z"}
+{"message":"Error detected in model","level":"error","timestamp":"2021-08-26T02:10:09.599Z"}
+{"message":"Error occured while registering new user","level":"error","timestamp":"2021-08-26T02:10:09.601Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-26T02:10:09.648Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-26T02:10:09.660Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-26T02:10:09.674Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-26T02:10:09.693Z"}
+{"message":"Email id doesnt exists","level":"error","timestamp":"2021-08-26T02:10:09.873Z"}
+{"level":"error","message":"Error in service","timestamp":"2021-08-26T02:10:09.873Z"}
+{"message":"Email id doesnt exists","level":"error","timestamp":"2021-08-26T02:10:09.890Z"}
+{"level":"error","message":"Error in service","timestamp":"2021-08-26T02:10:09.890Z"}
+{"message":"Invalid password","level":"error","timestamp":"2021-08-26T02:10:10.015Z"}
+{"message":"User with email id doesnt exists","level":"error","timestamp":"2021-08-26T02:10:12.044Z"}
+{"message":"User with email id doesnt exists","level":"error","timestamp":"2021-08-26T02:10:12.044Z"}
+{"message":"Error detected in model","level":"error","timestamp":"2021-08-26T02:11:50.098Z"}
+{"message":"Error occured while registering new user","level":"error","timestamp":"2021-08-26T02:11:50.100Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-26T02:11:50.149Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-26T02:11:50.164Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-26T02:11:50.178Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-26T02:11:50.192Z"}
+{"message":"Email id doesnt exists","level":"error","timestamp":"2021-08-26T02:11:50.365Z"}
+{"level":"error","message":"Error in service","timestamp":"2021-08-26T02:11:50.366Z"}
+{"message":"Email id doesnt exists","level":"error","timestamp":"2021-08-26T02:11:50.380Z"}
+{"level":"error","message":"Error in service","timestamp":"2021-08-26T02:11:50.381Z"}
+{"message":"Invalid password","level":"error","timestamp":"2021-08-26T02:11:50.499Z"}
+{"message":"User with email id doesnt exists","level":"error","timestamp":"2021-08-26T02:11:52.527Z"}
+{"message":"User with email id doesnt exists","level":"error","timestamp":"2021-08-26T02:11:52.528Z"}
+{"message":"Error detected in model","level":"error","timestamp":"2021-08-26T02:13:36.641Z"}
+{"message":"Error occured while registering new user","level":"error","timestamp":"2021-08-26T02:13:36.644Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-26T02:13:36.690Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-26T02:13:36.703Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-26T02:13:36.719Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-26T02:13:36.733Z"}
+{"message":"Email id doesnt exists","level":"error","timestamp":"2021-08-26T02:13:36.911Z"}
+{"level":"error","message":"Error in service","timestamp":"2021-08-26T02:13:36.912Z"}
+{"message":"Email id doesnt exists","level":"error","timestamp":"2021-08-26T02:13:36.927Z"}
+{"level":"error","message":"Error in service","timestamp":"2021-08-26T02:13:36.927Z"}
+{"message":"Invalid password","level":"error","timestamp":"2021-08-26T02:13:37.043Z"}
+{"message":"User with email id doesnt exists","level":"error","timestamp":"2021-08-26T02:13:39.085Z"}
+{"message":"User with email id doesnt exists","level":"error","timestamp":"2021-08-26T02:13:39.085Z"}
+{"message":"Error detected in model","level":"error","timestamp":"2021-08-26T02:14:11.309Z"}
+{"message":"Error occured while registering new user","level":"error","timestamp":"2021-08-26T02:14:11.312Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-26T02:14:11.362Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-26T02:14:11.378Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-26T02:14:11.394Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-26T02:14:11.406Z"}
+{"message":"Email id doesnt exists","level":"error","timestamp":"2021-08-26T02:14:11.588Z"}
+{"level":"error","message":"Error in service","timestamp":"2021-08-26T02:14:11.589Z"}
+{"message":"Email id doesnt exists","level":"error","timestamp":"2021-08-26T02:14:11.603Z"}
+{"level":"error","message":"Error in service","timestamp":"2021-08-26T02:14:11.603Z"}
+{"message":"Invalid password","level":"error","timestamp":"2021-08-26T02:14:11.722Z"}
+{"message":"User with email id doesnt exists","level":"error","timestamp":"2021-08-26T02:14:13.755Z"}
+{"message":"User with email id doesnt exists","level":"error","timestamp":"2021-08-26T02:14:13.755Z"}
+{"message":"Error detected in model","level":"error","timestamp":"2021-08-26T02:15:01.047Z"}
+{"message":"Error occured while registering new user","level":"error","timestamp":"2021-08-26T02:15:01.050Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-26T02:15:01.099Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-26T02:15:01.117Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-26T02:15:01.134Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-26T02:15:01.151Z"}
+{"message":"Email id doesnt exists","level":"error","timestamp":"2021-08-26T02:15:01.331Z"}
+{"level":"error","message":"Error in service","timestamp":"2021-08-26T02:15:01.332Z"}
+{"message":"Email id doesnt exists","level":"error","timestamp":"2021-08-26T02:15:01.349Z"}
+{"level":"error","message":"Error in service","timestamp":"2021-08-26T02:15:01.350Z"}
+{"message":"Invalid password","level":"error","timestamp":"2021-08-26T02:15:01.466Z"}
+{"message":"User with email id doesnt exists","level":"error","timestamp":"2021-08-26T02:15:01.488Z"}
+{"message":"User with email id doesnt exists","level":"error","timestamp":"2021-08-26T02:15:01.488Z"}
+{"message":"Error detected in model","level":"error","timestamp":"2021-08-26T02:17:14.002Z"}
+{"message":"Error occured while registering new user","level":"error","timestamp":"2021-08-26T02:17:14.004Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-26T02:17:14.056Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-26T02:17:14.077Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-26T02:17:14.093Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-26T02:17:14.109Z"}
+{"message":"Email id doesnt exists","level":"error","timestamp":"2021-08-26T02:17:14.289Z"}
+{"level":"error","message":"Error in service","timestamp":"2021-08-26T02:17:14.289Z"}
+{"message":"Email id doesnt exists","level":"error","timestamp":"2021-08-26T02:17:14.308Z"}
+{"level":"error","message":"Error in service","timestamp":"2021-08-26T02:17:14.308Z"}
+{"message":"Invalid password","level":"error","timestamp":"2021-08-26T02:17:14.428Z"}
+{"message":"User with email id doesnt exists","level":"error","timestamp":"2021-08-26T02:17:14.446Z"}
+{"message":"User with email id doesnt exists","level":"error","timestamp":"2021-08-26T02:17:14.446Z"}
+{"message":"User with email id doesnt exists","level":"error","timestamp":"2021-08-26T02:17:14.462Z"}
+{"message":"User with email id doesnt exists","level":"error","timestamp":"2021-08-26T02:17:14.462Z"}
+{"message":"Error detected in model","level":"error","timestamp":"2021-08-26T02:18:06.730Z"}
+{"message":"Error occured while registering new user","level":"error","timestamp":"2021-08-26T02:18:06.732Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-26T02:18:06.781Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-26T02:18:06.800Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-26T02:18:06.818Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-26T02:18:06.833Z"}
+{"message":"Email id doesnt exists","level":"error","timestamp":"2021-08-26T02:18:07.015Z"}
+{"level":"error","message":"Error in service","timestamp":"2021-08-26T02:18:07.016Z"}
+{"message":"Email id doesnt exists","level":"error","timestamp":"2021-08-26T02:18:07.034Z"}
+{"level":"error","message":"Error in service","timestamp":"2021-08-26T02:18:07.034Z"}
+{"message":"Invalid password","level":"error","timestamp":"2021-08-26T02:18:07.152Z"}
+{"message":"User with email id doesnt exists","level":"error","timestamp":"2021-08-26T02:18:07.171Z"}
+{"message":"User with email id doesnt exists","level":"error","timestamp":"2021-08-26T02:18:07.172Z"}
+{"message":"User with email id doesnt exists","level":"error","timestamp":"2021-08-26T02:18:07.186Z"}
+{"message":"User with email id doesnt exists","level":"error","timestamp":"2021-08-26T02:18:07.187Z"}
+{"message":"Error detected in model","level":"error","timestamp":"2021-08-26T02:20:05.155Z"}
+{"message":"Error occured while registering new user","level":"error","timestamp":"2021-08-26T02:20:05.158Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-26T02:20:05.206Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-26T02:20:05.218Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-26T02:20:05.230Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-26T02:20:05.244Z"}
+{"message":"Email id doesnt exists","level":"error","timestamp":"2021-08-26T02:20:05.416Z"}
+{"level":"error","message":"Error in service","timestamp":"2021-08-26T02:20:05.417Z"}
+{"message":"Email id doesnt exists","level":"error","timestamp":"2021-08-26T02:20:05.435Z"}
+{"level":"error","message":"Error in service","timestamp":"2021-08-26T02:20:05.435Z"}
+{"message":"Invalid password","level":"error","timestamp":"2021-08-26T02:20:05.552Z"}
+{"message":"User with email id doesnt exists","level":"error","timestamp":"2021-08-26T02:20:05.574Z"}
+{"message":"User with email id doesnt exists","level":"error","timestamp":"2021-08-26T02:20:05.575Z"}
+{"message":"User with email id doesnt exists","level":"error","timestamp":"2021-08-26T02:20:05.590Z"}
+{"message":"User with email id doesnt exists","level":"error","timestamp":"2021-08-26T02:20:05.590Z"}
+{"message":"Error detected in model","level":"error","timestamp":"2021-08-26T02:28:23.779Z"}
+{"message":"Error occured while registering new user","level":"error","timestamp":"2021-08-26T02:28:23.781Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-26T02:28:23.838Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-26T02:28:23.859Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-26T02:28:23.877Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-26T02:28:23.896Z"}
+{"message":"Email id doesnt exists","level":"error","timestamp":"2021-08-26T02:28:24.088Z"}
+{"level":"error","message":"Error in service","timestamp":"2021-08-26T02:28:24.089Z"}
+{"message":"Email id doesnt exists","level":"error","timestamp":"2021-08-26T02:28:24.104Z"}
+{"level":"error","message":"Error in service","timestamp":"2021-08-26T02:28:24.104Z"}
+{"message":"Invalid password","level":"error","timestamp":"2021-08-26T02:28:24.226Z"}
+{"message":"Invalid email id","level":"error","timestamp":"2021-08-26T02:28:24.250Z"}
+{"message":"Invalid email id","level":"error","timestamp":"2021-08-26T02:28:26.258Z"}
+{"message":"Error detected in model","level":"error","timestamp":"2021-08-26T02:29:48.167Z"}
+{"message":"Error occured while registering new user","level":"error","timestamp":"2021-08-26T02:29:48.169Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-26T02:29:48.242Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-26T02:29:48.262Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-26T02:29:48.283Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-26T02:29:48.302Z"}
+{"message":"Email id doesnt exists","level":"error","timestamp":"2021-08-26T02:29:48.499Z"}
+{"level":"error","message":"Error in service","timestamp":"2021-08-26T02:29:48.500Z"}
+{"message":"Email id doesnt exists","level":"error","timestamp":"2021-08-26T02:29:48.516Z"}
+{"level":"error","message":"Error in service","timestamp":"2021-08-26T02:29:48.516Z"}
+{"message":"Invalid password","level":"error","timestamp":"2021-08-26T02:29:48.656Z"}
+{"message":"Invalid email id","level":"error","timestamp":"2021-08-26T02:29:48.680Z"}
+{"message":"Invalid email id","level":"error","timestamp":"2021-08-26T02:29:50.679Z"}
+{"message":"Error detected in model","level":"error","timestamp":"2021-08-26T02:33:16.886Z"}
+{"message":"Error occured while registering new user","level":"error","timestamp":"2021-08-26T02:33:16.889Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-26T02:33:16.972Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-26T02:33:16.995Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-26T02:33:17.027Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-26T02:33:17.071Z"}
+{"message":"Email id doesnt exists","level":"error","timestamp":"2021-08-26T02:33:17.357Z"}
+{"level":"error","message":"Error in service","timestamp":"2021-08-26T02:33:17.357Z"}
+{"message":"Email id doesnt exists","level":"error","timestamp":"2021-08-26T02:33:17.375Z"}
+{"level":"error","message":"Error in service","timestamp":"2021-08-26T02:33:17.375Z"}
+{"message":"Invalid password","level":"error","timestamp":"2021-08-26T02:33:17.512Z"}
+{"message":"Invalid email id","level":"error","timestamp":"2021-08-26T02:33:17.542Z"}
+{"message":"Invalid email id","level":"error","timestamp":"2021-08-26T02:33:19.540Z"}
+{"message":"Error detected in model","level":"error","timestamp":"2021-08-26T02:41:29.633Z"}
+{"message":"Error occured while registering new user","level":"error","timestamp":"2021-08-26T02:41:29.637Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-26T02:41:29.717Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-26T02:41:29.751Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-26T02:41:29.784Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-26T02:41:29.815Z"}
+{"message":"Email id doesnt exists","level":"error","timestamp":"2021-08-26T02:41:30.052Z"}
+{"level":"error","message":"Error in service","timestamp":"2021-08-26T02:41:30.053Z"}
+{"message":"Email id doesnt exists","level":"error","timestamp":"2021-08-26T02:41:30.073Z"}
+{"level":"error","message":"Error in service","timestamp":"2021-08-26T02:41:30.073Z"}
+{"message":"Invalid password","level":"error","timestamp":"2021-08-26T02:41:30.206Z"}
+{"message":"Invalid email id","level":"error","timestamp":"2021-08-26T02:41:30.227Z"}
+{"message":"Invalid email id","level":"error","timestamp":"2021-08-26T02:41:32.232Z"}
+{"message":"Error detected in model","level":"error","timestamp":"2021-08-26T02:55:38.523Z"}
+{"message":"Error occured while registering new user","level":"error","timestamp":"2021-08-26T02:55:38.525Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-26T02:55:38.592Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-26T02:55:38.625Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-26T02:55:38.645Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-26T02:55:38.664Z"}
+{"message":"Email id doesnt exists","level":"error","timestamp":"2021-08-26T02:55:38.878Z"}
+{"level":"error","message":"Error in service","timestamp":"2021-08-26T02:55:38.878Z"}
+{"message":"Email id doesnt exists","level":"error","timestamp":"2021-08-26T02:55:38.904Z"}
+{"level":"error","message":"Error in service","timestamp":"2021-08-26T02:55:38.905Z"}
+{"message":"Invalid password","level":"error","timestamp":"2021-08-26T02:55:39.035Z"}
+{"message":"Invalid email id","level":"error","timestamp":"2021-08-26T02:55:39.052Z"}
+{"message":"Invalid email id","level":"error","timestamp":"2021-08-26T02:55:41.059Z"}
+{"message":"Error detected in model","level":"error","timestamp":"2021-08-26T03:03:42.609Z"}
+{"message":"Error occured while registering new user","level":"error","timestamp":"2021-08-26T03:03:42.611Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-26T03:03:42.657Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-26T03:03:42.670Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-26T03:03:42.687Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-26T03:03:42.707Z"}
+{"message":"Email id doesnt exists","level":"error","timestamp":"2021-08-26T03:03:42.914Z"}
+{"level":"error","message":"Error in service","timestamp":"2021-08-26T03:03:42.916Z"}
+{"message":"Email id doesnt exists","level":"error","timestamp":"2021-08-26T03:03:42.941Z"}
+{"level":"error","message":"Error in service","timestamp":"2021-08-26T03:03:42.941Z"}
+{"message":"Invalid password","level":"error","timestamp":"2021-08-26T03:03:43.063Z"}
+{"message":"Invalid email id","level":"error","timestamp":"2021-08-26T03:03:43.083Z"}
+{"message":"Invalid email id","level":"error","timestamp":"2021-08-26T03:03:43.097Z"}
+{"message":"Error detected in model","level":"error","timestamp":"2021-08-26T03:04:15.552Z"}
+{"message":"Error occured while registering new user","level":"error","timestamp":"2021-08-26T03:04:15.554Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-26T03:04:15.607Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-26T03:04:15.630Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-26T03:04:15.645Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-26T03:04:15.658Z"}
+{"message":"Email id doesnt exists","level":"error","timestamp":"2021-08-26T03:04:15.846Z"}
+{"level":"error","message":"Error in service","timestamp":"2021-08-26T03:04:15.847Z"}
+{"message":"Email id doesnt exists","level":"error","timestamp":"2021-08-26T03:04:15.862Z"}
+{"level":"error","message":"Error in service","timestamp":"2021-08-26T03:04:15.862Z"}
+{"message":"Invalid password","level":"error","timestamp":"2021-08-26T03:04:15.986Z"}
+{"message":"Invalid email id","level":"error","timestamp":"2021-08-26T03:04:16.013Z"}
+{"message":"Invalid email id","level":"error","timestamp":"2021-08-26T03:04:16.031Z"}
+{"message":"Error detected in model","level":"error","timestamp":"2021-08-26T12:49:11.768Z"}
+{"message":"Error occured while registering new user","level":"error","timestamp":"2021-08-26T12:49:11.770Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-26T12:49:11.823Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-26T12:49:11.957Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-26T12:49:12.023Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-26T12:49:12.100Z"}
+{"message":"Email id doesnt exists","level":"error","timestamp":"2021-08-26T12:49:12.609Z"}
+{"level":"error","message":"Error in service","timestamp":"2021-08-26T12:49:12.609Z"}
+{"message":"Email id doesnt exists","level":"error","timestamp":"2021-08-26T12:49:12.669Z"}
+{"level":"error","message":"Error in service","timestamp":"2021-08-26T12:49:12.670Z"}
+{"message":"Invalid password","level":"error","timestamp":"2021-08-26T12:49:12.872Z"}
+{"message":"Invalid email id","level":"error","timestamp":"2021-08-26T12:49:13.029Z"}
+{"message":"Invalid email id","level":"error","timestamp":"2021-08-26T12:49:13.076Z"}
+{"message":"Error detected in model","level":"error","timestamp":"2021-08-26T12:49:50.846Z"}
+{"message":"Error occured while registering new user","level":"error","timestamp":"2021-08-26T12:49:50.848Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-26T12:49:50.898Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-26T12:49:50.922Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-26T12:49:50.940Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-26T12:49:50.957Z"}
+{"message":"Email id doesnt exists","level":"error","timestamp":"2021-08-26T12:49:51.135Z"}
+{"level":"error","message":"Error in service","timestamp":"2021-08-26T12:49:51.136Z"}
+{"message":"Email id doesnt exists","level":"error","timestamp":"2021-08-26T12:49:51.149Z"}
+{"level":"error","message":"Error in service","timestamp":"2021-08-26T12:49:51.149Z"}
+{"message":"Invalid password","level":"error","timestamp":"2021-08-26T12:49:51.274Z"}
+{"message":"Invalid email id","level":"error","timestamp":"2021-08-26T12:49:51.289Z"}
+{"message":"Invalid email id","level":"error","timestamp":"2021-08-26T12:49:51.304Z"}
+{"message":"Error detected in model","level":"error","timestamp":"2021-08-26T12:50:31.330Z"}
+{"message":"Error occured while registering new user","level":"error","timestamp":"2021-08-26T12:50:31.333Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-26T12:50:31.389Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-26T12:50:31.409Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-26T12:50:31.427Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-26T12:50:31.444Z"}
+{"message":"Email id doesnt exists","level":"error","timestamp":"2021-08-26T12:50:31.636Z"}
+{"level":"error","message":"Error in service","timestamp":"2021-08-26T12:50:31.637Z"}
+{"message":"Email id doesnt exists","level":"error","timestamp":"2021-08-26T12:50:31.655Z"}
+{"level":"error","message":"Error in service","timestamp":"2021-08-26T12:50:31.655Z"}
+{"message":"Invalid password","level":"error","timestamp":"2021-08-26T12:50:31.911Z"}
+{"message":"Invalid email id","level":"error","timestamp":"2021-08-26T12:50:32.031Z"}
+{"message":"Invalid email id","level":"error","timestamp":"2021-08-26T12:50:32.066Z"}
+{"message":"Invalid email id","level":"error","timestamp":"2021-08-26T13:02:25.884Z"}
+{"message":"Invalid email id","level":"error","timestamp":"2021-08-26T13:39:26.239Z"}
+{"message":"Invalid email id","level":"error","timestamp":"2021-08-26T13:41:47.922Z"}
+{"message":"Invalid email id","level":"error","timestamp":"2021-08-26T13:49:45.865Z"}
+{"message":"Error detected in model","level":"error","timestamp":"2021-08-26T13:54:32.796Z"}
+{"message":"Error occured while registering new user","level":"error","timestamp":"2021-08-26T13:54:32.803Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-26T13:54:32.880Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-26T13:54:32.926Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-26T13:54:32.969Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-26T13:54:33.009Z"}
+{"message":"Email id doesnt exists","level":"error","timestamp":"2021-08-26T13:54:33.259Z"}
+{"level":"error","message":"Error in service","timestamp":"2021-08-26T13:54:33.272Z"}
+{"message":"Email id doesnt exists","level":"error","timestamp":"2021-08-26T13:54:33.306Z"}
+{"level":"error","message":"Error in service","timestamp":"2021-08-26T13:54:33.310Z"}
+{"message":"Invalid password","level":"error","timestamp":"2021-08-26T13:54:33.472Z"}
+{"message":"Invalid email id","level":"error","timestamp":"2021-08-26T13:54:39.376Z"}
+{"message":"Invalid email id","level":"error","timestamp":"2021-08-26T13:54:41.819Z"}
+{"message":"Error detected in model","level":"error","timestamp":"2021-08-26T13:56:15.502Z"}
+{"message":"Error occured while registering new user","level":"error","timestamp":"2021-08-26T13:56:15.510Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-26T13:56:15.606Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-26T13:56:15.640Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-26T13:56:15.683Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-26T13:56:15.716Z"}
+{"message":"Email id doesnt exists","level":"error","timestamp":"2021-08-26T13:56:15.949Z"}
+{"level":"error","message":"Error in service","timestamp":"2021-08-26T13:56:15.953Z"}
+{"message":"Email id doesnt exists","level":"error","timestamp":"2021-08-26T13:56:15.990Z"}
+{"level":"error","message":"Error in service","timestamp":"2021-08-26T13:56:15.996Z"}
+{"message":"Invalid password","level":"error","timestamp":"2021-08-26T13:56:16.161Z"}
+{"message":"Invalid email id","level":"error","timestamp":"2021-08-26T13:56:20.369Z"}
+{"message":"Invalid email id","level":"error","timestamp":"2021-08-26T13:56:21.377Z"}
+{"message":"Error detected in model","level":"error","timestamp":"2021-08-26T13:57:39.764Z"}
+{"message":"Error occured while registering new user","level":"error","timestamp":"2021-08-26T13:57:39.774Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-26T13:57:39.899Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-26T13:57:39.942Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-26T13:57:39.975Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-26T13:57:40.022Z"}
+{"message":"Email id doesnt exists","level":"error","timestamp":"2021-08-26T13:57:40.255Z"}
+{"level":"error","message":"Error in service","timestamp":"2021-08-26T13:57:40.258Z"}
+{"message":"Email id doesnt exists","level":"error","timestamp":"2021-08-26T13:57:40.295Z"}
+{"level":"error","message":"Error in service","timestamp":"2021-08-26T13:57:40.299Z"}
+{"message":"Invalid password","level":"error","timestamp":"2021-08-26T13:57:40.450Z"}
+{"message":"Invalid email id","level":"error","timestamp":"2021-08-26T13:57:46.917Z"}
+{"message":"Invalid email id","level":"error","timestamp":"2021-08-26T13:57:48.246Z"}
+{"message":"Error detected in model","level":"error","timestamp":"2021-08-26T14:01:35.093Z"}
+{"message":"Error occured while registering new user","level":"error","timestamp":"2021-08-26T14:01:35.100Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-26T14:01:35.187Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-26T14:01:35.225Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-26T14:01:35.259Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-26T14:01:35.292Z"}
+{"message":"Email id doesnt exists","level":"error","timestamp":"2021-08-26T14:01:35.536Z"}
+{"level":"error","message":"Error in service","timestamp":"2021-08-26T14:01:35.541Z"}
+{"message":"Email id doesnt exists","level":"error","timestamp":"2021-08-26T14:01:35.580Z"}
+{"level":"error","message":"Error in service","timestamp":"2021-08-26T14:01:35.585Z"}
+{"message":"Invalid password","level":"error","timestamp":"2021-08-26T14:01:35.744Z"}
+{"message":"Invalid email id","level":"error","timestamp":"2021-08-26T14:02:04.328Z"}
+{"message":"Invalid email id","level":"error","timestamp":"2021-08-26T14:03:50.832Z"}
+{"message":"Error detected in model","level":"error","timestamp":"2021-08-26T14:05:22.789Z"}
+{"message":"Error occured while registering new user","level":"error","timestamp":"2021-08-26T14:05:22.792Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-26T14:05:22.846Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-26T14:05:22.861Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-26T14:05:22.875Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-26T14:05:22.895Z"}
+{"message":"Email id doesnt exists","level":"error","timestamp":"2021-08-26T14:05:23.099Z"}
+{"level":"error","message":"Error in service","timestamp":"2021-08-26T14:05:23.100Z"}
+{"message":"Email id doesnt exists","level":"error","timestamp":"2021-08-26T14:05:23.117Z"}
+{"level":"error","message":"Error in service","timestamp":"2021-08-26T14:05:23.117Z"}
+{"message":"Invalid password","level":"error","timestamp":"2021-08-26T14:05:23.253Z"}
+{"message":"Invalid email id","level":"error","timestamp":"2021-08-26T14:05:23.272Z"}
+{"message":"Invalid email id","level":"error","timestamp":"2021-08-26T14:05:23.285Z"}
+{"message":"Error detected in model","level":"error","timestamp":"2021-08-26T14:09:26.837Z"}
+{"message":"Error occured while registering new user","level":"error","timestamp":"2021-08-26T14:09:26.839Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-26T14:09:26.900Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-26T14:09:26.920Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-26T14:09:26.945Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-26T14:09:26.966Z"}
+{"message":"Email id doesnt exists","level":"error","timestamp":"2021-08-26T14:09:27.165Z"}
+{"level":"error","message":"Error in service","timestamp":"2021-08-26T14:09:27.166Z"}
+{"message":"Email id doesnt exists","level":"error","timestamp":"2021-08-26T14:09:27.183Z"}
+{"level":"error","message":"Error in service","timestamp":"2021-08-26T14:09:27.184Z"}
+{"message":"Invalid password","level":"error","timestamp":"2021-08-26T14:09:27.315Z"}
+{"message":"Invalid email id","level":"error","timestamp":"2021-08-26T14:09:27.334Z"}
+{"message":"Invalid email id","level":"error","timestamp":"2021-08-26T14:09:27.351Z"}
+{"message":"Error detected in model","level":"error","timestamp":"2021-08-26T14:11:03.227Z"}
+{"message":"Error occured while registering new user","level":"error","timestamp":"2021-08-26T14:11:03.229Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-26T14:11:03.291Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-26T14:11:03.308Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-26T14:11:03.330Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-26T14:11:03.350Z"}
+{"message":"Email id doesnt exists","level":"error","timestamp":"2021-08-26T14:11:03.554Z"}
+{"level":"error","message":"Error in service","timestamp":"2021-08-26T14:11:03.556Z"}
+{"message":"Email id doesnt exists","level":"error","timestamp":"2021-08-26T14:11:03.573Z"}
+{"level":"error","message":"Error in service","timestamp":"2021-08-26T14:11:03.573Z"}
+{"message":"Invalid password","level":"error","timestamp":"2021-08-26T14:11:03.706Z"}
+{"message":"Invalid email id","level":"error","timestamp":"2021-08-26T14:11:03.724Z"}
+{"message":"Invalid email id","level":"error","timestamp":"2021-08-26T14:11:03.740Z"}
+{"message":"Error detected in model","level":"error","timestamp":"2021-08-26T14:12:16.524Z"}
+{"message":"Error occured while registering new user","level":"error","timestamp":"2021-08-26T14:12:16.527Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-26T14:12:16.594Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-26T14:12:16.619Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-26T14:12:16.636Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-26T14:12:16.657Z"}
+{"message":"Email id doesnt exists","level":"error","timestamp":"2021-08-26T14:12:16.859Z"}
+{"level":"error","message":"Error in service","timestamp":"2021-08-26T14:12:16.861Z"}
+{"message":"Email id doesnt exists","level":"error","timestamp":"2021-08-26T14:12:16.877Z"}
+{"level":"error","message":"Error in service","timestamp":"2021-08-26T14:12:16.878Z"}
+{"message":"Invalid password","level":"error","timestamp":"2021-08-26T14:12:17.014Z"}
+{"message":"Invalid email id","level":"error","timestamp":"2021-08-26T14:12:17.038Z"}
+{"message":"Invalid email id","level":"error","timestamp":"2021-08-26T14:12:17.061Z"}
+{"message":"Error detected in model","level":"error","timestamp":"2021-08-26T14:14:26.195Z"}
+{"message":"Error occured while registering new user","level":"error","timestamp":"2021-08-26T14:14:26.198Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-26T14:14:26.261Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-26T14:14:26.280Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-26T14:14:26.303Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-26T14:14:26.321Z"}
+{"message":"Email id doesnt exists","level":"error","timestamp":"2021-08-26T14:14:26.526Z"}
+{"level":"error","message":"Error in service","timestamp":"2021-08-26T14:14:26.526Z"}
+{"message":"Email id doesnt exists","level":"error","timestamp":"2021-08-26T14:14:26.543Z"}
+{"level":"error","message":"Error in service","timestamp":"2021-08-26T14:14:26.544Z"}
+{"message":"Invalid password","level":"error","timestamp":"2021-08-26T14:14:26.676Z"}
+{"message":"Invalid email id","level":"error","timestamp":"2021-08-26T14:14:26.694Z"}
+{"message":"Invalid email id","level":"error","timestamp":"2021-08-26T14:14:26.713Z"}
+{"message":"Error detected in model","level":"error","timestamp":"2021-08-26T14:15:53.776Z"}
+{"message":"Error occured while registering new user","level":"error","timestamp":"2021-08-26T14:15:53.778Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-26T14:15:53.838Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-26T14:15:53.860Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-26T14:15:53.879Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-26T14:15:53.901Z"}
+{"message":"Email id doesnt exists","level":"error","timestamp":"2021-08-26T14:15:54.102Z"}
+{"level":"error","message":"Error in service","timestamp":"2021-08-26T14:15:54.102Z"}
+{"message":"Email id doesnt exists","level":"error","timestamp":"2021-08-26T14:15:54.120Z"}
+{"level":"error","message":"Error in service","timestamp":"2021-08-26T14:15:54.120Z"}
+{"message":"Invalid password","level":"error","timestamp":"2021-08-26T14:15:54.252Z"}
+{"message":"Invalid email id","level":"error","timestamp":"2021-08-26T14:15:54.278Z"}
+{"message":"Invalid email id","level":"error","timestamp":"2021-08-26T14:15:54.295Z"}
+{"message":"Invalid email id","level":"error","timestamp":"2021-08-26T15:11:37.323Z"}
+{"message":"Invalid email id","level":"error","timestamp":"2021-08-26T15:12:52.682Z"}
+{"message":"Error detected in model","level":"error","timestamp":"2021-08-26T15:13:38.949Z"}
+{"message":"Error occured while registering new user","level":"error","timestamp":"2021-08-26T15:13:38.951Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-26T15:13:39.012Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-26T15:13:39.029Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-26T15:13:39.044Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-26T15:13:39.064Z"}
+{"message":"Email id doesnt exists","level":"error","timestamp":"2021-08-26T15:13:39.270Z"}
+{"level":"error","message":"Error in service","timestamp":"2021-08-26T15:13:39.271Z"}
+{"message":"Email id doesnt exists","level":"error","timestamp":"2021-08-26T15:13:39.290Z"}
+{"level":"error","message":"Error in service","timestamp":"2021-08-26T15:13:39.291Z"}
+{"message":"Invalid password","level":"error","timestamp":"2021-08-26T15:13:39.427Z"}
+{"message":"Invalid email id","level":"error","timestamp":"2021-08-26T15:13:39.455Z"}
+{"message":"Invalid email id","level":"error","timestamp":"2021-08-26T15:13:39.476Z"}
+{"message":"Error detected in model","level":"error","timestamp":"2021-08-26T15:17:00.190Z"}
+{"message":"Error occured while registering new user","level":"error","timestamp":"2021-08-26T15:17:00.192Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-26T15:17:00.248Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-26T15:17:00.263Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-26T15:17:00.277Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-26T15:17:00.296Z"}
+{"message":"Email id doesnt exists","level":"error","timestamp":"2021-08-26T15:17:00.493Z"}
+{"level":"error","message":"Error in service","timestamp":"2021-08-26T15:17:00.494Z"}
+{"message":"Email id doesnt exists","level":"error","timestamp":"2021-08-26T15:17:00.511Z"}
+{"level":"error","message":"Error in service","timestamp":"2021-08-26T15:17:00.511Z"}
+{"message":"Invalid password","level":"error","timestamp":"2021-08-26T15:17:00.646Z"}
+{"message":"Invalid email id","level":"error","timestamp":"2021-08-26T15:17:00.664Z"}
+{"message":"Invalid email id","level":"error","timestamp":"2021-08-26T15:17:00.680Z"}
+{"message":"Error detected in model","level":"error","timestamp":"2021-08-26T15:21:15.036Z"}
+{"message":"Error occured while registering new user","level":"error","timestamp":"2021-08-26T15:21:15.038Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-26T15:21:15.090Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-26T15:21:15.105Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-26T15:21:15.125Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-26T15:21:15.142Z"}
+{"message":"Email id doesnt exists","level":"error","timestamp":"2021-08-26T15:21:15.337Z"}
+{"level":"error","message":"Error in service","timestamp":"2021-08-26T15:21:15.338Z"}
+{"message":"Email id doesnt exists","level":"error","timestamp":"2021-08-26T15:21:15.355Z"}
+{"level":"error","message":"Error in service","timestamp":"2021-08-26T15:21:15.356Z"}
+{"message":"Invalid password","level":"error","timestamp":"2021-08-26T15:21:15.485Z"}
+{"message":"Invalid email id","level":"error","timestamp":"2021-08-26T15:21:15.504Z"}
+{"message":"Invalid email id","level":"error","timestamp":"2021-08-26T15:21:15.521Z"}
+{"message":"Error detected in model","level":"error","timestamp":"2021-08-26T15:22:11.098Z"}
+{"message":"Error occured while registering new user","level":"error","timestamp":"2021-08-26T15:22:11.101Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-26T15:22:11.164Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-26T15:22:11.188Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-26T15:22:11.209Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-26T15:22:11.228Z"}
+{"message":"Email id doesnt exists","level":"error","timestamp":"2021-08-26T15:22:11.446Z"}
+{"level":"error","message":"Error in service","timestamp":"2021-08-26T15:22:11.447Z"}
+{"message":"Email id doesnt exists","level":"error","timestamp":"2021-08-26T15:22:11.462Z"}
+{"level":"error","message":"Error in service","timestamp":"2021-08-26T15:22:11.462Z"}
+{"message":"Invalid password","level":"error","timestamp":"2021-08-26T15:22:11.591Z"}
+{"message":"Invalid email id","level":"error","timestamp":"2021-08-26T15:22:11.610Z"}
+{"message":"Invalid email id","level":"error","timestamp":"2021-08-26T15:22:11.627Z"}
+{"message":"Error detected in model","level":"error","timestamp":"2021-08-26T15:23:06.125Z"}
+{"message":"Error occured while registering new user","level":"error","timestamp":"2021-08-26T15:23:06.128Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-26T15:23:06.189Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-26T15:23:06.210Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-26T15:23:06.227Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-26T15:23:06.245Z"}
+{"message":"Email id doesnt exists","level":"error","timestamp":"2021-08-26T15:23:06.439Z"}
+{"level":"error","message":"Error in service","timestamp":"2021-08-26T15:23:06.440Z"}
+{"message":"Email id doesnt exists","level":"error","timestamp":"2021-08-26T15:23:06.456Z"}
+{"level":"error","message":"Error in service","timestamp":"2021-08-26T15:23:06.456Z"}
+{"message":"Invalid password","level":"error","timestamp":"2021-08-26T15:23:06.586Z"}
+{"message":"Invalid email id","level":"error","timestamp":"2021-08-26T15:23:06.605Z"}
+{"message":"Invalid email id","level":"error","timestamp":"2021-08-26T15:23:06.621Z"}
+{"message":"Error detected in model","level":"error","timestamp":"2021-08-26T15:41:45.266Z"}
+{"message":"Error occured while registering new user","level":"error","timestamp":"2021-08-26T15:41:45.270Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-26T15:41:45.326Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-26T15:41:45.341Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-26T15:41:45.356Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-26T15:41:45.378Z"}
+{"message":"Email id doesnt exists","level":"error","timestamp":"2021-08-26T15:41:45.578Z"}
+{"level":"error","message":"Error in service","timestamp":"2021-08-26T15:41:45.579Z"}
+{"message":"Email id doesnt exists","level":"error","timestamp":"2021-08-26T15:41:45.599Z"}
+{"level":"error","message":"Error in service","timestamp":"2021-08-26T15:41:45.599Z"}
+{"message":"Invalid password","level":"error","timestamp":"2021-08-26T15:41:45.733Z"}
+{"message":"Invalid email id","level":"error","timestamp":"2021-08-26T15:41:45.750Z"}
+{"message":"Invalid email id","level":"error","timestamp":"2021-08-26T15:41:45.770Z"}
+{"message":"Error detected in model","level":"error","timestamp":"2021-08-26T15:51:30.494Z"}
+{"message":"Error occured while registering new user","level":"error","timestamp":"2021-08-26T15:51:30.501Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-26T15:51:30.585Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-26T15:51:30.624Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-26T15:51:30.661Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-26T15:51:30.697Z"}
+{"message":"Email id doesnt exists","level":"error","timestamp":"2021-08-26T15:51:30.938Z"}
+{"level":"error","message":"Error in service","timestamp":"2021-08-26T15:51:30.943Z"}
+{"message":"Email id doesnt exists","level":"error","timestamp":"2021-08-26T15:51:30.981Z"}
+{"level":"error","message":"Error in service","timestamp":"2021-08-26T15:51:30.985Z"}
+{"message":"Invalid password","level":"error","timestamp":"2021-08-26T15:51:31.151Z"}
+{"message":"Invalid email id","level":"error","timestamp":"2021-08-26T15:51:31.187Z"}
+{"message":"Invalid email id","level":"error","timestamp":"2021-08-26T15:51:31.220Z"}
+{"message":"Error detected in model","level":"error","timestamp":"2021-08-26T15:52:41.709Z"}
+{"message":"Error occured while registering new user","level":"error","timestamp":"2021-08-26T15:52:41.717Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-26T15:52:41.806Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-26T15:52:41.843Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-26T15:52:41.877Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-26T15:52:41.910Z"}
+{"message":"Email id doesnt exists","level":"error","timestamp":"2021-08-26T15:52:42.157Z"}
+{"level":"error","message":"Error in service","timestamp":"2021-08-26T15:52:42.162Z"}
+{"message":"Email id doesnt exists","level":"error","timestamp":"2021-08-26T15:52:42.200Z"}
+{"level":"error","message":"Error in service","timestamp":"2021-08-26T15:52:42.204Z"}
+{"message":"Invalid password","level":"error","timestamp":"2021-08-26T15:52:42.368Z"}
+{"message":"Invalid email id","level":"error","timestamp":"2021-08-26T15:52:42.403Z"}
+{"message":"Invalid email id","level":"error","timestamp":"2021-08-26T15:52:42.436Z"}
+{"message":"Error detected in model","level":"error","timestamp":"2021-08-26T15:54:14.242Z"}
+{"message":"Error occured while registering new user","level":"error","timestamp":"2021-08-26T15:54:14.245Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-26T15:54:14.310Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-26T15:54:14.327Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-26T15:54:14.346Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-26T15:54:14.363Z"}
+{"message":"Email id doesnt exists","level":"error","timestamp":"2021-08-26T15:54:14.558Z"}
+{"level":"error","message":"Error in service","timestamp":"2021-08-26T15:54:14.560Z"}
+{"message":"Email id doesnt exists","level":"error","timestamp":"2021-08-26T15:54:14.576Z"}
+{"level":"error","message":"Error in service","timestamp":"2021-08-26T15:54:14.576Z"}
+{"message":"Invalid password","level":"error","timestamp":"2021-08-26T15:54:14.708Z"}
+{"message":"Invalid email id","level":"error","timestamp":"2021-08-26T15:54:14.736Z"}
+{"message":"Invalid email id","level":"error","timestamp":"2021-08-26T15:54:14.752Z"}
+{"message":"Error detected in model","level":"error","timestamp":"2021-08-26T15:56:44.806Z"}
+{"message":"Error occured while registering new user","level":"error","timestamp":"2021-08-26T15:56:44.808Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-26T15:56:44.869Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-26T15:56:44.886Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-26T15:56:44.908Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-26T15:56:44.926Z"}
+{"message":"Email id doesnt exists","level":"error","timestamp":"2021-08-26T15:56:45.125Z"}
+{"level":"error","message":"Error in service","timestamp":"2021-08-26T15:56:45.125Z"}
+{"message":"Email id doesnt exists","level":"error","timestamp":"2021-08-26T15:56:45.143Z"}
+{"level":"error","message":"Error in service","timestamp":"2021-08-26T15:56:45.143Z"}
+{"message":"Invalid password","level":"error","timestamp":"2021-08-26T15:56:45.276Z"}
+{"message":"Invalid email id","level":"error","timestamp":"2021-08-26T15:56:45.295Z"}
+{"message":"Invalid email id","level":"error","timestamp":"2021-08-26T15:56:45.310Z"}
+{"message":"Error detected in model","level":"error","timestamp":"2021-08-26T15:57:42.349Z"}
+{"message":"Error occured while registering new user","level":"error","timestamp":"2021-08-26T15:57:42.352Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-26T15:57:42.413Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-26T15:57:42.431Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-26T15:57:42.449Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-26T15:57:42.465Z"}
+{"message":"Email id doesnt exists","level":"error","timestamp":"2021-08-26T15:57:42.660Z"}
+{"level":"error","message":"Error in service","timestamp":"2021-08-26T15:57:42.661Z"}
+{"message":"Email id doesnt exists","level":"error","timestamp":"2021-08-26T15:57:42.681Z"}
+{"level":"error","message":"Error in service","timestamp":"2021-08-26T15:57:42.681Z"}
+{"message":"Invalid password","level":"error","timestamp":"2021-08-26T15:57:42.812Z"}
+{"message":"Invalid email id","level":"error","timestamp":"2021-08-26T15:57:42.830Z"}
+{"message":"Invalid email id","level":"error","timestamp":"2021-08-26T15:57:42.847Z"}
+{"message":"Error detected in model","level":"error","timestamp":"2021-08-26T16:00:55.392Z"}
+{"message":"Error occured while registering new user","level":"error","timestamp":"2021-08-26T16:00:55.399Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-26T16:00:55.469Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-26T16:00:55.500Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-26T16:00:55.525Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-26T16:00:55.551Z"}
+{"message":"Email id doesnt exists","level":"error","timestamp":"2021-08-26T16:00:55.948Z"}
+{"level":"error","message":"Error in service","timestamp":"2021-08-26T16:00:55.959Z"}
+{"message":"Email id doesnt exists","level":"error","timestamp":"2021-08-26T16:00:56.132Z"}
+{"level":"error","message":"Error in service","timestamp":"2021-08-26T16:00:56.136Z"}
+{"message":"Invalid password","level":"error","timestamp":"2021-08-26T16:00:56.450Z"}
+{"message":"Invalid email id","level":"error","timestamp":"2021-08-26T16:00:56.576Z"}
+{"message":"Invalid email id","level":"error","timestamp":"2021-08-26T16:00:56.674Z"}
+{"message":"Error detected in model","level":"error","timestamp":"2021-08-26T16:14:05.221Z"}
+{"message":"Error occured while registering new user","level":"error","timestamp":"2021-08-26T16:14:05.227Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-26T16:14:05.320Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-26T16:14:05.357Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-26T16:14:05.393Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-26T16:14:05.431Z"}
+{"message":"Email id doesnt exists","level":"error","timestamp":"2021-08-26T16:14:05.670Z"}
+{"level":"error","message":"Error in service","timestamp":"2021-08-26T16:14:05.674Z"}
+{"message":"Email id doesnt exists","level":"error","timestamp":"2021-08-26T16:14:05.709Z"}
+{"level":"error","message":"Error in service","timestamp":"2021-08-26T16:14:05.714Z"}
+{"message":"Invalid password","level":"error","timestamp":"2021-08-26T16:14:05.893Z"}
+{"message":"Invalid email id","level":"error","timestamp":"2021-08-26T16:14:05.944Z"}
+{"message":"Invalid email id","level":"error","timestamp":"2021-08-26T16:14:05.990Z"}
+{"message":"Error detected in model","level":"error","timestamp":"2021-08-26T16:17:12.681Z"}
+{"message":"Error occured while registering new user","level":"error","timestamp":"2021-08-26T16:17:12.688Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-26T16:17:12.765Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-26T16:17:12.800Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-26T16:17:12.834Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-26T16:17:12.869Z"}
+{"message":"Email id doesnt exists","level":"error","timestamp":"2021-08-26T16:17:13.105Z"}
+{"level":"error","message":"Error in service","timestamp":"2021-08-26T16:17:13.110Z"}
+{"message":"Email id doesnt exists","level":"error","timestamp":"2021-08-26T16:17:13.149Z"}
+{"level":"error","message":"Error in service","timestamp":"2021-08-26T16:17:13.153Z"}
+{"message":"Invalid password","level":"error","timestamp":"2021-08-26T16:17:13.318Z"}
+{"message":"Invalid email id","level":"error","timestamp":"2021-08-26T16:17:13.352Z"}
+{"message":"Invalid email id","level":"error","timestamp":"2021-08-26T16:17:13.385Z"}
+{"message":"Error detected in model","level":"error","timestamp":"2021-08-26T16:18:01.434Z"}
+{"message":"Error occured while registering new user","level":"error","timestamp":"2021-08-26T16:18:01.440Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-26T16:18:01.525Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-26T16:18:01.566Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-26T16:18:01.602Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-26T16:18:01.635Z"}
+{"message":"Email id doesnt exists","level":"error","timestamp":"2021-08-26T16:18:01.876Z"}
+{"level":"error","message":"Error in service","timestamp":"2021-08-26T16:18:01.880Z"}
+{"message":"Email id doesnt exists","level":"error","timestamp":"2021-08-26T16:18:01.918Z"}
+{"level":"error","message":"Error in service","timestamp":"2021-08-26T16:18:01.922Z"}
+{"message":"Invalid password","level":"error","timestamp":"2021-08-26T16:18:02.073Z"}
+{"message":"Invalid email id","level":"error","timestamp":"2021-08-26T16:18:02.108Z"}
+{"message":"Invalid email id","level":"error","timestamp":"2021-08-26T16:18:02.145Z"}
+{"message":"Error detected in model","level":"error","timestamp":"2021-08-26T16:18:41.237Z"}
+{"message":"Error occured while registering new user","level":"error","timestamp":"2021-08-26T16:18:41.245Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-26T16:18:41.341Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-26T16:18:41.381Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-26T16:18:41.427Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-26T16:18:41.456Z"}
+{"message":"Email id doesnt exists","level":"error","timestamp":"2021-08-26T16:18:41.699Z"}
+{"level":"error","message":"Error in service","timestamp":"2021-08-26T16:18:41.703Z"}
+{"message":"Email id doesnt exists","level":"error","timestamp":"2021-08-26T16:18:41.741Z"}
+{"level":"error","message":"Error in service","timestamp":"2021-08-26T16:18:41.746Z"}
+{"message":"Invalid password","level":"error","timestamp":"2021-08-26T16:18:41.907Z"}
+{"message":"Invalid email id","level":"error","timestamp":"2021-08-26T16:18:41.941Z"}
+{"message":"Invalid email id","level":"error","timestamp":"2021-08-26T16:18:41.976Z"}
+{"message":"Error detected in model","level":"error","timestamp":"2021-08-26T16:19:18.217Z"}
+{"message":"Error occured while registering new user","level":"error","timestamp":"2021-08-26T16:19:18.225Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-26T16:19:18.322Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-26T16:19:18.359Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-26T16:19:18.392Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-26T16:19:18.427Z"}
+{"message":"Email id doesnt exists","level":"error","timestamp":"2021-08-26T16:19:18.668Z"}
+{"level":"error","message":"Error in service","timestamp":"2021-08-26T16:19:18.674Z"}
+{"message":"Email id doesnt exists","level":"error","timestamp":"2021-08-26T16:19:18.705Z"}
+{"level":"error","message":"Error in service","timestamp":"2021-08-26T16:19:18.711Z"}
+{"message":"Invalid password","level":"error","timestamp":"2021-08-26T16:19:18.867Z"}
+{"message":"Invalid email id","level":"error","timestamp":"2021-08-26T16:19:18.899Z"}
+{"message":"Invalid email id","level":"error","timestamp":"2021-08-26T16:19:18.933Z"}
+{"message":"Error detected in model","level":"error","timestamp":"2021-08-26T16:22:19.735Z"}
+{"message":"Error occured while registering new user","level":"error","timestamp":"2021-08-26T16:22:19.742Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-26T16:22:19.824Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-26T16:22:19.861Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-26T16:22:19.897Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-26T16:22:19.934Z"}
+{"message":"Email id doesnt exists","level":"error","timestamp":"2021-08-26T16:22:20.176Z"}
+{"level":"error","message":"Error in service","timestamp":"2021-08-26T16:22:20.180Z"}
+{"message":"Email id doesnt exists","level":"error","timestamp":"2021-08-26T16:22:20.217Z"}
+{"level":"error","message":"Error in service","timestamp":"2021-08-26T16:22:20.221Z"}
+{"message":"Invalid password","level":"error","timestamp":"2021-08-26T16:22:20.390Z"}
+{"message":"Invalid email id","level":"error","timestamp":"2021-08-26T16:22:20.426Z"}
+{"message":"Invalid email id","level":"error","timestamp":"2021-08-26T16:22:20.460Z"}
+{"message":"Error detected in model","level":"error","timestamp":"2021-08-26T16:33:25.587Z"}
+{"message":"Error occured while registering new user","level":"error","timestamp":"2021-08-26T16:33:25.593Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-26T16:33:25.670Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-26T16:33:25.717Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-26T16:33:25.769Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-26T16:33:25.800Z"}
+{"message":"Email id doesnt exists","level":"error","timestamp":"2021-08-26T16:33:26.046Z"}
+{"level":"error","message":"Error in service","timestamp":"2021-08-26T16:33:26.051Z"}
+{"message":"Email id doesnt exists","level":"error","timestamp":"2021-08-26T16:33:26.088Z"}
+{"level":"error","message":"Error in service","timestamp":"2021-08-26T16:33:26.092Z"}
+{"message":"Invalid password","level":"error","timestamp":"2021-08-26T16:33:26.245Z"}
+{"message":"Invalid email id","level":"error","timestamp":"2021-08-26T16:33:26.284Z"}
+{"message":"Invalid email id","level":"error","timestamp":"2021-08-26T16:33:26.322Z"}
+{"message":"Error detected in model","level":"error","timestamp":"2021-08-26T16:34:31.682Z"}
+{"message":"Error occured while registering new user","level":"error","timestamp":"2021-08-26T16:34:31.690Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-26T16:34:31.774Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-26T16:34:31.810Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-26T16:34:31.845Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-26T16:34:31.877Z"}
+{"message":"Email id doesnt exists","level":"error","timestamp":"2021-08-26T16:34:32.109Z"}
+{"level":"error","message":"Error in service","timestamp":"2021-08-26T16:34:32.113Z"}
+{"message":"Email id doesnt exists","level":"error","timestamp":"2021-08-26T16:34:32.148Z"}
+{"level":"error","message":"Error in service","timestamp":"2021-08-26T16:34:32.153Z"}
+{"message":"Invalid password","level":"error","timestamp":"2021-08-26T16:34:32.317Z"}
+{"message":"Invalid email id","level":"error","timestamp":"2021-08-26T16:34:32.346Z"}
+{"message":"Invalid email id","level":"error","timestamp":"2021-08-26T16:34:32.378Z"}
+{"message":"Error detected in model","level":"error","timestamp":"2021-08-27T02:17:52.393Z"}
+{"message":"Error occured while registering new user","level":"error","timestamp":"2021-08-27T02:17:52.406Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-27T02:17:52.520Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-27T02:17:52.580Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-27T02:17:52.635Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-27T02:17:52.689Z"}
+{"message":"Email id doesnt exists","level":"error","timestamp":"2021-08-27T02:17:52.993Z"}
+{"level":"error","message":"Error in service","timestamp":"2021-08-27T02:17:53.001Z"}
+{"message":"Email id doesnt exists","level":"error","timestamp":"2021-08-27T02:17:53.055Z"}
+{"level":"error","message":"Error in service","timestamp":"2021-08-27T02:17:53.066Z"}
+{"message":"Invalid password","level":"error","timestamp":"2021-08-27T02:17:53.316Z"}
+{"message":"Invalid email id","level":"error","timestamp":"2021-08-27T02:17:53.358Z"}
+{"message":"Invalid email id","level":"error","timestamp":"2021-08-27T02:17:53.408Z"}
+{"message":"Error detected in model","level":"error","timestamp":"2021-08-27T02:30:55.452Z"}
+{"message":"Error occured while registering new user","level":"error","timestamp":"2021-08-27T02:30:55.454Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-27T02:30:55.536Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-27T02:30:55.558Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-27T02:30:55.579Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-27T02:30:55.610Z"}
+{"message":"Email id doesnt exists","level":"error","timestamp":"2021-08-27T02:30:55.896Z"}
+{"level":"error","message":"Error in service","timestamp":"2021-08-27T02:30:55.897Z"}
+{"message":"Email id doesnt exists","level":"error","timestamp":"2021-08-27T02:30:55.919Z"}
+{"level":"error","message":"Error in service","timestamp":"2021-08-27T02:30:55.920Z"}
+{"message":"Invalid password","level":"error","timestamp":"2021-08-27T02:30:56.101Z"}
+{"message":"Invalid email id","level":"error","timestamp":"2021-08-27T02:30:56.129Z"}
+{"message":"Invalid email id","level":"error","timestamp":"2021-08-27T02:30:56.165Z"}
+{"message":"could not connect to db .Exiting now  connect ECONNREFUSED 127.0.0.1:27017","reason":{"type":"Single","setName":null,"maxSetVersion":null,"maxElectionId":null,"servers":{},"stale":false,"compatible":true,"compatibilityError":null,"logicalSessionTimeoutMinutes":null,"heartbeatFrequencyMS":10000,"localThresholdMS":15,"commonWireVersion":null},"level":"error","stack":"MongooseServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017\n    at NativeConnection.Connection.openUri (C:\\Users\\visha\\Desktop\\nodeprojects\\fundoo-note-app\\node_modules\\mongoose\\lib\\connection.js:846:32)\n    at C:\\Users\\visha\\Desktop\\nodeprojects\\fundoo-note-app\\node_modules\\mongoose\\lib\\index.js:351:10\n    at C:\\Users\\visha\\Desktop\\nodeprojects\\fundoo-note-app\\node_modules\\mongoose\\lib\\helpers\\promiseOrCallback.js:32:5\n    at new Promise (<anonymous>)\n    at promiseOrCallback (C:\\Users\\visha\\Desktop\\nodeprojects\\fundoo-note-app\\node_modules\\mongoose\\lib\\helpers\\promiseOrCallback.js:31:10)\n    at Mongoose._promiseOrCallback (C:\\Users\\visha\\Desktop\\nodeprojects\\fundoo-note-app\\node_modules\\mongoose\\lib\\index.js:1149:10)\n    at Mongoose.connect (C:\\Users\\visha\\Desktop\\nodeprojects\\fundoo-note-app\\node_modules\\mongoose\\lib\\index.js:350:20)\n    at Object.exports.dbConnection (C:\\Users\\visha\\Desktop\\nodeprojects\\fundoo-note-app\\config\\db.config.js:6:10)\n    at Object.<anonymous> (C:\\Users\\visha\\Desktop\\nodeprojects\\fundoo-note-app\\server.js:33:10)\n    at Module._compile (internal/modules/cjs/loader.js:1085:14)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)\n    at Module.load (internal/modules/cjs/loader.js:950:32)\n    at Function.Module._load (internal/modules/cjs/loader.js:790:14)\n    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)\n    at internal/main/run_main_module.js:17:47","timestamp":"2021-08-28T02:29:52.690Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-31T10:46:32.172Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-31T10:46:32.193Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-31T10:46:32.217Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-31T10:46:32.235Z"}
+{"message":"Email id doesnt exists","level":"error","timestamp":"2021-08-31T10:46:42.665Z"}
+{"level":"error","message":"Error in service","timestamp":"2021-08-31T10:46:42.668Z"}
+{"message":"Email id doesnt exists","level":"error","timestamp":"2021-08-31T10:46:42.706Z"}
+{"level":"error","message":"Error in service","timestamp":"2021-08-31T10:46:42.708Z"}
+{"message":"Invalid password","level":"error","timestamp":"2021-08-31T10:46:42.838Z"}
+{"message":"Invalid email id","level":"error","timestamp":"2021-08-31T10:46:42.873Z"}
+{"message":"Invalid email id","level":"error","timestamp":"2021-08-31T10:46:45.439Z"}
+{"message":"Error detected in model","level":"error","timestamp":"2021-08-31T10:48:00.779Z"}
+{"message":"Error occured while registering new user","level":"error","timestamp":"2021-08-31T10:48:00.784Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-31T10:48:00.834Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-31T10:48:00.861Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-31T10:48:00.882Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-31T10:48:00.903Z"}
+{"message":"Email id doesnt exists","level":"error","timestamp":"2021-08-31T10:48:08.268Z"}
+{"level":"error","message":"Error in service","timestamp":"2021-08-31T10:48:08.273Z"}
+{"message":"Email id doesnt exists","level":"error","timestamp":"2021-08-31T10:48:08.305Z"}
+{"level":"error","message":"Error in service","timestamp":"2021-08-31T10:48:08.307Z"}
+{"message":"Invalid password","level":"error","timestamp":"2021-08-31T10:48:08.439Z"}
+{"message":"Invalid email id","level":"error","timestamp":"2021-08-31T10:48:08.474Z"}
+{"message":"Invalid email id","level":"error","timestamp":"2021-08-31T10:48:08.515Z"}
+{"message":"Error detected in model","level":"error","timestamp":"2021-08-31T11:01:26.526Z"}
+{"message":"Error occured while registering new user","level":"error","timestamp":"2021-08-31T11:01:26.528Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-31T11:01:26.565Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-31T11:01:26.575Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-31T11:01:26.584Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-31T11:01:26.598Z"}
+{"message":"Email id doesnt exists","level":"error","timestamp":"2021-08-31T11:01:26.736Z"}
+{"level":"error","message":"Error in service","timestamp":"2021-08-31T11:01:26.737Z"}
+{"message":"Email id doesnt exists","level":"error","timestamp":"2021-08-31T11:01:26.753Z"}
+{"level":"error","message":"Error in service","timestamp":"2021-08-31T11:01:26.753Z"}
+{"message":"Invalid password","level":"error","timestamp":"2021-08-31T11:01:26.856Z"}
+{"message":"Invalid email id","level":"error","timestamp":"2021-08-31T11:01:26.866Z"}
+{"message":"Invalid email id","level":"error","timestamp":"2021-08-31T11:01:26.881Z"}
+{"message":"Error detected in model","level":"error","timestamp":"2021-08-31T11:02:13.622Z"}
+{"message":"Error occured while registering new user","level":"error","timestamp":"2021-08-31T11:02:13.624Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-31T11:02:13.668Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-31T11:02:13.683Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-31T11:02:13.694Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-31T11:02:13.706Z"}
+{"message":"Email id doesnt exists","level":"error","timestamp":"2021-08-31T11:02:13.838Z"}
+{"level":"error","message":"Error in service","timestamp":"2021-08-31T11:02:13.839Z"}
+{"message":"Email id doesnt exists","level":"error","timestamp":"2021-08-31T11:02:13.852Z"}
+{"level":"error","message":"Error in service","timestamp":"2021-08-31T11:02:13.852Z"}
+{"message":"Invalid password","level":"error","timestamp":"2021-08-31T11:02:13.953Z"}
+{"message":"Invalid email id","level":"error","timestamp":"2021-08-31T11:02:13.964Z"}
+{"message":"Invalid email id","level":"error","timestamp":"2021-08-31T11:02:13.973Z"}
+{"message":"Error detected in model","level":"error","timestamp":"2021-08-31T11:04:32.281Z"}
+{"message":"Error occured while registering new user","level":"error","timestamp":"2021-08-31T11:04:32.283Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-31T11:04:32.329Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-31T11:04:32.341Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-31T11:04:32.354Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-31T11:04:32.365Z"}
+{"message":"Email id doesnt exists","level":"error","timestamp":"2021-08-31T11:04:32.502Z"}
+{"level":"error","message":"Error in service","timestamp":"2021-08-31T11:04:32.503Z"}
+{"message":"Email id doesnt exists","level":"error","timestamp":"2021-08-31T11:04:32.515Z"}
+{"level":"error","message":"Error in service","timestamp":"2021-08-31T11:04:32.515Z"}
+{"message":"Invalid password","level":"error","timestamp":"2021-08-31T11:04:32.615Z"}
+{"message":"Invalid email id","level":"error","timestamp":"2021-08-31T11:04:32.629Z"}
+{"message":"Invalid email id","level":"error","timestamp":"2021-08-31T11:04:32.640Z"}
+{"message":"Error detected in model","level":"error","timestamp":"2021-08-31T11:05:11.978Z"}
+{"message":"Error occured while registering new user","level":"error","timestamp":"2021-08-31T11:05:11.979Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-31T11:05:12.034Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-31T11:05:12.046Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-31T11:05:12.056Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-31T11:05:12.067Z"}
+{"message":"Email id doesnt exists","level":"error","timestamp":"2021-08-31T11:05:12.218Z"}
+{"level":"error","message":"Error in service","timestamp":"2021-08-31T11:05:12.220Z"}
+{"message":"Email id doesnt exists","level":"error","timestamp":"2021-08-31T11:05:12.231Z"}
+{"level":"error","message":"Error in service","timestamp":"2021-08-31T11:05:12.231Z"}
+{"message":"Invalid password","level":"error","timestamp":"2021-08-31T11:05:12.336Z"}
+{"message":"Invalid email id","level":"error","timestamp":"2021-08-31T11:05:12.349Z"}
+{"message":"Invalid email id","level":"error","timestamp":"2021-08-31T11:05:12.363Z"}
+{"message":"Error detected in model","level":"error","timestamp":"2021-08-31T11:08:58.187Z"}
+{"message":"Error occured while registering new user","level":"error","timestamp":"2021-08-31T11:08:58.189Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-31T11:08:58.224Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-31T11:08:58.235Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-31T11:08:58.243Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-08-31T11:08:58.252Z"}
+{"message":"Email id doesnt exists","level":"error","timestamp":"2021-08-31T11:08:58.385Z"}
+{"level":"error","message":"Error in service","timestamp":"2021-08-31T11:08:58.385Z"}
+{"message":"Email id doesnt exists","level":"error","timestamp":"2021-08-31T11:08:58.397Z"}
+{"level":"error","message":"Error in service","timestamp":"2021-08-31T11:08:58.397Z"}
+{"message":"Invalid password","level":"error","timestamp":"2021-08-31T11:08:58.499Z"}
+{"message":"Invalid email id","level":"error","timestamp":"2021-08-31T11:08:58.512Z"}
+{"message":"Invalid email id","level":"error","timestamp":"2021-08-31T11:08:58.532Z"}
+{"message":"Invalid password","level":"error","timestamp":"2021-09-06T19:13:00.814Z"}
+{"message":"Invalid password","level":"error","timestamp":"2021-09-06T19:13:19.578Z"}
+{"message":"Error detected in model","level":"error","timestamp":"2021-09-06T19:15:04.356Z"}
+{"message":"Error occured while registering new user","level":"error","timestamp":"2021-09-06T19:15:04.358Z"}
+{"message":"Error detected in model","level":"error","timestamp":"2021-09-06T19:17:07.793Z"}
+{"message":"Error occured while registering new user","level":"error","timestamp":"2021-09-06T19:17:07.795Z"}
+{"message":"Error detected in model","level":"error","timestamp":"2021-09-06T19:18:26.236Z"}
+{"message":"Error occured while registering new user","level":"error","timestamp":"2021-09-06T19:18:26.238Z"}
+{"message":"Invalid password","level":"error","timestamp":"2021-09-07T17:42:15.202Z"}
+{"level":"error","message":"Error occured while logging user Operation `userregisters.findOne()` buffering timed out after 10000ms","stack":"MongooseError: Operation `userregisters.findOne()` buffering timed out after 10000ms\n    at Timeout.<anonymous> (C:\\Users\\visha\\Desktop\\nodeprojects\\fundoo-note-app\\node_modules\\mongoose\\lib\\drivers\\node-mongodb-native\\collection.js:197:23)\n    at listOnTimeout (internal/timers.js:557:17)\n    at processTimers (internal/timers.js:500:7)","timestamp":"2021-09-11T14:16:26.657Z"}
+{"level":"error","message":"Error occured while logging user Operation `userregisters.findOne()` buffering timed out after 10000ms","stack":"MongooseError: Operation `userregisters.findOne()` buffering timed out after 10000ms\n    at Timeout.<anonymous> (C:\\Users\\visha\\Desktop\\nodeprojects\\fundoo-note-app\\node_modules\\mongoose\\lib\\drivers\\node-mongodb-native\\collection.js:197:23)\n    at listOnTimeout (internal/timers.js:557:17)\n    at processTimers (internal/timers.js:500:7)","timestamp":"2021-09-11T14:17:30.054Z"}
+{"level":"error","message":"Error in service Operation `userregisters.findOne()` buffering timed out after 10000ms","stack":"MongooseError: Operation `userregisters.findOne()` buffering timed out after 10000ms\n    at Timeout.<anonymous> (C:\\Users\\visha\\Desktop\\nodeprojects\\fundoo-note-app\\node_modules\\mongoose\\lib\\drivers\\node-mongodb-native\\collection.js:197:23)\n    at listOnTimeout (internal/timers.js:557:17)\n    at processTimers (internal/timers.js:500:7)","timestamp":"2021-09-11T14:17:30.056Z"}
+{"level":"error","message":"Error occured while logging user Operation `userregisters.findOne()` buffering timed out after 10000ms","stack":"MongooseError: Operation `userregisters.findOne()` buffering timed out after 10000ms\n    at Timeout.<anonymous> (C:\\Users\\visha\\Desktop\\nodeprojects\\fundoo-note-app\\node_modules\\mongoose\\lib\\drivers\\node-mongodb-native\\collection.js:197:23)\n    at listOnTimeout (internal/timers.js:557:17)\n    at processTimers (internal/timers.js:500:7)","timestamp":"2021-09-11T14:18:29.043Z"}
+{"level":"error","message":"Error in service Operation `userregisters.findOne()` buffering timed out after 10000ms","stack":"MongooseError: Operation `userregisters.findOne()` buffering timed out after 10000ms\n    at Timeout.<anonymous> (C:\\Users\\visha\\Desktop\\nodeprojects\\fundoo-note-app\\node_modules\\mongoose\\lib\\drivers\\node-mongodb-native\\collection.js:197:23)\n    at listOnTimeout (internal/timers.js:557:17)\n    at processTimers (internal/timers.js:500:7)","timestamp":"2021-09-11T14:18:29.046Z"}
+{"message":"could not connect to db .Exiting now  connect ECONNREFUSED 127.0.0.1:27017","reason":{"type":"Single","setName":null,"maxSetVersion":null,"maxElectionId":null,"servers":{},"stale":false,"compatible":true,"compatibilityError":null,"logicalSessionTimeoutMinutes":null,"heartbeatFrequencyMS":10000,"localThresholdMS":15,"commonWireVersion":null},"level":"error","stack":"MongooseServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017\n    at NativeConnection.Connection.openUri (C:\\Users\\visha\\Desktop\\nodeprojects\\fundoo-note-app\\node_modules\\mongoose\\lib\\connection.js:846:32)\n    at C:\\Users\\visha\\Desktop\\nodeprojects\\fundoo-note-app\\node_modules\\mongoose\\lib\\index.js:351:10\n    at C:\\Users\\visha\\Desktop\\nodeprojects\\fundoo-note-app\\node_modules\\mongoose\\lib\\helpers\\promiseOrCallback.js:32:5\n    at new Promise (<anonymous>)\n    at promiseOrCallback (C:\\Users\\visha\\Desktop\\nodeprojects\\fundoo-note-app\\node_modules\\mongoose\\lib\\helpers\\promiseOrCallback.js:31:10)\n    at Mongoose._promiseOrCallback (C:\\Users\\visha\\Desktop\\nodeprojects\\fundoo-note-app\\node_modules\\mongoose\\lib\\index.js:1149:10)\n    at Mongoose.connect (C:\\Users\\visha\\Desktop\\nodeprojects\\fundoo-note-app\\node_modules\\mongoose\\lib\\index.js:350:20)\n    at Object.exports.dbConnection (C:\\Users\\visha\\Desktop\\nodeprojects\\fundoo-note-app\\config\\db.config.js:6:10)\n    at Object.<anonymous> (C:\\Users\\visha\\Desktop\\nodeprojects\\fundoo-note-app\\server.js:33:10)\n    at Module._compile (internal/modules/cjs/loader.js:1085:14)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)\n    at Module.load (internal/modules/cjs/loader.js:950:32)\n    at Function.Module._load (internal/modules/cjs/loader.js:790:14)\n    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)\n    at internal/main/run_main_module.js:17:47","timestamp":"2021-09-11T14:19:11.237Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-09-11T16:17:46.439Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-09-12T09:37:00.955Z"}
+{"message":"Label not found by id","level":"error","timestamp":"2021-09-13T13:22:41.877Z"}
+{"message":"Email id doesnt exists","level":"error","timestamp":"2021-09-13T14:20:12.387Z"}
+{"level":"error","message":"Error in service","timestamp":"2021-09-13T14:20:12.387Z"}
+{"message":"Invalid label body","level":"error","timestamp":"2021-09-13T14:35:47.146Z"}
+{"message":"Label Not found","level":"error","timestamp":"2021-09-13T14:35:47.761Z"}
+{"message":"Label to be updated not found","level":"error","timestamp":"2021-09-13T14:35:48.533Z"}
+{"message":"Invalid label given to update","level":"error","timestamp":"2021-09-13T14:35:48.807Z"}
+{"message":"Invalid Note","level":"error","timestamp":"2021-09-13T14:35:49.833Z"}
+{"message":"Invalid Note","level":"error","timestamp":"2021-09-13T14:35:50.029Z"}
+{"message":"Label not found by id","level":"error","timestamp":"2021-09-15T10:29:04.215Z"}
+{"message":"Label not deleted","level":"error","timestamp":"2021-09-15T17:01:44.382Z"}
+{"message":"Label not deleted","level":"error","timestamp":"2021-09-15T17:03:01.675Z"}
+{"message":"Label not deleted","level":"error","timestamp":"2021-09-15T17:06:02.719Z"}
+{"message":"Label not deleted","level":"error","timestamp":"2021-09-15T17:08:26.887Z"}
+{"message":"Label not deleted","level":"error","timestamp":"2021-09-15T17:09:47.594Z"}
+{"message":"Label not deleted","level":"error","timestamp":"2021-09-15T17:10:44.986Z"}
+{"message":"Label not deleted","level":"error","timestamp":"2021-09-15T17:24:34.812Z"}
+{"message":"Label not deleted","level":"error","timestamp":"2021-09-15T17:30:39.253Z"}
+{"message":"Label not found by id","level":"error","timestamp":"2021-09-15T18:01:09.523Z"}
+{"message":"Label not found by id","level":"error","timestamp":"2021-09-15T18:02:48.143Z"}
+{"message":"Label not found by id","level":"error","timestamp":"2021-09-15T18:04:18.100Z"}
+{"message":"Label not deleted","level":"error","timestamp":"2021-09-15T18:33:34.333Z"}
+{"message":"Label not deleted","level":"error","timestamp":"2021-09-15T19:57:22.732Z"}
+{"message":"Label not deleted","level":"error","timestamp":"2021-09-15T20:11:30.440Z"}
+{"message":"Label not deleted","level":"error","timestamp":"2021-09-15T20:25:47.654Z"}
+{"message":"Label not deleted","level":"error","timestamp":"2021-09-15T20:25:51.554Z"}
+{"message":"Label not deleted","level":"error","timestamp":"2021-09-15T20:25:53.261Z"}
+{"message":"Label not deleted","level":"error","timestamp":"2021-09-15T20:26:20.464Z"}
+{"message":"cache not cleared","level":"error","timestamp":"2021-09-15T20:41:41.714Z"}
+{"message":"cache not cleared","level":"error","timestamp":"2021-09-16T02:34:07.253Z"}
+{"message":"cache not cleared","level":"error","timestamp":"2021-09-16T02:36:53.301Z"}
+{"message":"Error while getting cache for note","level":"error","timestamp":"2021-09-16T10:49:46.171Z"}
+{"message":"Label not found by id","level":"error","timestamp":"2021-09-16T10:50:18.215Z"}
+{"message":"Error while getting cache for note","level":"error","timestamp":"2021-09-16T13:06:48.362Z"}
+{"message":"Error while getting cache for note","level":"error","timestamp":"2021-09-16T13:06:56.447Z"}
+{"message":"cache not cleared","level":"error","timestamp":"2021-09-16T13:07:03.728Z"}
+{"message":"Error while getting cache for note","level":"error","timestamp":"2021-09-16T13:21:36.557Z"}
+{"message":"cache not cleared","level":"error","timestamp":"2021-09-16T13:21:47.193Z"}
+{"message":"Error while getting cache for note","level":"error","timestamp":"2021-09-16T13:22:08.433Z"}
+{"message":"Error while getting cache for note","level":"error","timestamp":"2021-09-16T13:27:18.888Z"}
+{"message":"Error while getting cache for note","level":"error","timestamp":"2021-09-16T13:36:05.464Z"}
+{"message":"cache not cleared","level":"error","timestamp":"2021-09-16T13:36:16.988Z"}
+{"message":"cache not cleared","level":"error","timestamp":"2021-09-16T13:50:01.886Z"}
+{"message":"cache not cleared","level":"error","timestamp":"2021-09-16T13:52:47.423Z"}
+{"message":"Label not found by id","level":"error","timestamp":"2021-09-16T13:55:07.327Z"}
+{"message":"cache not cleared","level":"error","timestamp":"2021-09-16T13:57:51.030Z"}
+{"message":"Error while getting cache for note","level":"error","timestamp":"2021-09-16T13:58:38.795Z"}
+{"message":"Error while getting cache for note","level":"error","timestamp":"2021-09-16T14:00:52.393Z"}
+{"message":"Error while getting cache for note","level":"error","timestamp":"2021-09-16T14:01:04.333Z"}
+{"message":"Error while getting cache for note","level":"error","timestamp":"2021-09-16T14:01:05.296Z"}
+{"message":"Error while getting cache for note","level":"error","timestamp":"2021-09-16T14:01:07.111Z"}
+{"message":"Error while getting cache for note","level":"error","timestamp":"2021-09-16T14:01:08.156Z"}
+{"message":"Error while getting cache for note","level":"error","timestamp":"2021-09-16T14:07:07.736Z"}
+{"message":"Error while getting cache for note","level":"error","timestamp":"2021-09-16T14:07:11.660Z"}
+{"message":"cache not cleared","level":"error","timestamp":"2021-09-16T17:05:16.908Z"}
+{"message":"Invalid label body","level":"error","timestamp":"2021-09-16T18:41:09.224Z"}
+{"message":"Label Not found","level":"error","timestamp":"2021-09-16T18:41:09.868Z"}
+{"message":"Label to be updated not foudn due to error","level":"error","timestamp":"2021-09-16T18:41:10.822Z"}
+{"message":"Label to be updated not found","level":"error","timestamp":"2021-09-16T18:41:11.071Z"}
+{"message":"Invalid label given to update","level":"error","timestamp":"2021-09-16T18:41:11.273Z"}
+{"message":"Label not deleted","level":"error","timestamp":"2021-09-16T18:41:11.672Z"}
+{"message":"Invalid Note","level":"error","timestamp":"2021-09-16T18:41:12.326Z"}
+{"message":"Invalid Note","level":"error","timestamp":"2021-09-16T18:41:12.522Z"}
+{"message":"cache not cleared","level":"error","timestamp":"2021-09-16T18:41:12.929Z"}
+{"message":"Invalid label body","level":"error","timestamp":"2021-09-16T18:41:58.099Z"}
+{"message":"Label Not found","level":"error","timestamp":"2021-09-16T18:41:58.812Z"}
+{"message":"Label to be updated not foudn due to error","level":"error","timestamp":"2021-09-16T18:41:59.251Z"}
+{"message":"Label to be updated not found","level":"error","timestamp":"2021-09-16T18:41:59.457Z"}
+{"message":"Invalid label given to update","level":"error","timestamp":"2021-09-16T18:41:59.655Z"}
+{"message":"Label not deleted","level":"error","timestamp":"2021-09-16T18:42:00.075Z"}
+{"message":"Invalid Note","level":"error","timestamp":"2021-09-16T18:42:00.686Z"}
+{"message":"Invalid Note","level":"error","timestamp":"2021-09-16T18:42:00.884Z"}
+{"message":"cache not cleared","level":"error","timestamp":"2021-09-16T18:42:01.289Z"}
+{"message":"Invalid label body","level":"error","timestamp":"2021-09-16T18:42:43.853Z"}
+{"message":"Label Not found","level":"error","timestamp":"2021-09-16T18:42:44.459Z"}
+{"message":"Label to be updated not foudn due to error","level":"error","timestamp":"2021-09-16T18:42:44.860Z"}
+{"message":"Label to be updated not found","level":"error","timestamp":"2021-09-16T18:42:45.090Z"}
+{"message":"Invalid label given to update","level":"error","timestamp":"2021-09-16T18:42:45.291Z"}
+{"message":"Label not deleted","level":"error","timestamp":"2021-09-16T18:42:45.692Z"}
+{"message":"Invalid Note","level":"error","timestamp":"2021-09-16T18:42:46.299Z"}
+{"message":"Invalid Note","level":"error","timestamp":"2021-09-16T18:42:46.495Z"}
+{"message":"cache not cleared","level":"error","timestamp":"2021-09-16T18:42:46.947Z"}
+{"message":"Invalid label body","level":"error","timestamp":"2021-09-16T18:45:04.817Z"}
+{"message":"Label Not found","level":"error","timestamp":"2021-09-16T18:45:05.455Z"}
+{"message":"Label to be updated not foudn due to error","level":"error","timestamp":"2021-09-16T18:45:05.854Z"}
+{"message":"Label to be updated not found","level":"error","timestamp":"2021-09-16T18:45:06.060Z"}
+{"message":"Invalid label given to update","level":"error","timestamp":"2021-09-16T18:45:06.259Z"}
+{"message":"Label not deleted","level":"error","timestamp":"2021-09-16T18:45:06.733Z"}
+{"message":"Invalid Note","level":"error","timestamp":"2021-09-16T18:45:07.374Z"}
+{"message":"Invalid Note","level":"error","timestamp":"2021-09-16T18:45:07.570Z"}
+{"message":"cache not cleared","level":"error","timestamp":"2021-09-16T18:45:07.975Z"}
+{"message":"Invalid label body","level":"error","timestamp":"2021-09-16T18:46:25.948Z"}
+{"message":"Label Not found","level":"error","timestamp":"2021-09-16T18:46:26.560Z"}
+{"message":"Label to be updated not foudn due to error","level":"error","timestamp":"2021-09-16T18:46:27.041Z"}
+{"message":"Label to be updated not found","level":"error","timestamp":"2021-09-16T18:46:27.288Z"}
+{"message":"Invalid label given to update","level":"error","timestamp":"2021-09-16T18:46:27.482Z"}
+{"message":"Label not deleted","level":"error","timestamp":"2021-09-16T18:46:27.875Z"}
+{"message":"Invalid Note","level":"error","timestamp":"2021-09-16T18:46:28.470Z"}
+{"message":"Invalid Note","level":"error","timestamp":"2021-09-16T18:46:28.662Z"}
+{"message":"cache not cleared","level":"error","timestamp":"2021-09-16T18:46:29.070Z"}
+{"message":"Invalid label body","level":"error","timestamp":"2021-09-16T18:50:17.217Z"}
+{"message":"Label Not found","level":"error","timestamp":"2021-09-16T18:50:17.870Z"}
+{"message":"Label to be updated not foudn due to error","level":"error","timestamp":"2021-09-16T18:50:18.278Z"}
+{"message":"Label to be updated not found","level":"error","timestamp":"2021-09-16T18:50:18.507Z"}
+{"message":"Invalid label given to update","level":"error","timestamp":"2021-09-16T18:50:18.703Z"}
+{"message":"Label not deleted","level":"error","timestamp":"2021-09-16T18:50:19.110Z"}
+{"message":"Invalid Note","level":"error","timestamp":"2021-09-16T18:50:19.712Z"}
+{"message":"Invalid Note","level":"error","timestamp":"2021-09-16T18:50:19.911Z"}
+{"message":"cache not cleared","level":"error","timestamp":"2021-09-16T18:50:20.322Z"}
+{"message":"Invalid label body","level":"error","timestamp":"2021-09-16T18:51:36.629Z"}
+{"message":"Label Not found","level":"error","timestamp":"2021-09-16T18:51:37.239Z"}
+{"message":"Label to be updated not foudn due to error","level":"error","timestamp":"2021-09-16T18:51:37.642Z"}
+{"message":"Label to be updated not found","level":"error","timestamp":"2021-09-16T18:51:37.866Z"}
+{"message":"Invalid label given to update","level":"error","timestamp":"2021-09-16T18:51:38.062Z"}
+{"message":"Label not deleted","level":"error","timestamp":"2021-09-16T18:51:38.479Z"}
+{"message":"Invalid Note","level":"error","timestamp":"2021-09-16T18:51:39.102Z"}
+{"message":"Invalid Note","level":"error","timestamp":"2021-09-16T18:51:39.304Z"}
+{"message":"cache not cleared","level":"error","timestamp":"2021-09-16T18:51:39.715Z"}
+{"message":"Invalid label body","level":"error","timestamp":"2021-09-16T18:54:35.521Z"}
+{"message":"Label Not found","level":"error","timestamp":"2021-09-16T18:54:36.182Z"}
+{"message":"Label to be updated not foudn due to error","level":"error","timestamp":"2021-09-16T18:54:36.585Z"}
+{"message":"Label to be updated not found","level":"error","timestamp":"2021-09-16T18:54:36.792Z"}
+{"message":"Invalid label given to update","level":"error","timestamp":"2021-09-16T18:54:36.988Z"}
+{"message":"Label not deleted","level":"error","timestamp":"2021-09-16T18:54:37.390Z"}
+{"message":"Invalid Note","level":"error","timestamp":"2021-09-16T18:54:37.992Z"}
+{"message":"Invalid Note","level":"error","timestamp":"2021-09-16T18:54:38.186Z"}
+{"message":"cache not cleared","level":"error","timestamp":"2021-09-16T18:54:38.586Z"}
+{"message":"Invalid label body","level":"error","timestamp":"2021-09-16T18:56:15.521Z"}
+{"message":"Label Not found","level":"error","timestamp":"2021-09-16T18:56:16.194Z"}
+{"message":"Label to be updated not foudn due to error","level":"error","timestamp":"2021-09-16T18:56:16.615Z"}
+{"message":"Label to be updated not found","level":"error","timestamp":"2021-09-16T18:56:16.824Z"}
+{"message":"Invalid label given to update","level":"error","timestamp":"2021-09-16T18:56:17.018Z"}
+{"message":"Label not deleted","level":"error","timestamp":"2021-09-16T18:56:17.419Z"}
+{"message":"Invalid Note","level":"error","timestamp":"2021-09-16T18:56:18.023Z"}
+{"message":"Invalid Note","level":"error","timestamp":"2021-09-16T18:56:18.218Z"}
+{"message":"cache not cleared","level":"error","timestamp":"2021-09-16T18:56:18.622Z"}
+{"message":"Invalid label body","level":"error","timestamp":"2021-09-16T18:56:43.213Z"}
+{"message":"Label Not found","level":"error","timestamp":"2021-09-16T18:56:43.860Z"}
+{"message":"Label to be updated not foudn due to error","level":"error","timestamp":"2021-09-16T18:56:44.268Z"}
+{"message":"Label to be updated not found","level":"error","timestamp":"2021-09-16T18:56:44.505Z"}
+{"message":"Invalid label given to update","level":"error","timestamp":"2021-09-16T18:56:44.708Z"}
+{"message":"Label not deleted","level":"error","timestamp":"2021-09-16T18:56:45.116Z"}
+{"message":"Invalid Note","level":"error","timestamp":"2021-09-16T18:56:45.731Z"}
+{"message":"Invalid Note","level":"error","timestamp":"2021-09-16T18:56:45.934Z"}
+{"message":"cache not cleared","level":"error","timestamp":"2021-09-16T18:56:46.347Z"}
+{"message":"Invalid label body","level":"error","timestamp":"2021-09-16T19:07:45.163Z"}
+{"message":"Label Not found","level":"error","timestamp":"2021-09-16T19:07:45.903Z"}
+{"message":"Label to be updated not foudn due to error","level":"error","timestamp":"2021-09-16T19:07:46.427Z"}
+{"message":"Label to be updated not found","level":"error","timestamp":"2021-09-16T19:07:46.680Z"}
+{"message":"Invalid label given to update","level":"error","timestamp":"2021-09-16T19:07:46.926Z"}
+{"message":"Label not deleted","level":"error","timestamp":"2021-09-16T19:07:53.212Z"}
+{"message":"Invalid label body","level":"error","timestamp":"2021-09-16T19:09:32.958Z"}
+{"message":"Label Not found","level":"error","timestamp":"2021-09-16T19:09:33.720Z"}
+{"message":"Label to be updated not foudn due to error","level":"error","timestamp":"2021-09-16T19:09:34.183Z"}
+{"message":"Label to be updated not found","level":"error","timestamp":"2021-09-16T19:09:34.419Z"}
+{"message":"Invalid label given to update","level":"error","timestamp":"2021-09-16T19:09:34.710Z"}
+{"message":"Label not deleted","level":"error","timestamp":"2021-09-16T19:09:35.213Z"}
+{"message":"Invalid Note","level":"error","timestamp":"2021-09-16T19:09:35.918Z"}
+{"message":"Invalid Note","level":"error","timestamp":"2021-09-16T19:09:36.156Z"}
+{"message":"cache not cleared","level":"error","timestamp":"2021-09-16T19:09:36.638Z"}
+{"message":"Invalid label body","level":"error","timestamp":"2021-09-16T19:10:09.535Z"}
+{"message":"Label Not found","level":"error","timestamp":"2021-09-16T19:10:10.307Z"}
+{"message":"Label to be updated not foudn due to error","level":"error","timestamp":"2021-09-16T19:10:10.774Z"}
+{"message":"Label to be updated not found","level":"error","timestamp":"2021-09-16T19:10:11.014Z"}
+{"message":"Invalid label given to update","level":"error","timestamp":"2021-09-16T19:10:11.247Z"}
+{"message":"Label not deleted","level":"error","timestamp":"2021-09-16T19:10:11.715Z"}
+{"message":"Invalid Note","level":"error","timestamp":"2021-09-16T19:10:12.425Z"}
+{"message":"Invalid Note","level":"error","timestamp":"2021-09-16T19:10:12.656Z"}
+{"message":"cache not cleared","level":"error","timestamp":"2021-09-16T19:10:13.130Z"}
+{"message":"Invalid label body","level":"error","timestamp":"2021-09-16T19:13:48.782Z"}
+{"message":"Label Not found","level":"error","timestamp":"2021-09-16T19:13:49.537Z"}
+{"message":"Label to be updated not foudn due to error","level":"error","timestamp":"2021-09-16T19:13:50.000Z"}
+{"message":"Label to be updated not found","level":"error","timestamp":"2021-09-16T19:13:50.248Z"}
+{"message":"Invalid label given to update","level":"error","timestamp":"2021-09-16T19:13:50.486Z"}
+{"message":"Label not deleted","level":"error","timestamp":"2021-09-16T19:13:50.958Z"}
+{"message":"Invalid Note","level":"error","timestamp":"2021-09-16T19:13:51.667Z"}
+{"message":"Invalid Note","level":"error","timestamp":"2021-09-16T19:13:51.903Z"}
+{"message":"cache not cleared","level":"error","timestamp":"2021-09-16T19:13:52.373Z"}
+{"message":"Invalid label body","level":"error","timestamp":"2021-09-16T19:15:16.761Z"}
+{"message":"Label Not found","level":"error","timestamp":"2021-09-16T19:15:17.530Z"}
+{"message":"Label to be updated not foudn due to error","level":"error","timestamp":"2021-09-16T19:15:18.000Z"}
+{"message":"Label to be updated not found","level":"error","timestamp":"2021-09-16T19:15:18.251Z"}
+{"message":"Invalid label given to update","level":"error","timestamp":"2021-09-16T19:15:18.479Z"}
+{"message":"Label not deleted","level":"error","timestamp":"2021-09-16T19:15:18.951Z"}
+{"message":"Invalid Note","level":"error","timestamp":"2021-09-16T19:15:19.656Z"}
+{"message":"Invalid Note","level":"error","timestamp":"2021-09-16T19:15:19.884Z"}
+{"message":"cache not cleared","level":"error","timestamp":"2021-09-16T19:15:20.386Z"}
+{"message":"Invalid label body","level":"error","timestamp":"2021-09-16T19:16:53.910Z"}
+{"message":"Label Not found","level":"error","timestamp":"2021-09-16T19:16:54.629Z"}
+{"message":"Label to be updated not foudn due to error","level":"error","timestamp":"2021-09-16T19:16:55.096Z"}
+{"message":"Label to be updated not found","level":"error","timestamp":"2021-09-16T19:16:55.337Z"}
+{"message":"Invalid label given to update","level":"error","timestamp":"2021-09-16T19:16:55.562Z"}
+{"message":"Label not deleted","level":"error","timestamp":"2021-09-16T19:16:56.028Z"}
+{"message":"Invalid Note","level":"error","timestamp":"2021-09-16T19:16:56.732Z"}
+{"message":"Invalid Note","level":"error","timestamp":"2021-09-16T19:16:56.991Z"}
+{"message":"cache not cleared","level":"error","timestamp":"2021-09-16T19:16:57.497Z"}
+{"message":"Invalid label body","level":"error","timestamp":"2021-09-16T19:17:58.510Z"}
+{"message":"Label Not found","level":"error","timestamp":"2021-09-16T19:17:59.347Z"}
+{"message":"Label to be updated not foudn due to error","level":"error","timestamp":"2021-09-16T19:17:59.834Z"}
+{"message":"Label to be updated not found","level":"error","timestamp":"2021-09-16T19:18:00.111Z"}
+{"message":"Invalid label given to update","level":"error","timestamp":"2021-09-16T19:18:00.346Z"}
+{"message":"Label not deleted","level":"error","timestamp":"2021-09-16T19:18:00.848Z"}
+{"message":"Invalid Note","level":"error","timestamp":"2021-09-16T19:18:01.591Z"}
+{"message":"Invalid Note","level":"error","timestamp":"2021-09-16T19:18:01.831Z"}
+{"message":"cache not cleared","level":"error","timestamp":"2021-09-16T19:18:02.322Z"}
+{"message":"Invalid label body","level":"error","timestamp":"2021-09-16T19:23:12.708Z"}
+{"message":"Label Not found","level":"error","timestamp":"2021-09-16T19:23:13.448Z"}
+{"message":"Label to be updated not foudn due to error","level":"error","timestamp":"2021-09-16T19:23:13.917Z"}
+{"message":"Label to be updated not found","level":"error","timestamp":"2021-09-16T19:23:14.150Z"}
+{"message":"Invalid label given to update","level":"error","timestamp":"2021-09-16T19:23:14.367Z"}
+{"message":"Label not deleted","level":"error","timestamp":"2021-09-16T19:23:14.850Z"}
+{"message":"Invalid Note","level":"error","timestamp":"2021-09-16T19:23:15.599Z"}
+{"message":"Invalid Note","level":"error","timestamp":"2021-09-16T19:23:15.841Z"}
+{"message":"cache not cleared","level":"error","timestamp":"2021-09-16T19:23:16.345Z"}
+{"message":"Invalid label body","level":"error","timestamp":"2021-09-16T19:24:13.716Z"}
+{"message":"Label Not found","level":"error","timestamp":"2021-09-16T19:24:14.444Z"}
+{"message":"Label to be updated not foudn due to error","level":"error","timestamp":"2021-09-16T19:24:14.917Z"}
+{"message":"Label to be updated not found","level":"error","timestamp":"2021-09-16T19:24:15.156Z"}
+{"message":"Invalid label given to update","level":"error","timestamp":"2021-09-16T19:24:15.383Z"}
+{"message":"Label not deleted","level":"error","timestamp":"2021-09-16T19:24:15.901Z"}
+{"message":"Invalid Note","level":"error","timestamp":"2021-09-16T19:24:16.591Z"}
+{"message":"Invalid Note","level":"error","timestamp":"2021-09-16T19:24:16.826Z"}
+{"message":"cache not cleared","level":"error","timestamp":"2021-09-16T19:24:17.293Z"}
+{"message":"Invalid label body","level":"error","timestamp":"2021-09-16T19:25:04.516Z"}
+{"message":"Label Not found","level":"error","timestamp":"2021-09-16T19:25:05.491Z"}
+{"message":"Label to be updated not foudn due to error","level":"error","timestamp":"2021-09-16T19:25:06.048Z"}
+{"message":"Label to be updated not found","level":"error","timestamp":"2021-09-16T19:25:06.493Z"}
+{"message":"Invalid label given to update","level":"error","timestamp":"2021-09-16T19:25:06.929Z"}
+{"message":"Label not deleted","level":"error","timestamp":"2021-09-16T19:25:07.931Z"}
+{"message":"Invalid Note","level":"error","timestamp":"2021-09-16T19:25:08.897Z"}
+{"message":"Invalid Note","level":"error","timestamp":"2021-09-16T19:25:09.124Z"}
+{"message":"cache not cleared","level":"error","timestamp":"2021-09-16T19:25:09.590Z"}
+{"message":"Invalid label body","level":"error","timestamp":"2021-09-16T19:30:57.094Z"}
+{"message":"Label Not found","level":"error","timestamp":"2021-09-16T19:30:57.823Z"}
+{"message":"Label to be updated not foudn due to error","level":"error","timestamp":"2021-09-16T19:30:58.290Z"}
+{"message":"Label to be updated not found","level":"error","timestamp":"2021-09-16T19:30:58.523Z"}
+{"message":"Invalid label given to update","level":"error","timestamp":"2021-09-16T19:30:58.744Z"}
+{"message":"Label not deleted","level":"error","timestamp":"2021-09-16T19:30:59.205Z"}
+{"message":"Invalid Note","level":"error","timestamp":"2021-09-16T19:30:59.901Z"}
+{"message":"Invalid Note","level":"error","timestamp":"2021-09-16T19:31:00.141Z"}
+{"message":"cache not cleared","level":"error","timestamp":"2021-09-16T19:31:00.615Z"}
+{"message":"Invalid label body","level":"error","timestamp":"2021-09-16T19:36:27.793Z"}
+{"message":"Label Not found","level":"error","timestamp":"2021-09-16T19:36:28.546Z"}
+{"message":"Label to be updated not foudn due to error","level":"error","timestamp":"2021-09-16T19:36:29.017Z"}
+{"message":"Label to be updated not found","level":"error","timestamp":"2021-09-16T19:36:29.253Z"}
+{"message":"Invalid label given to update","level":"error","timestamp":"2021-09-16T19:36:29.478Z"}
+{"message":"Label not deleted","level":"error","timestamp":"2021-09-16T19:36:29.948Z"}
+{"message":"Invalid Note","level":"error","timestamp":"2021-09-16T19:36:30.651Z"}
+{"message":"Invalid Note","level":"error","timestamp":"2021-09-16T19:36:30.875Z"}
+{"message":"cache not cleared","level":"error","timestamp":"2021-09-16T19:36:31.342Z"}
+{"message":"cache not cleared","level":"error","timestamp":"2021-09-17T02:38:58.983Z"}
+{"message":"cache not cleared","level":"error","timestamp":"2021-09-17T02:39:45.080Z"}
+{"message":"cache not cleared","level":"error","timestamp":"2021-09-17T02:46:03.239Z"}
+{"message":"cache not cleared","level":"error","timestamp":"2021-09-17T03:28:39.925Z"}
+{"message":"Label not found by id","level":"error","timestamp":"2021-09-17T03:30:22.329Z"}
+{"message":"cache not cleared","level":"error","timestamp":"2021-09-17T04:06:57.093Z"}
+{"message":"cache not cleared","level":"error","timestamp":"2021-09-17T04:12:41.611Z"}
+{"message":"cache not cleared","level":"error","timestamp":"2021-09-17T04:16:30.208Z"}
+{"message":"Email id doesnt exists","level":"error","timestamp":"2021-09-24T19:35:02.560Z"}
+{"level":"error","message":"Error in service","timestamp":"2021-09-24T19:35:02.562Z"}
+{"message":"Email id doesnt exists","level":"error","timestamp":"2021-09-24T19:35:35.679Z"}
+{"level":"error","message":"Error in service","timestamp":"2021-09-24T19:35:35.681Z"}
+{"message":"Email id doesnt exists","level":"error","timestamp":"2021-09-24T19:35:39.827Z"}
+{"level":"error","message":"Error in service","timestamp":"2021-09-24T19:35:39.830Z"}
+{"message":"Email id doesnt exists","level":"error","timestamp":"2021-09-24T19:37:38.703Z"}
+{"level":"error","message":"Error in service","timestamp":"2021-09-24T19:37:38.706Z"}
+{"message":"Email id doesnt exists","level":"error","timestamp":"2021-09-24T19:40:34.869Z"}
+{"level":"error","message":"Error in service","timestamp":"2021-09-24T19:40:34.870Z"}
+{"message":"Email id doesnt exists","level":"error","timestamp":"2021-09-24T19:41:52.180Z"}
+{"level":"error","message":"Error in service","timestamp":"2021-09-24T19:41:52.180Z"}
+{"message":"Email id doesnt exists","level":"error","timestamp":"2021-09-24T19:42:27.921Z"}
+{"level":"error","message":"Error in service","timestamp":"2021-09-24T19:42:27.921Z"}
+{"message":"Email id doesnt exists","level":"error","timestamp":"2021-09-24T19:43:21.141Z"}
+{"level":"error","message":"Error in service","timestamp":"2021-09-24T19:43:21.141Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-09-26T18:41:53.491Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-09-26T18:42:08.135Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-09-26T18:42:55.571Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-09-26T18:45:36.165Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-09-26T18:45:53.695Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-09-26T18:49:42.720Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-09-26T18:49:56.791Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-09-26T19:32:54.584Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-09-26T19:34:40.197Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-09-26T19:35:14.758Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-09-26T19:37:32.563Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-09-26T19:39:44.981Z"}
+{"message":"Invalid credentials","level":"error","timestamp":"2021-09-26T19:50:27.397Z"}
+{"message":"Error detected in model","level":"error","timestamp":"2021-09-26T19:52:13.600Z"}
+{"message":"Error occured while registering new user","level":"error","timestamp":"2021-09-26T19:52:13.601Z"}
+{"message":"Error detected in model","level":"error","timestamp":"2021-10-01T14:05:01.239Z"}
+{"message":"Error occured while registering new user","level":"error","timestamp":"2021-10-01T14:05:01.240Z"}
+{"message":"Email id doesnt exists","level":"error","timestamp":"2021-10-03T08:44:32.039Z"}
+{"level":"error","message":"Error in service","timestamp":"2021-10-03T08:44:32.040Z"}
+{"message":"Email id doesnt exists","level":"error","timestamp":"2021-10-03T08:44:53.019Z"}
+{"level":"error","message":"Error in service","timestamp":"2021-10-03T08:44:53.019Z"}
+{"message":"Email id doesnt exists","level":"error","timestamp":"2021-10-03T09:10:50.275Z"}
+{"level":"error","message":"Error in service","timestamp":"2021-10-03T09:10:50.275Z"}
+{"message":"Email id doesnt exists","level":"error","timestamp":"2021-10-03T09:11:04.863Z"}
+{"level":"error","message":"Error in service","timestamp":"2021-10-03T09:11:04.864Z"}
+{"message":"Email id doesnt exists","level":"error","timestamp":"2021-10-03T09:11:15.882Z"}
+{"level":"error","message":"Error in service","timestamp":"2021-10-03T09:11:15.882Z"}
+{"message":"Email id doesnt exists","level":"error","timestamp":"2021-10-03T09:11:40.264Z"}
+{"level":"error","message":"Error in service","timestamp":"2021-10-03T09:11:40.265Z"}
+{"message":"Email id doesnt exists","level":"error","timestamp":"2021-10-03T09:15:23.667Z"}
+{"level":"error","message":"Error in service","timestamp":"2021-10-03T09:15:23.667Z"}
+{"message":"Email id doesnt exists","level":"error","timestamp":"2021-10-03T14:50:25.507Z"}
+{"level":"error","message":"Error in service","timestamp":"2021-10-03T14:50:25.507Z"}
+{"message":"Email id doesnt exists","level":"error","timestamp":"2021-10-03T14:50:25.535Z"}
+{"level":"error","message":"Error in service","timestamp":"2021-10-03T14:50:25.536Z"}
+{"message":"Email id doesnt exists","level":"error","timestamp":"2021-10-03T14:50:25.563Z"}
+{"level":"error","message":"Error in service","timestamp":"2021-10-03T14:50:25.563Z"}
+{"message":"Email id doesnt exists","level":"error","timestamp":"2021-10-03T14:50:25.689Z"}
+{"level":"error","message":"Error in service","timestamp":"2021-10-03T14:50:25.689Z"}
+{"message":"Invalid Note","level":"error","timestamp":"2021-10-05T19:24:52.893Z"}
+{"message":"Invalid Note","level":"error","timestamp":"2021-10-05T19:27:47.509Z"}
+{"message":"Invalid Note","level":"error","timestamp":"2021-10-05T19:29:45.410Z"}
+{"message":"Invalid Note","level":"error","timestamp":"2021-10-05T19:30:47.482Z"}
+{"message":"Invalid Note","level":"error","timestamp":"2021-10-05T19:31:34.847Z"}
+{"message":"Invalid password","level":"error","timestamp":"2021-10-06T21:12:53.293Z"}
+{"message":"Invalid password","level":"error","timestamp":"2021-10-07T02:34:30.216Z"}
+{"message":"Invalid password","level":"error","timestamp":"2021-10-07T02:34:33.384Z"}
+{"message":"could not connect to db .Exiting now  connect ECONNREFUSED 127.0.0.1:27017","reason":{"type":"Single","setName":null,"maxSetVersion":null,"maxElectionId":null,"servers":{},"stale":false,"compatible":true,"compatibilityError":null,"logicalSessionTimeoutMinutes":null,"heartbeatFrequencyMS":10000,"localThresholdMS":15,"commonWireVersion":null},"level":"error","stack":"MongooseServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017\n    at NativeConnection.Connection.openUri (C:\\Users\\visha\\Desktop\\nodeprojects\\fundoo-note-app\\node_modules\\mongoose\\lib\\connection.js:846:32)\n    at C:\\Users\\visha\\Desktop\\nodeprojects\\fundoo-note-app\\node_modules\\mongoose\\lib\\index.js:351:10\n    at C:\\Users\\visha\\Desktop\\nodeprojects\\fundoo-note-app\\node_modules\\mongoose\\lib\\helpers\\promiseOrCallback.js:32:5\n    at new Promise (<anonymous>)\n    at promiseOrCallback (C:\\Users\\visha\\Desktop\\nodeprojects\\fundoo-note-app\\node_modules\\mongoose\\lib\\helpers\\promiseOrCallback.js:31:10)\n    at Mongoose._promiseOrCallback (C:\\Users\\visha\\Desktop\\nodeprojects\\fundoo-note-app\\node_modules\\mongoose\\lib\\index.js:1149:10)\n    at Mongoose.connect (C:\\Users\\visha\\Desktop\\nodeprojects\\fundoo-note-app\\node_modules\\mongoose\\lib\\index.js:350:20)\n    at Object.exports.dbConnection (C:\\Users\\visha\\Desktop\\nodeprojects\\fundoo-note-app\\config\\db.config.js:6:10)\n    at Object.<anonymous> (C:\\Users\\visha\\Desktop\\nodeprojects\\fundoo-note-app\\server.js:32:10)\n    at Module._compile (internal/modules/cjs/loader.js:1085:14)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)\n    at Module.load (internal/modules/cjs/loader.js:950:32)\n    at Function.Module._load (internal/modules/cjs/loader.js:790:14)\n    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)\n    at internal/main/run_main_module.js:17:47","timestamp":"2021-10-12T14:21:50.002Z"}
+{"message":"could not connect to db .Exiting now  connect ECONNREFUSED 127.0.0.1:27017","reason":{"type":"Single","setName":null,"maxSetVersion":null,"maxElectionId":null,"servers":{},"stale":false,"compatible":true,"compatibilityError":null,"logicalSessionTimeoutMinutes":null,"heartbeatFrequencyMS":10000,"localThresholdMS":15,"commonWireVersion":null},"level":"error","stack":"MongooseServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017\n    at NativeConnection.Connection.openUri (C:\\Users\\visha\\Desktop\\nodeprojects\\fundoo-note-app\\node_modules\\mongoose\\lib\\connection.js:846:32)\n    at C:\\Users\\visha\\Desktop\\nodeprojects\\fundoo-note-app\\node_modules\\mongoose\\lib\\index.js:351:10\n    at C:\\Users\\visha\\Desktop\\nodeprojects\\fundoo-note-app\\node_modules\\mongoose\\lib\\helpers\\promiseOrCallback.js:32:5\n    at new Promise (<anonymous>)\n    at promiseOrCallback (C:\\Users\\visha\\Desktop\\nodeprojects\\fundoo-note-app\\node_modules\\mongoose\\lib\\helpers\\promiseOrCallback.js:31:10)\n    at Mongoose._promiseOrCallback (C:\\Users\\visha\\Desktop\\nodeprojects\\fundoo-note-app\\node_modules\\mongoose\\lib\\index.js:1149:10)\n    at Mongoose.connect (C:\\Users\\visha\\Desktop\\nodeprojects\\fundoo-note-app\\node_modules\\mongoose\\lib\\index.js:350:20)\n    at Object.exports.dbConnection (C:\\Users\\visha\\Desktop\\nodeprojects\\fundoo-note-app\\config\\db.config.js:6:10)\n    at Object.<anonymous> (C:\\Users\\visha\\Desktop\\nodeprojects\\fundoo-note-app\\server.js:32:10)\n    at Module._compile (internal/modules/cjs/loader.js:1085:14)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)\n    at Module.load (internal/modules/cjs/loader.js:950:32)\n    at Function.Module._load (internal/modules/cjs/loader.js:790:14)\n    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)\n    at internal/main/run_main_module.js:17:47","timestamp":"2021-10-17T13:26:16.733Z"}
+{"message":"Invalid password","level":"error","timestamp":"2021-10-17T13:27:51.218Z"}
+{"message":"Invalid password","level":"error","timestamp":"2021-10-17T13:27:53.293Z"}
+{"message":"could not connect to db .Exiting now  connect ECONNREFUSED 127.0.0.1:27017","reason":{"type":"Single","setName":null,"maxSetVersion":null,"maxElectionId":null,"servers":{},"stale":false,"compatible":true,"compatibilityError":null,"logicalSessionTimeoutMinutes":null,"heartbeatFrequencyMS":10000,"localThresholdMS":15,"commonWireVersion":null},"level":"error","stack":"MongooseServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017\n    at NativeConnection.Connection.openUri (C:\\Users\\visha\\Desktop\\nodeprojects\\fundoo-note-app\\node_modules\\mongoose\\lib\\connection.js:846:32)\n    at C:\\Users\\visha\\Desktop\\nodeprojects\\fundoo-note-app\\node_modules\\mongoose\\lib\\index.js:351:10\n    at C:\\Users\\visha\\Desktop\\nodeprojects\\fundoo-note-app\\node_modules\\mongoose\\lib\\helpers\\promiseOrCallback.js:32:5\n    at new Promise (<anonymous>)\n    at promiseOrCallback (C:\\Users\\visha\\Desktop\\nodeprojects\\fundoo-note-app\\node_modules\\mongoose\\lib\\helpers\\promiseOrCallback.js:31:10)\n    at Mongoose._promiseOrCallback (C:\\Users\\visha\\Desktop\\nodeprojects\\fundoo-note-app\\node_modules\\mongoose\\lib\\index.js:1149:10)\n    at Mongoose.connect (C:\\Users\\visha\\Desktop\\nodeprojects\\fundoo-note-app\\node_modules\\mongoose\\lib\\index.js:350:20)\n    at Object.exports.dbConnection (C:\\Users\\visha\\Desktop\\nodeprojects\\fundoo-note-app\\config\\db.config.js:6:10)\n    at Object.<anonymous> (C:\\Users\\visha\\Desktop\\nodeprojects\\fundoo-note-app\\server.js:32:10)\n    at Module._compile (internal/modules/cjs/loader.js:1085:14)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)\n    at Module.load (internal/modules/cjs/loader.js:950:32)\n    at Function.Module._load (internal/modules/cjs/loader.js:790:14)\n    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)\n    at internal/main/run_main_module.js:17:47","timestamp":"2021-11-02T10:18:23.244Z"}
+{"message":"could not connect to db .Exiting now  connect ECONNREFUSED 127.0.0.1:27017","reason":{"type":"Single","setName":null,"maxSetVersion":null,"maxElectionId":null,"servers":{},"stale":false,"compatible":true,"compatibilityError":null,"logicalSessionTimeoutMinutes":null,"heartbeatFrequencyMS":10000,"localThresholdMS":15,"commonWireVersion":null},"level":"error","stack":"MongooseServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017\n    at NativeConnection.Connection.openUri (C:\\Users\\visha\\Desktop\\nodeprojects\\fundoo-note-app\\node_modules\\mongoose\\lib\\connection.js:846:32)\n    at C:\\Users\\visha\\Desktop\\nodeprojects\\fundoo-note-app\\node_modules\\mongoose\\lib\\index.js:351:10\n    at C:\\Users\\visha\\Desktop\\nodeprojects\\fundoo-note-app\\node_modules\\mongoose\\lib\\helpers\\promiseOrCallback.js:32:5\n    at new Promise (<anonymous>)\n    at promiseOrCallback (C:\\Users\\visha\\Desktop\\nodeprojects\\fundoo-note-app\\node_modules\\mongoose\\lib\\helpers\\promiseOrCallback.js:31:10)\n    at Mongoose._promiseOrCallback (C:\\Users\\visha\\Desktop\\nodeprojects\\fundoo-note-app\\node_modules\\mongoose\\lib\\index.js:1149:10)\n    at Mongoose.connect (C:\\Users\\visha\\Desktop\\nodeprojects\\fundoo-note-app\\node_modules\\mongoose\\lib\\index.js:350:20)\n    at Object.exports.dbConnection (C:\\Users\\visha\\Desktop\\nodeprojects\\fundoo-note-app\\config\\db.config.js:6:10)\n    at Object.<anonymous> (C:\\Users\\visha\\Desktop\\nodeprojects\\fundoo-note-app\\server.js:32:10)\n    at Module._compile (internal/modules/cjs/loader.js:1085:14)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)\n    at Module.load (internal/modules/cjs/loader.js:950:32)\n    at Function.Module._load (internal/modules/cjs/loader.js:790:14)\n    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)\n    at internal/main/run_main_module.js:17:47","timestamp":"2021-11-22T18:45:55.411Z"}

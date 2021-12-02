@@ -69,7 +69,7 @@ class Note {
                     });
                 }
                 else{
-                    redis.clearCache();
+                    //redis.clearCache();
                     logger.info("All notes retrieved")
                     return res.status(200).json({
                         message:"Notes retieved succesfully",
@@ -102,7 +102,7 @@ class Note {
                 }) 
             }
             const value = JSON.stringify(data);
-            redis.setData("notes",3600,value);
+            redis.setData(id.noteId,3600,value);
             return res.status(200).json({
                 message:"Note retieved succesfully",
                 success:true,
@@ -144,7 +144,7 @@ class Note {
                         })
                     }
                     else{
-                        redis.clearCache("notes");
+                        // redis.clearCache("notes");
                         return res.status(200).json({
                             message:"Note updated",
                             success:true,
@@ -178,7 +178,7 @@ class Note {
                     });
                 }
                 else{
-                    redis.clearCache("notes");
+                    // redis.clearCache("notes");
                     return res.status(200).json({
                         message:"Note deleted",
                         success:true

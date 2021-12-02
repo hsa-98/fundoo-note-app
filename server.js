@@ -6,9 +6,9 @@ const swaggerDoc = require('./swagger/swagger.json');
 const cors = require('cors');
 const app = express();
 
-const whiteList = ["http://localhost:4000/resetpassword","http://localhost:4000/register",
-"http://localhost:4000/login"
-];
+// const whiteList = ["http://localhost:4000/resetpassword","http://localhost:4000/register",
+// "http://localhost:4000/login"
+// ];
 
 /*const corsOptionsDelegate = (req,callback)=>{
     let corsOptions;
@@ -22,14 +22,13 @@ const whiteList = ["http://localhost:4000/resetpassword","http://localhost:4000/
     callback(null,corsOptions);
 }*/
 app.use(cors({
-    origin: ["http://localhost:4000/resetpassword","http://localhost:4000/register",
-    "http://localhost:4000/login"
+    origin: ["http://localhost:3000"
     ]
 
 }));
 app.use(express.urlencoded({extended:true}));
 app.use(express.json());
-app.use("/api-docs",swaggerUI.serve,swaggerUI.setup(swaggerDoc));
+
 dbConfig.dbConnection();
 
 app.get('/',/*cors(corsOptionsDelegate),*/(req,res) => {
