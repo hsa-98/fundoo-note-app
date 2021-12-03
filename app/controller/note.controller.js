@@ -69,7 +69,7 @@ class Note {
                     });
                 }
                 else{
-                    //redis.clearCache();
+                    redis.clearCache();
                     logger.info("All notes retrieved")
                     return res.status(200).json({
                         message:"Notes retieved succesfully",
@@ -144,7 +144,7 @@ class Note {
                         })
                     }
                     else{
-                        // redis.clearCache("notes");
+                         redis.clearCache("notes");
                         return res.status(200).json({
                             message:"Note updated",
                             success:true,
@@ -178,7 +178,7 @@ class Note {
                     });
                 }
                 else{
-                    // redis.clearCache("notes");
+                     redis.clearCache("notes");
                     return res.status(200).json({
                         message:"Note deleted",
                         success:true

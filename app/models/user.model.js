@@ -30,18 +30,20 @@ const userSchema = mongoose.Schema({
 
 userSchema.pre('save',async function (next){
     try{
-        // const salt = await bcrypt.genSalt(10);
-        // const hashedPassword = await bcrypt.hash(this.password,salt);
-        // this.password = hashedPassword;
-        bcrypt.hash(this.password,10,(err,newHash) =>{
-            if(err){
-                return next(err);
-            }
-            else{
-                this.password = newHash;
-                next();
-            }
-        })
+        const salt = await bcrypt.genSalt(10);
+        const hashedPassword = await bcrypt.hash(this.password,salt);
+        this.password = hashedPassword;
+        // this.password=bcrypt.hash(this.password,10,(err,newHash) =>{
+        //     if(err){
+        //         return next(err);
+        //     }
+        //     else{
+        //         console.log(newHash,"in")
+        //         next();
+                
+        //     }
+        // })
+        next();
     
     }catch(err){
         next(err);
