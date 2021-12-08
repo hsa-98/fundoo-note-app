@@ -32,7 +32,7 @@ class Note {
                 service.createNote(note,(err,data)=>{
                     if(err){
                          return res.status(500).json({
-                            message:"failed to post note",
+                            message:"failed in posting note",
                             success:false
                         });
                     }
