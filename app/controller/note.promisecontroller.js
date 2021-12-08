@@ -10,7 +10,7 @@ class Notepromise {
         if(valid){
             service.createNote(req.body.note).then(
                  res.status(201).json({
-                    message: "Successfully insert note,work",
+                    message: "Successfully insert note,work please",
                     success:true,
                     data:data})
                 )
